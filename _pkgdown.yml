@@ -1,6 +1,4 @@
-url: https://maelle.github.io/saperlipopette/
-template:
-  bootstrap: 5
+url: https://docs.ropensci.org/saperlipopette/
 
 reference:
 - title: Exercises inspired from Oh shit Git!

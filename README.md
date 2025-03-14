@@ -5,9 +5,9 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/maelle/saperlipopette/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/maelle/saperlipopette/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/ropensci-training/saperlipopette/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropensci-training/saperlipopette/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/maelle/saperlipopette/graph/badge.svg)](https://app.codecov.io/gh/maelle/saperlipopette)
+coverage](https://codecov.io/gh/ropensci-training/saperlipopette/graph/badge.svg)](https://app.codecov.io/gh/ropensci-training/saperlipopette)
 <!-- badges: end -->
 
 The goal of saperlipopette is to hold functions creating Git messes,
@@ -18,7 +18,7 @@ that users would then solve, to follow <https://ohshitgit.com/>.
 You can install the development version of saperlipopette like so:
 
 ``` r
-pak::pak("maelle/saperlipopette")
+pak::pak("ropensci-training/saperlipopette")
 ```
 
 You’ll also need

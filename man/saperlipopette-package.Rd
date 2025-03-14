@@ -11,9 +11,9 @@ Holds functions creating Git messes, that users would then solve, to follow \url
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://maelle.github.io/saperlipopette/}
-  \item \url{https://github.com/maelle/saperlipopette}
-  \item Report bugs at \url{https://github.com/maelle/saperlipopette/issues}
+  \item \url{https://docs.ropensci.org/saperlipopette/}
+  \item \url{https://github.com/ropensci-training/saperlipopette}
+  \item Report bugs at \url{https://github.com/ropensci-training/saperlipopette/issues}
 }
 
 }
