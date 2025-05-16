@@ -20,7 +20,7 @@ default_author <- function() {
 
 git_commit <- function(message) {
   gert::git_commit(
-    message = message,
+    message = tr_(message),
     author = default_author(),
     committer = default_committer()
   )

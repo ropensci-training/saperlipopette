@@ -8,6 +8,8 @@
 [![R-CMD-check](https://github.com/ropensci-training/saperlipopette/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropensci-training/saperlipopette/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/ropensci-training/saperlipopette/graph/badge.svg)](https://app.codecov.io/gh/ropensci-training/saperlipopette)
+[![Codecov test
+coverage](https://codecov.io/gh/maelle/saperlipopette/graph/badge.svg)](https://app.codecov.io/gh/maelle/saperlipopette)
 <!-- badges: end -->
 
 The goal of saperlipopette is to hold functions creating Git messes,
@@ -49,10 +51,10 @@ This is a basic example which shows you how to solve a common problem:
 library("saperlipopette")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmprB2S8E/file10b5d656dc3da/one-small-change!
+#> ℹ Follow along in /tmp/RtmpMILSQF/file9a404fd2d8b7/one-small-change!
 # what's in path
 fs::dir_tree(path)
-#> /tmp/RtmprB2S8E/file10b5d656dc3da/one-small-change
+#> /tmp/RtmpMILSQF/file9a404fd2d8b7/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
@@ -84,7 +86,7 @@ can run:
 ``` r
 tip()
 #> • Add 'thing 3' to the 'bla' file and save it.
-#> • Add 'bla' file to Git.
+#> • `git add bla`
 #> • `git commit --amend --no-edit`
 #> • Examine Git history.
 ```
@@ -104,7 +106,7 @@ building documentation.
 ``` r
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmprB2S8E/file10b5d3fcba991/one-small-change!
+#> ℹ Follow along in /tmp/RtmpMILSQF/file9a40904ef2f/one-small-change!
 gert::git_log(repo = path)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -113,13 +115,52 @@ gert::git_log(repo = path)
 #> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 16:25:00     2 FALSE "First…
 parent_path2 <- withr::local_tempdir()
 path2 <- exo_one_small_change(parent_path2)
-#> ℹ Follow along in /tmp/RtmprB2S8E/file10b5d92f231a/one-small-change!
+#> ℹ Follow along in /tmp/RtmpMILSQF/file9a401e38b1bd/one-small-change!
 gert::git_log(repo = path2)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
 #> * <chr>                           <chr>  <dttm>              <int> <lgl> <chr>  
 #> 1 2ff0d31f566e68ae0ee94b6028a3fa… Jane … 2023-12-15 16:25:00     1 FALSE "feat:…
 #> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 16:25:00     2 FALSE "First…
+```
+
+### Multilingual!
+
+The saperlipopette can create messages in English (default) but also in
+French:
+
+``` r
+library("saperlipopette")
+withr::local_language("fr")
+parent_path <- withr::local_tempdir()
+path <- exo_one_small_change(parent_path)
+#> ℹ L'exercice attend dans /tmp/RtmpMILSQF/file9a4049f26e6c/one-small-change !
+# what's in path
+fs::dir_tree(path)
+#> /tmp/RtmpMILSQF/file9a4049f26e6c/one-small-change
+#> ├── R
+#> └── bla
+# with Git in a command line: git log
+# or the gert R package
+gert::git_log(repo = path)
+#> # A tibble: 2 × 6
+#>   commit                          author time                files merge message
+#> * <chr>                           <chr>  <dttm>              <int> <lgl> <chr>  
+#> 1 fb950db731b1121ec9af6db77d2211… Jane … 2023-12-15 16:25:00     1 FALSE "feat:…
+#> 2 65bee703cbbcc9f809594e17835551… Jane … 2023-12-15 16:25:00     2 FALSE "Premi…
+```
+
+    #> ✖ "Et merde, je viens de commiter et il manque une toute petite modification !"
+    #> ✖ Je voulais lister 3 choses dans mon fichier bla, pas seulement 2 !
+    #> ℹ Voir <https://ohshitgit.com/fr#modifier-le-dernier-commit>
+    #> ℹ Pour plus d'aide, `tip()`
+
+``` r
+tip()
+#> • Ajouter 'chose 3' au fichier 'bla' puis l'enregistrer.
+#> • `git add bla`
+#> • `git commit --amend --no-edit`
+#> • Examiner l'historique Git.
 ```
 
 ### Recommended resources about Git

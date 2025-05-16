@@ -15,7 +15,6 @@
 #' parent_path <- withr::local_tempdir()
 #' path <- exo_undo_commit(parent_path = parent_path)
 exo_undo_commit <- function(parent_path) {
-
   path <- file.path(parent_path, "undo-commit")
 
   withr::local_options(usethis.quiet = TRUE)
@@ -26,10 +25,7 @@ exo_undo_commit <- function(parent_path) {
   withr::local_dir(path)
   gert::git_init()
 
-  file.copy(
-    system.file("exo_undo_commit-Rprofile.R", package = "saperlipopette"),
-    ".Rprofile"
-  )
+  create_r_profile("undo_commit")
 
   create_project(path = getwd())
   # Ignore Rproj that might otherwise get edited when we open the project
@@ -38,11 +34,11 @@ exo_undo_commit <- function(parent_path) {
   usethis::use_git_ignore(rproj)
   usethis::use_git_ignore(".Rprofile")
   gert::git_add("*")
-  git_commit("First commit")
+  git_commit(tr_("First commit"))
 
   brio::write_lines("lala", "fix.txt")
   gert::git_add("fix.txt")
-  git_commit("fix: fix things")
+  git_commit(tr_("fix: fix things"))
 
   fs::file_create("bla")
   brio::write_lines(
@@ -50,25 +46,23 @@ exo_undo_commit <- function(parent_path) {
     path = "bla"
   )
   gert::git_add("bla")
-  git_commit("feat: add bla")
+  git_commit(tr_("feat: add bla"))
   brio::write_lines(
     text = c("thing 1", "thing 3"),
     path = "bla"
   )
   gert::git_add("bla")
-  git_commit("fix: edit bla")
+  git_commit(tr_("fix: edit bla"))
   brio::write_lines(
     text = c("thing 3", "thing 3"),
     path = "bla"
   )
   gert::git_add("bla")
-  git_commit("fix: amend bla")
-
-
+  git_commit(tr_("fix: amend bla"))
 
   usethis::local_project(original_dir, force = TRUE)
 
-  cli::cli_alert_info("Follow along in {path}!")
+  cli::cli_alert_info(tr_("Follow along in {path}!"))
 
   return(path)
 }

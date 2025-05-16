@@ -23,7 +23,6 @@
 #' parent_path <- withr::local_tempdir()
 #' path <- exo_split_changes(parent_path = parent_path)
 exo_split_changes <- function(parent_path) {
-
   path <- file.path(parent_path, "split-changes")
 
   withr::local_options(usethis.quiet = TRUE)
@@ -34,10 +33,7 @@ exo_split_changes <- function(parent_path) {
   withr::local_dir(path)
   gert::git_init()
 
-  file.copy(
-    system.file("exo_split_changes-Rprofile.R", package = "saperlipopette"),
-    ".Rprofile"
-  )
+  create_r_profile("split_changes")
 
   create_project(path = getwd())
   # Ignore Rproj that might otherwise get edited when we open the project
@@ -46,14 +42,14 @@ exo_split_changes <- function(parent_path) {
   usethis::use_git_ignore(rproj)
   usethis::use_git_ignore(".Rprofile")
   gert::git_add("*")
-  git_commit("First commit")
+  git_commit(tr_("First commit"))
 
   new_script <- file.path("R", "script.R")
   fs::file_create(new_script)
   script_lines <- c("a <- 1", "b <- 2")
   brio::write_lines(text = script_lines, path = new_script)
   gert::git_add(new_script)
-  git_commit("feat: add script")
+  git_commit(tr_("feat: add script"))
 
   script_lines <- append(script_lines, "# a comment", after = 0)
   script_lines <- append(script_lines, c("1/2", "1/3"), after = 2)
@@ -62,7 +58,7 @@ exo_split_changes <- function(parent_path) {
 
   usethis::local_project(original_dir, force = TRUE)
 
-  cli::cli_alert_info("Follow along in {path}!")
+  cli::cli_alert_info(tr_("Follow along in {path}!"))
 
   return(path)
 }

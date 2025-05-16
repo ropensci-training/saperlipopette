@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: saperlipopette 0.0.0.9000\n"
+"POT-Creation-Date: 2025-05-16 13:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: clean-dir.R:43 committed-to-main.R:37 committed-to-wrong-branch.R:37 conflict.R:45 debug.R:45 edit-latest-message.R:41 one-small-change.R:42 rebase-i.R:48 reset.R:47 revert-commit.R:40 revert-file.R:40 split-changes.R:48 time-machine.R:40
+msgid "First commit"
+msgstr ""
+
+#: clean-dir.R:50 conflict.R:52 debug.R:52 split-changes.R:55
+msgid "feat: add script"
+msgstr ""
+
+#: clean-dir.R:60 committed-to-main.R:49 committed-to-wrong-branch.R:62 conflict.R:70 debug.R:70 edit-latest-message.R:53 one-small-change.R:54 rebase-i.R:86 reset.R:86 revert-commit.R:68 revert-file.R:69 split-changes.R:64 time-machine.R:53
+msgid "Follow along in {path}!"
+msgstr ""
+
+#: committed-to-main.R:41
+msgid "thing 1"
+msgstr ""
+
+#: committed-to-main.R:41
+msgid "thing 2"
+msgstr ""
+
+#: committed-to-main.R:45 committed-to-wrong-branch.R:58 one-small-change.R:50 revert-commit.R:52 time-machine.R:48
+msgid "feat: add bla"
+msgstr ""
+
+#: committed-to-wrong-branch.R:50
+msgid "fix things"
+msgstr ""
+
+#: conflict.R:57
+msgid "feat: improve script"
+msgstr ""
+
+#: conflict.R:66
+msgid "feat: amend script"
+msgstr ""
+
+#: debug.R:63
+msgid "feat: edit script"
+msgstr ""
+
+#: edit-latest-message.R:49
+msgid "add a new documennnt"
+msgstr ""
+
+#: rebase-i.R:57 reset.R:56
+msgid "add ci configuration"
+msgstr ""
+
+#: rebase-i.R:64 reset.R:63
+msgid "add script"
+msgstr ""
+
+#: rebase-i.R:68 rebase-i.R:71 reset.R:67 reset.R:70
+msgid "try to fix ci"
+msgstr ""
+
+#: rebase-i.R:75 reset.R:74
+msgid "try to fix script"
+msgstr ""
+
+#: rebase-i.R:79 reset.R:78
+msgid "add a ci thing"
+msgstr ""
+
+#: rebase-i.R:82 reset.R:82
+msgid "fix script"
+msgstr ""
+
+#: revert-commit.R:44 revert-file.R:65
+msgid "fix: fix things"
+msgstr ""
+
+#: revert-commit.R:58 revert-file.R:54
+msgid "fix: edit bla"
+msgstr ""
+
+#: revert-commit.R:64
+msgid "fix: amend bla"
+msgstr ""
+
+#: revert-file.R:48
+msgid "feat: add bla.txt"
+msgstr ""
+
+#: revert-file.R:60
+msgid "fix: amend bla.txt"
+msgstr ""
+
+#: utils-potools.R:6
+msgid "en"
+msgstr ""

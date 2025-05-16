@@ -21,7 +21,6 @@
 #' parent_path <- withr::local_tempdir()
 #' path <- exo_clean_dir(parent_path = parent_path)
 exo_clean_dir <- function(parent_path) {
-
   path <- file.path(parent_path, "clean-dir")
 
   withr::local_options(usethis.quiet = TRUE)
@@ -32,10 +31,7 @@ exo_clean_dir <- function(parent_path) {
   withr::local_dir(path)
   gert::git_init()
 
-  file.copy(
-    system.file("exo_clean_dir-Rprofile.R", package = "saperlipopette"),
-    ".Rprofile"
-  )
+  create_r_profile("clean_dir")
 
   create_project(path = getwd())
   # Ignore Rproj that might otherwise get edited when we open the project
@@ -44,14 +40,14 @@ exo_clean_dir <- function(parent_path) {
   usethis::use_git_ignore(rproj)
   usethis::use_git_ignore(".Rprofile")
   gert::git_add("*")
-  git_commit("First commit")
+  git_commit(tr_("First commit"))
 
   new_script <- file.path("R", "script.R")
   fs::file_create(new_script)
   script_lines <- c("a <- 1", "b <- 2")
   brio::write_lines(text = script_lines, path = new_script)
   gert::git_add(new_script)
-  git_commit("feat: add script")
+  git_commit(tr_("feat: add script"))
 
   fs::dir_create("debugging")
   fs::file_create("debug1")
@@ -61,7 +57,7 @@ exo_clean_dir <- function(parent_path) {
 
   usethis::local_project(original_dir, force = TRUE)
 
-  cli::cli_alert_info("Follow along in {path}!")
+  cli::cli_alert_info(tr_("Follow along in {path}!"))
 
   return(path)
 }
