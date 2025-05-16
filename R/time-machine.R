@@ -15,7 +15,6 @@
 #' parent_path <- withr::local_tempdir()
 #' path <- exo_time_machine(parent_path = parent_path)
 exo_time_machine <- function(parent_path) {
-
   path <- file.path(parent_path, "time-machine")
 
   withr::local_options(usethis.quiet = TRUE)
@@ -26,10 +25,7 @@ exo_time_machine <- function(parent_path) {
   withr::local_dir(path)
   gert::git_init()
 
-  file.copy(
-    system.file("exo_time_machine-Rprofile.R", package = "saperlipopette"),
-    ".Rprofile"
-  )
+  create_r_profile("time_machine")
 
   create_project(path = getwd())
   # Ignore Rproj that might otherwise get edited when we open the project
@@ -38,7 +34,7 @@ exo_time_machine <- function(parent_path) {
   usethis::use_git_ignore(rproj)
   usethis::use_git_ignore(".Rprofile")
   gert::git_add("*")
-  first <- git_commit("First commit")
+  first <- git_commit(tr_("First commit"))
 
   fs::file_create("bla")
   brio::write_lines(
@@ -46,12 +42,12 @@ exo_time_machine <- function(parent_path) {
     path = "bla"
   )
   gert::git_add("bla")
-  git_commit("feat: add bla")
+  git_commit(tr_("feat: add bla"))
   gert::git_reset_hard(first)
 
   usethis::local_project(original_dir, force = TRUE)
 
-  cli::cli_alert_info("Follow along in {path}!")
+  cli::cli_alert_info(tr_("Follow along in {path}!"))
 
   return(path)
 }

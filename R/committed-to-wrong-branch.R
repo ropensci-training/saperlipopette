@@ -15,7 +15,6 @@
 #' parent_path <- withr::local_tempdir()
 #' path <- exo_committed_to_wrong(parent_path = parent_path)
 exo_committed_to_wrong <- function(parent_path) {
-
   path <- file.path(parent_path, "committed-to-wrong")
 
   withr::local_options(usethis.quiet = TRUE)
@@ -26,10 +25,7 @@ exo_committed_to_wrong <- function(parent_path) {
   withr::local_dir(path)
   gert::git_init()
 
-  file.copy(
-    system.file("exo_committed_to_wrong-Rprofile.R", package = "saperlipopette"),
-    ".Rprofile"
-  )
+  create_r_profile("committed_to_wrong")
 
   create_project(path = getwd())
   # Ignore Rproj that might otherwise get edited when we open the project
@@ -38,7 +34,7 @@ exo_committed_to_wrong <- function(parent_path) {
   usethis::use_git_ignore(rproj)
   usethis::use_git_ignore(".Rprofile")
   gert::git_add("*")
-  git_commit("First commit")
+  git_commit(tr_("First commit"))
 
   gert::git_branch_create("feat-bla")
 
@@ -51,7 +47,7 @@ exo_committed_to_wrong <- function(parent_path) {
   gert::git_branch_create("hot-fix")
   brio::write_lines("lala", "fix.txt")
   gert::git_add("fix.txt")
-  git_commit("fix things")
+  git_commit(tr_("fix things"))
 
   fs::file_create("bla")
   brio::write_lines(
@@ -59,11 +55,11 @@ exo_committed_to_wrong <- function(parent_path) {
     path = "bla"
   )
   gert::git_add("bla")
-  git_commit("feat: add bla")
+  git_commit(tr_("feat: add bla"))
 
   usethis::local_project(original_dir, force = TRUE)
 
-  cli::cli_alert_info("Follow along in {path}!")
+  cli::cli_alert_info(tr_("Follow along in {path}!"))
 
   return(path)
 }

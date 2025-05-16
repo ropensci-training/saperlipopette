@@ -20,7 +20,6 @@
 #' parent_path <- withr::local_tempdir()
 #' path <- exo_bisect(parent_path = parent_path)
 exo_bisect <- function(parent_path) {
-
   path <- file.path(parent_path, "bisect")
 
   withr::local_options(usethis.quiet = TRUE)
@@ -31,10 +30,7 @@ exo_bisect <- function(parent_path) {
   withr::local_dir(path)
   gert::git_init()
 
-  file.copy(
-    system.file("exo_bisect-Rprofile.R", package = "saperlipopette"),
-    ".Rprofile"
-  )
+  create_r_profile("bisect")
 
   create_project(path = getwd())
   # Ignore Rproj that might otherwise get edited when we open the project
@@ -43,14 +39,14 @@ exo_bisect <- function(parent_path) {
   usethis::use_git_ignore(rproj)
   usethis::use_git_ignore(".Rprofile")
   gert::git_add("*")
-  git_commit("First commit")
+  git_commit(tr_("First commit"))
 
   new_script <- file.path("R", "script.R")
   fs::file_create(new_script)
   script_lines <- c("a <- 1", "b <- 2")
   brio::write_lines(text = script_lines, path = new_script)
   gert::git_add(new_script)
-  git_commit("feat: add script")
+  git_commit(tr_("feat: add script"))
 
   create_commit <- function(i, new_script) {
     script_lines <- brio::read_lines(new_script)
@@ -61,14 +57,14 @@ exo_bisect <- function(parent_path) {
     }
     brio::write_lines(text = c(script_lines, new_line), path = new_script)
     gert::git_add(new_script)
-    git_commit("feat: edit script")
+    git_commit(tr_("feat: edit script"))
   }
 
   purrr::walk(1:100, create_commit, new_script = new_script)
 
   usethis::local_project(original_dir, force = TRUE)
 
-  cli::cli_alert_info("Follow along in {path}!")
+  cli::cli_alert_info(tr_("Follow along in {path}!"))
 
   return(path)
 }
