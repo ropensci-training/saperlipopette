@@ -98,7 +98,8 @@ gert::git_log(repo = path2)
 
 ### Multilingual!
 
-The saperlipopette can create messages in English (default) but also in French:
+The saperlipopette can create messages in English (default) but also in French and Spanish.
+Example in French:
 
 ```{r example-fr}
 library("saperlipopette")
