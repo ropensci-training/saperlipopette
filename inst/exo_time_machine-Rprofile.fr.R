@@ -14,9 +14,6 @@ cli::cli_alert_info("Pour plus d'aide, {.run tip()}")
 
 tip <- function() {
   cli::cli_li("{.code git reflog}")
-  cli::cli_li('{.code git reset --hard HEAD@{1}}')
-  cli::cli_li(
-    'Note : --hard n\'est pas toujours adapté, mais git reset est toujours la commande'
-  )
+  cli::cli_li('{.code git reset HEAD@{1}}')
   cli::cli_li('Examiner l\'historique Git.')
 }
