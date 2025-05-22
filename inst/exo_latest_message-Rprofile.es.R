@@ -7,7 +7,7 @@ cli::cli_alert_danger(
 )
 cli::cli_alert_danger("¡He cometido un error tipográfico!")
 cli::cli_alert_info(
-  "Voir {.url https://ohshitgit.com/fr#corriger-dernier-message-commit}"
+  "Mira {.url https://ohshitgit.com/es#cambio-mensage-ultimo-commit}"
 )
 cli::cli_alert_info("Para más ayuda, {.run tip()}")
 
