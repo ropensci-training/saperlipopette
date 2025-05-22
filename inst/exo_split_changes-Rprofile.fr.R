@@ -15,7 +15,7 @@ cli::cli_alert_info("Pour plus d'aide, {.run tip()}")
 tip <- function() {
   ul <- cli::cli_ul()
   cli::cli_li("Examiner l'index de Git.")
-  cli::cli_li("{.code git add --patch} pour ajoute un premier morceau")
+  cli::cli_li("{.code git add --patch} pour ajouter un premier morceau")
   ulid <- cli::cli_ul()
   cli::cli_li("'s' pour diviser le morceau")
   cli::cli_li("'y' pour ajouter le morceau à l'index")
