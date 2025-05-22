@@ -21,7 +21,7 @@ tip <- function() {
       "{.code git cherry-pick hot-fix}",
       "{.code git checkout hot-fix}",
       "{.code git reset HEAD~ --hard}",
-      "Examiner l'historique Git des branches feat-bla et hot-fix."
+      "Examina el historial Git de las ramas feat-bla y hot-fix."
     )
   )
 }

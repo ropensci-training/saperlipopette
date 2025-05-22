@@ -15,7 +15,7 @@ tip <- function() {
     items = c(
       "Inspecciona la historia de Git.",
       "Encuentra el commit para el rebase con {.code git merge-base feature main}",
-      "{.code git rebase -i <commit-id>} cuantas veces necesitas (una vez para cambiar el ordén, una vez para fusionar commits juntos, etc).",
+      "{.code git rebase -i <commit-id>} cuantas veces necesitas (una vez para cambiar el orden, una vez para fusionar commits juntos, etc).",
       "Inspecciona la historia de Git y los archivos."
     )
   )

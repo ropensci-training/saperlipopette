@@ -3,7 +3,7 @@ if (file.exists("~/.Rprofile")) {
 }
 
 cli::cli_alert_danger(
-  '"Mierda, hice algo terriblemente mal, por favor dime que git tiene una maquina del tiempo mágica!?!"'
+  '"¡Mierda, hice algo terriblemente mal!, ¡por favor dime que git tiene una máquina del tiempo mágica!"'
 )
 cli::cli_alert_danger(
   "Ejecuté {.code git reset hard} por descuido y perdí un commit importante."

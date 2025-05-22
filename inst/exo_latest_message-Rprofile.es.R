@@ -3,9 +3,9 @@ if (file.exists("~/.Rprofile")) {
 }
 
 cli::cli_alert_danger(
-  '"Et merde, je veux corriger le message de mon dernier commit !'
+  '"¡Mierda, quiero corregir el mensaje de mi último commit!'
 )
-cli::cli_alert_danger("J'ai fait une faute de frappe !")
+cli::cli_alert_danger("¡He cometido un error tipográfico!")
 cli::cli_alert_info(
   "Voir {.url https://ohshitgit.com/fr#corriger-dernier-message-commit}"
 )
@@ -15,7 +15,7 @@ tip <- function() {
   cli::cli_li(
     items = c(
       "Inspecciona la historia de Git.",
-      "Nota que 'documennnto' tendria que ser 'documento' ! Error de dedo !",
+      "Nota que 'documennnto' tendria que ser 'documento' ! Error de tipeo !",
       "{.code git commit --amend}",
       "Inspecciona la historia de Git."
     )

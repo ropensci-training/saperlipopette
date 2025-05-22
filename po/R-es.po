@@ -60,7 +60,7 @@ msgstr "feat: cambia el script"
 
 #: edit-latest-message.R:49
 msgid "add a new documennnt"
-msgstr "añade un nuevo documennnto"
+msgstr "añade un nuevo documento"
 
 #: rebase-i.R:57 reset.R:56
 msgid "add ci configuration"

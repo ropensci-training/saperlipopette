@@ -12,12 +12,12 @@ tip <- function() {
   cli::cli_li(
     items = c(
       "Inspecciona la historia de Git.",
-      "Ejecuta R/script.R, ve que hay un error.",
+      "Ejecuta R/script.R, para ver que hay un error.",
       "{.code git bisect start}",
       "{.code git bisect bad} (la versión actual no funciona).",
       "{.code git bisect good <first-commit-SHA>} (la primera versión funcionaba).",
       "A cada etapa ejecuta R/script.R y escribe {.code git bisect bad} si hay un error, {.code git bisect good} si no hay un error.",
-      "Continuar hasta que git bisect te muestre el culpable.",
+      "Continuar hasta que git bisect te muestre al culpable.",
       "{.code git bisect reset} para salir del modo.",
       "Inspecciona la diff Git del commit culpable.",
       "Avanzado : en vez de las instruccionnes 'a cada etapa', ejecuta {.code git bisect run Rscript R/script.R}."

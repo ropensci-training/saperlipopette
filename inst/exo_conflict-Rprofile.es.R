@@ -3,7 +3,7 @@ if (file.exists("~/.Rprofile")) {
 }
 
 cli::cli_alert_danger(
-  '"Quiero fusionar la rama feature a la rama main."'
+  '"Quiero fusionar (merge) la rama feature a la rama main."'
 )
 cli::cli_alert_danger("Voy a tener que ocuparme de un 'merge conflict'.")
 cli::cli_alert_info("Para más ayuda, {.run tip()}")
@@ -16,7 +16,7 @@ tip <- function() {
       "Modificar R/script.R hasta que sea como quieres, suprimir los marcadores de conflicto.",
       "{.code git add R/script.R}",
       "{.code git commit}.",
-      "Mira como se finaliza la fusión, si se necesita modifica un mensaje de commit.",
+      "Mira como se finaliza el merge, si se necesita modifica un mensaje de commit.",
       "Inspecciona la historia de Git."
     )
   )
