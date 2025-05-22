@@ -16,7 +16,7 @@ cli::cli_alert_info("Para más ayuda, {.run tip()}")
 tip <- function() {
   cli::cli_li(
     items = c(
-      "Añade 'cosa 3' al archivo {.path bla}, pues guardarlo.",
+      "Añade 'cosa 3' al archivo {.path bla}, pues guardalo.",
       "{.code git add bla}",
       "{.code git commit --amend --no-edit}",
       "Inspecciona la historia de Git."
