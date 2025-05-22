@@ -19,7 +19,7 @@ tip <- function() {
       "Añade 'cosa 3' al archivo {.path bla}, pues guardarlo.",
       "{.code git add bla}",
       "{.code git commit --amend --no-edit}",
-      "Inspecciona la historia de Git.""
+      "Inspecciona la historia de Git."
     )
   )
 }
