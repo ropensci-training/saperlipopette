@@ -38,19 +38,19 @@ exo_revert_file <- function(parent_path) {
 
   fs::file_create("bla.txt")
   brio::write_lines(
-    text = c("thing 1", "thing 2"),
+    text = c(tr_("thing 1"), tr_("thing 2")),
     path = "bla.txt"
   )
   gert::git_add("bla.txt")
   git_commit(tr_("feat: add bla.txt"))
   brio::write_lines(
-    text = c("thing 1", "thing 3"),
+    text = c(tr_("thing 1"), tr_("thing 3")),
     path = "bla.txt"
   )
   gert::git_add("bla.txt")
   git_commit(tr_("fix: edit bla"))
   brio::write_lines(
-    text = c("thing 3", "thing 3"),
+    text = c(tr_("thing 3"), tr_("thing 3")),
     path = "bla.txt"
   )
   gert::git_add("bla.txt")

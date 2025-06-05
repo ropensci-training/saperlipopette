@@ -51,7 +51,7 @@ exo_committed_to_wrong <- function(parent_path) {
 
   fs::file_create("bla")
   brio::write_lines(
-    text = c("thing 1", "thing 2"),
+    text = c(tr_("thing 1"), tr_("thing 2")),
     path = "bla"
   )
   gert::git_add("bla")

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: saperlipopette 0.0.0.9000\n"
-"POT-Creation-Date: 2025-05-16 13:57+0200\n"
+"POT-Creation-Date: 2025-06-05 14:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,27 +10,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: clean-dir.R:43 committed-to-main.R:37 committed-to-wrong-branch.R:37 conflict.R:45 debug.R:45 edit-latest-message.R:41 one-small-change.R:42 rebase-i.R:48 reset.R:47 revert-commit.R:40 revert-file.R:40 split-changes.R:48 time-machine.R:40
+#: clean-dir.R:43 committed-to-main.R:37 committed-to-wrong-branch.R:37 conflict.R:42 debug.R:42 edit-latest-message.R:38 one-small-change.R:39 rebase-i.R:45 reset.R:44 revert-commit.R:37 revert-file.R:37 split-changes.R:45 time-machine.R:37
 msgid "First commit"
 msgstr ""
 
-#: clean-dir.R:50 conflict.R:52 debug.R:52 split-changes.R:55
+#: clean-dir.R:50 conflict.R:49 debug.R:49 split-changes.R:52
 msgid "feat: add script"
 msgstr ""
 
-#: clean-dir.R:60 committed-to-main.R:49 committed-to-wrong-branch.R:62 conflict.R:70 debug.R:70 edit-latest-message.R:53 one-small-change.R:54 rebase-i.R:86 reset.R:86 revert-commit.R:68 revert-file.R:69 split-changes.R:64 time-machine.R:53
+#: clean-dir.R:60 committed-to-main.R:49 committed-to-wrong-branch.R:62 conflict.R:67 debug.R:67 edit-latest-message.R:50 one-small-change.R:51 rebase-i.R:83 reset.R:83 revert-commit.R:65 revert-file.R:66 split-changes.R:61 time-machine.R:50
 msgid "Follow along in {path}!"
 msgstr ""
 
-#: committed-to-main.R:41
+#: committed-to-main.R:41 committed-to-wrong-branch.R:54 edit-latest-message.R:42 one-small-change.R:43 revert-commit.R:45 revert-commit.R:51 revert-file.R:41 revert-file.R:47 time-machine.R:41
 msgid "thing 1"
 msgstr ""
 
-#: committed-to-main.R:41
+#: committed-to-main.R:41 committed-to-wrong-branch.R:54 edit-latest-message.R:42 one-small-change.R:43 revert-commit.R:45 revert-file.R:41 time-machine.R:41
 msgid "thing 2"
 msgstr ""
 
-#: committed-to-main.R:45 committed-to-wrong-branch.R:58 one-small-change.R:50 revert-commit.R:52 time-machine.R:48
+#: committed-to-main.R:45 committed-to-wrong-branch.R:58 one-small-change.R:47 revert-commit.R:49 time-machine.R:45
 msgid "feat: add bla"
 msgstr ""
 
@@ -38,63 +38,67 @@ msgstr ""
 msgid "fix things"
 msgstr ""
 
-#: conflict.R:57
+#: conflict.R:54
 msgid "feat: improve script"
 msgstr ""
 
-#: conflict.R:66
+#: conflict.R:63
 msgid "feat: amend script"
 msgstr ""
 
-#: debug.R:63
+#: debug.R:60
 msgid "feat: edit script"
 msgstr ""
 
-#: edit-latest-message.R:49
+#: edit-latest-message.R:46
 msgid "add a new documennnt"
 msgstr ""
 
-#: rebase-i.R:57 reset.R:56
+#: rebase-i.R:54 reset.R:53
 msgid "add ci configuration"
 msgstr ""
 
-#: rebase-i.R:64 reset.R:63
+#: rebase-i.R:61 reset.R:60
 msgid "add script"
 msgstr ""
 
-#: rebase-i.R:68 rebase-i.R:71 reset.R:67 reset.R:70
+#: rebase-i.R:65 rebase-i.R:68 reset.R:64 reset.R:67
 msgid "try to fix ci"
 msgstr ""
 
-#: rebase-i.R:75 reset.R:74
+#: rebase-i.R:72 reset.R:71
 msgid "try to fix script"
 msgstr ""
 
-#: rebase-i.R:79 reset.R:78
+#: rebase-i.R:76 reset.R:75
 msgid "add a ci thing"
 msgstr ""
 
-#: rebase-i.R:82 reset.R:82
+#: rebase-i.R:79 reset.R:79
 msgid "fix script"
 msgstr ""
 
-#: revert-commit.R:44 revert-file.R:65
+#: revert-commit.R:41 revert-file.R:62
 msgid "fix: fix things"
 msgstr ""
 
-#: revert-commit.R:58 revert-file.R:54
+#: revert-commit.R:51 revert-commit.R:57 revert-commit.R:57 revert-file.R:47 revert-file.R:53 revert-file.R:53
+msgid "thing 3"
+msgstr ""
+
+#: revert-commit.R:55 revert-file.R:51
 msgid "fix: edit bla"
 msgstr ""
 
-#: revert-commit.R:64
+#: revert-commit.R:61
 msgid "fix: amend bla"
 msgstr ""
 
-#: revert-file.R:48
+#: revert-file.R:45
 msgid "feat: add bla.txt"
 msgstr ""
 
-#: revert-file.R:60
+#: revert-file.R:57
 msgid "fix: amend bla.txt"
 msgstr ""
 

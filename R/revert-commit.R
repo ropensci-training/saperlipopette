@@ -42,19 +42,19 @@ exo_undo_commit <- function(parent_path) {
 
   fs::file_create("bla")
   brio::write_lines(
-    text = c("thing 1", "thing 2"),
+    text = c(tr_("thing 1"), tr_("thing 2")),
     path = "bla"
   )
   gert::git_add("bla")
   git_commit(tr_("feat: add bla"))
   brio::write_lines(
-    text = c("thing 1", "thing 3"),
+    text = c(tr_("thing 1"), tr_("thing 3")),
     path = "bla"
   )
   gert::git_add("bla")
   git_commit(tr_("fix: edit bla"))
   brio::write_lines(
-    text = c("thing 3", "thing 3"),
+    text = c(tr_("thing 3"), tr_("thing 3")),
     path = "bla"
   )
   gert::git_add("bla")
