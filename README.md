@@ -17,9 +17,20 @@ that users would then solve, to follow <https://ohshitgit.com/>.
 
 ## Installation
 
-You can install the development version of saperlipopette like so:
+You can install the development version of saperlipopette like so, from
+R-universe:
 
 ``` r
+install.packages(
+  'saperlipopette', 
+  repos = c('https://packages.ropensci.org', 'https://cloud.r-project.org')
+)
+```
+
+Or from GitHub:
+
+``` r
+# install.packages("pak")
 pak::pak("ropensci-training/saperlipopette")
 ```
 
@@ -51,10 +62,10 @@ This is a basic example which shows you how to solve a common problem:
 library("saperlipopette")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmpMILSQF/file9a404fd2d8b7/one-small-change!
+#> ℹ Follow along in /tmp/Rtmp8ohEEH/file5f675e102349/one-small-change!
 # what's in path
 fs::dir_tree(path)
-#> /tmp/RtmpMILSQF/file9a404fd2d8b7/one-small-change
+#> /tmp/Rtmp8ohEEH/file5f675e102349/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
@@ -106,7 +117,7 @@ building documentation.
 ``` r
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmpMILSQF/file9a40904ef2f/one-small-change!
+#> ℹ Follow along in /tmp/Rtmp8ohEEH/file5f673cc75ae7/one-small-change!
 gert::git_log(repo = path)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -115,7 +126,7 @@ gert::git_log(repo = path)
 #> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 16:25:00     2 FALSE "First…
 parent_path2 <- withr::local_tempdir()
 path2 <- exo_one_small_change(parent_path2)
-#> ℹ Follow along in /tmp/RtmpMILSQF/file9a401e38b1bd/one-small-change!
+#> ℹ Follow along in /tmp/Rtmp8ohEEH/file5f671b28dfce/one-small-change!
 gert::git_log(repo = path2)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -127,17 +138,17 @@ gert::git_log(repo = path2)
 ### Multilingual!
 
 The saperlipopette can create messages in English (default) but also in
-French:
+French and Spanish. Example in French:
 
 ``` r
 library("saperlipopette")
 withr::local_language("fr")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ L'exercice attend dans /tmp/RtmpMILSQF/file9a4049f26e6c/one-small-change !
+#> ℹ L'exercice attend dans /tmp/Rtmp8ohEEH/file5f6760e782cf/one-small-change !
 # what's in path
 fs::dir_tree(path)
-#> /tmp/RtmpMILSQF/file9a4049f26e6c/one-small-change
+#> /tmp/Rtmp8ohEEH/file5f6760e782cf/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
@@ -146,7 +157,7 @@ gert::git_log(repo = path)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
 #> * <chr>                           <chr>  <dttm>              <int> <lgl> <chr>  
-#> 1 fb950db731b1121ec9af6db77d2211… Jane … 2023-12-15 16:25:00     1 FALSE "feat:…
+#> 1 8f4f4f6fc6c4423d2c67caf93bdd92… Jane … 2023-12-15 16:25:00     1 FALSE "feat:…
 #> 2 65bee703cbbcc9f809594e17835551… Jane … 2023-12-15 16:25:00     2 FALSE "Premi…
 ```
 

@@ -26,9 +26,20 @@ would then solve, to follow https://ohshitgit.com/.
 
 ## Installation
 
-You can install the development version of saperlipopette like so:
+You can install the development version of saperlipopette like so, from R-universe:
+
+```r
+install.packages(
+  'saperlipopette', 
+  repos = c('https://packages.ropensci.org', 'https://cloud.r-project.org')
+)
+```
+
+
+Or from GitHub: 
 
 ``` r
+# install.packages("pak")
 pak::pak("ropensci-training/saperlipopette")
 ```
 
