@@ -7,6 +7,9 @@
       +-- bisect
       |   \-- R
       |       \-- script.R
+      +-- check-editor
+      |   +-- R
+      |   \-- bla
       +-- clean-dir
       |   +-- R
       |   |   \-- script.R

@@ -1,6 +1,10 @@
 url: https://docs.ropensci.org/saperlipopette/
 
 reference:
+- title: Tools to check your set up
+  contents:
+  - usethis::git_sitrep
+  - exo_check_editor
 - title: Exercises inspired from Oh shit Git!
   contents:
   - exo_time_machine
