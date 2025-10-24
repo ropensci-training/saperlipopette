@@ -3,7 +3,7 @@ if (file.exists("~/.Rprofile")) {
 }
 
 cli::cli_alert_danger(
-  '"Mierda, necesito deshacer un commit que hice hace 5 comits!"'
+  '"Mierda, necesito deshacer un commit que hice hace 5 commits!"'
 )
 cli::cli_alert_danger(
   "Quiero deshacer mi commit 'fix: repara las cosas' porqué rompió mi codigo !"
