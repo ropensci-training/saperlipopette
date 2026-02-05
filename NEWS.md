@@ -1,6 +1,6 @@
 # saperlipopette (development version)
 
-* Add instructions with "switch" and "restore" alongside "checkout" equivalents.
+* Add instructions with "switch" and "restore" alongside "checkout" equivalents (#30).
 
 # saperlipopette 0.1.0
 
