@@ -17,7 +17,7 @@ To go with \url{https://ohshitgit.com/#undo-a-file}
 }
 \section{Git commands}{
 
-\verb{git log}, \verb{git checkout}, \verb{git commit}
+\verb{git log}, \verb{git restore}, \verb{git checkout}, \verb{git commit}
 }
 
 \examples{

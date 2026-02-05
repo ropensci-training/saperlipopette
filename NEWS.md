@@ -1,3 +1,7 @@
+# saperlipopette (development version)
+
+* Add instructions with "switch" and "restore" alongside "checkout" equivalents.
+
 # saperlipopette 0.1.0
 
 * Translation to Spanish of saperlipopette's messages, Git commit messages (#25).

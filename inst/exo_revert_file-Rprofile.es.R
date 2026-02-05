@@ -15,7 +15,7 @@ tip <- function() {
   cli::cli_li(
     items = c(
       "Inspecciona la historia de Git.",
-      "{.code git checkout [saved hash] -- bla.txt}",
+      "{.code git restore bla.txt --source=[saved hash]} o {.code git checkout [saved hash] -- bla.txt}",
       "{.code git commit -m 'no need to copy-paste yay'}",
       "Inspecciona la historia de Git."
     )
