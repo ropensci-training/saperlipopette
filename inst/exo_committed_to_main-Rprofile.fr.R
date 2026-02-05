@@ -19,9 +19,9 @@ tip <- function() {
       "Examiner l'historique Git.",
       "Vérifier qu'on est sur la branche main.",
       "{.code git branch feat-bla}",
-      "Retourner sur la branche main, {.code git checkout main}",
+      "Retourner sur la branche main, {.code git switch main} ou {.code git checkout main}",
       "{.code git reset HEAD~ --hard}",
-      "{.code git checkout feat-bla}",
+      "{.code git switch feat-bla} ou {.code git checkout feat-bla}",
       "Examiner l'historique Git des branches main et feat-bla."
     )
   )

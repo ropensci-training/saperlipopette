@@ -17,9 +17,9 @@ tip <- function() {
   cli::cli_li(
     items = c(
       "Examiner l'historique Git.",
-      "{.code git checkout feat-bla}",
+      "{.code git switch feat-bla} ou {.code git checkout feat-bla}",
       "{.code git cherry-pick hot-fix}",
-      "{.code git checkout hot-fix}",
+      "{.code git switch hot-fix} ou {.code git checkout hot-fix}",
       "{.code git reset HEAD~ --hard}",
       "Examiner l'historique Git des branches feat-bla et hot-fix."
     )

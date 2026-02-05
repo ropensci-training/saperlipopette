@@ -17,7 +17,7 @@ To go with \url{https://ohshitgit.com/#accidental-commit-wrong-branch}
 }
 \section{Git commands}{
 
-\verb{git cherry-pick}, \verb{git reset}, \verb{git checkout}
+\verb{git cherry-pick}, \verb{git reset}, \verb{git switch}, \verb{git checkout}
 }
 
 \examples{

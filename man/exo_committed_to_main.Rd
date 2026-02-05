@@ -17,7 +17,7 @@ To go with \url{https://ohshitgit.com/#accidental-commit-master}
 }
 \section{Git commands}{
 
-\verb{git reset --hard}, \verb{git branch}, \verb{git checkout}
+\verb{git reset --hard}, \verb{git branch}, \verb{git switch}, \verb{git checkout}
 }
 
 \examples{

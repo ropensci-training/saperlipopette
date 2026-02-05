@@ -6,7 +6,7 @@
 #'
 #' @inheritParams exo_one_small_change
 #' @section Git commands:
-#' `git log`, `git checkout`, `git commit`
+#' `git log`, `git restore`, `git checkout`, `git commit`
 #'
 #' @return The path to the new project
 #' @export
