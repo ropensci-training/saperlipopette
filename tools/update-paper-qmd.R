@@ -16,7 +16,7 @@ body <- gsub("\\]\\[.*/jose\\.png\\]", "](jose.png)", body)
 
 qmd_header <- c(
   "---",
-  'title: "Saperlipopette, a risk-free playground for learning more Git"',
+  'title: "saperlipopette, a risk-free playground for learning more Git"',
   "bibliography: paper.bib",
   "knitr:",
   "  opts_chunk:",

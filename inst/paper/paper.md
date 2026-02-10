@@ -1,5 +1,5 @@
 ---
-title: 'Saperlipopette, a risk-free playground for learning more Git'
+title: 'saperlipopette, a risk-free playground for learning more Git'
 tags:
   - R
   - version control
