@@ -6,8 +6,7 @@
 #'
 #' @param parent_path Path where to create the exercise repo
 #'
-#' @section Git commands:
-#' `git commit --amend --no-edit`
+#' @git amend_no_edit
 #' @return The path
 #' @export
 #'

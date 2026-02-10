@@ -11,8 +11,7 @@
 #'
 #' @inheritParams exo_one_small_change
 #'
-#' @section Git commands:
-#' `git merge`.
+#' @git merge
 #' @return The path to the new project
 #' @export
 #'

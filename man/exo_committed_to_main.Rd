@@ -15,14 +15,11 @@ The path to the new project
 \description{
 To go with \url{https://ohshitgit.com/#accidental-commit-master}
 }
-\section{Git commands}{
-
-\verb{git reset --hard}, \verb{git branch}, \verb{git switch}, \verb{git checkout}
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_committed_to_main(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---hard}{\code{git reset --hard}}, \href{https://git-scm.com/docs/git-branch}{\code{git branch}}, \href{https://git-scm.com/docs/git-switch}{\code{git switch}}, \href{https://git-scm.com/docs/git-checkout}{\code{git checkout}}.}
+

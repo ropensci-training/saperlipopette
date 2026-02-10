@@ -5,8 +5,7 @@
 #'
 #'
 #' @inheritParams exo_one_small_change
-#' @section Git commands:
-#' `git cherry-pick`, `git reset`, `git switch`, `git checkout`
+#' @git cherry_pick reset switch checkout
 #'
 #' @return The path to the new project
 #' @export

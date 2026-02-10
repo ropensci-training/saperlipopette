@@ -10,12 +10,11 @@
 #' - <https://jvns.ca/blog/2023/11/06/rebasing-what-can-go-wrong-/>
 #' - <https://wizardzines.com/comics/rules-for-rebasing/>
 #' - <https://github.com/MikeMcQuaid/GitInPractice/blob/main/06-RewritingHistoryAndDisasterRecovery.adoc#rebase-commits-interactively-git-rebase-interactive>
-#' - <https://github.blog/2022-06-30-write-better-commits-build-better-projects/>
+#' - <https://github.blog/developer-skills/github/write-better-commits-build-better-projects/>
 #'
 #' @inheritParams exo_one_small_change
 #'
-#' @section Git commands:
-#' `git rebase -i`
+#' @git rebase_i
 #' @return The path to the new project
 #' @export
 #'

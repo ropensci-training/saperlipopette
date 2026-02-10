@@ -15,14 +15,11 @@ The path to the new project
 \description{
 To go with \url{https://ohshitgit.com/#accidental-commit-wrong-branch}
 }
-\section{Git commands}{
-
-\verb{git cherry-pick}, \verb{git reset}, \verb{git switch}, \verb{git checkout}
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_committed_to_wrong(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-cherry-pick}{\code{git cherry-pick}}, \href{https://git-scm.com/docs/git-reset}{\code{git reset}}, \href{https://git-scm.com/docs/git-switch}{\code{git switch}}, \href{https://git-scm.com/docs/git-checkout}{\code{git checkout}}.}
+

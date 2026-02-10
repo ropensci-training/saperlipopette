@@ -24,6 +24,8 @@ Imports:
 URL: https://docs.ropensci.org/saperlipopette/, https://github.com/ropensci-training/saperlipopette
 BugReports: https://github.com/ropensci-training/saperlipopette/issues
 Suggests: 
-    testthat (>= 3.0.0)
+    roxygen2,
+    testthat (>= 3.0.0),
+    tibble
 Config/testthat/edition: 3
 Config/potools/style: explicit
