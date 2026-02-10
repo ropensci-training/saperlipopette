@@ -5,8 +5,7 @@
 #'
 #'
 #' @inheritParams exo_one_small_change
-#' @section Git commands:
-#' `git reset --hard`, `git branch`, `git switch`, `git checkout`
+#' @git reset_hard branch switch checkout
 #'
 #' @return The path to the new project
 #' @export

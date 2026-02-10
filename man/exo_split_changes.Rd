@@ -23,14 +23,11 @@ See \url{https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging#_staging_p
 
 Note that patch is also an option for \verb{git commit}, if you prefer so.
 }
-\section{Git commands}{
-
-\verb{git add --patch}, \verb{git add -p}.
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_split_changes(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-add#Documentation/git-add.txt---patch}{\code{git add --patch()}}.}
+

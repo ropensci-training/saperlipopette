@@ -15,14 +15,11 @@ The path to the new project
 \description{
 To go with \url{https://ohshitgit.com/#magic-time-machine}
 }
-\section{Git commands}{
-
-\verb{git reset}, \verb{git reflog}
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_time_machine(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-reset}{\code{git reset()}}, \href{https://git-scm.com/docs/git-reflog}{\code{git reflog()}}.}
+

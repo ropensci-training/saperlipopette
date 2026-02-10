@@ -15,14 +15,11 @@ The path
 \description{
 To go with \url{https://ohshitgit.com/#change-last-commit-message}
 }
-\section{Git commands}{
-
-\verb{git commit --amend}
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_latest_message(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---amend}{\code{git commit --amend()}}.}
+

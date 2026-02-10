@@ -14,8 +14,7 @@
 #'
 #' @inheritParams exo_one_small_change
 #'
-#' @section Git commands:
-#' `git rebase -i`
+#' @git rebase_i
 #' @return The path to the new project
 #' @export
 #'

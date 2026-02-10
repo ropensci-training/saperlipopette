@@ -26,14 +26,11 @@ Useful links:
 \item \url{https://github.blog/2022-06-30-write-better-commits-build-better-projects/}
 }
 }
-\section{Git commands}{
-
-\verb{git rebase -i}
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_rebase_i(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-rebase#_interactive_mode}{\code{git rebase -i()}}.}
+

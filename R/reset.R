@@ -13,8 +13,7 @@
 #'
 #' @inheritParams exo_one_small_change
 #'
-#' @section Git commands:
-#' `git reset --mixed`
+#' @git reset_mixed
 #' @return The path to the new project
 #' @export
 #'

@@ -15,11 +15,6 @@ The path
 \description{
 To go with \url{https://ohshitgit.com/#change-last-commit}
 }
-\section{Git commands}{
-
-\verb{git commit --amend --no-edit}
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
@@ -28,3 +23,5 @@ path <- exo_one_small_change(parent_path = parent_path)
 # And amend the latest commit
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---no-edit}{\code{git commit --amend --no-edit()}}.}
+

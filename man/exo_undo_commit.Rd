@@ -15,14 +15,11 @@ The path to the new project
 \description{
 To go with \url{https://ohshitgit.com/#undo-a-commit}
 }
-\section{Git commands}{
-
-\verb{git log}, \verb{git revert}
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_undo_commit(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-log}{\code{git log()}}, \href{https://git-scm.com/docs/git-revert}{\code{git revert()}}.}
+

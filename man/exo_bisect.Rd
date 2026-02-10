@@ -20,14 +20,11 @@ which commit introduced the bug by using \verb{git bisect}.
 See \url{https://git-scm.com/docs/git-bisect} and
 \url{https://www.jimhester.com/post/2019-04-24-git-bisect/}.
 }
-\section{Git commands}{
-
-\verb{git bisect}.
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_bisect(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-bisect}{\code{git bisect()}}.}
+

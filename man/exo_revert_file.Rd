@@ -15,14 +15,11 @@ The path to the new project
 \description{
 To go with \url{https://ohshitgit.com/#undo-a-file}
 }
-\section{Git commands}{
-
-\verb{git log}, \verb{git restore}, \verb{git checkout}, \verb{git commit}
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_revert_file(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-log}{\code{git log()}}, \href{https://git-scm.com/docs/git-restore}{\code{git restore()}}, \href{https://git-scm.com/docs/git-checkout}{\code{git checkout()}}, \href{https://git-scm.com/docs/git-commit}{\code{git commit()}}.}
+

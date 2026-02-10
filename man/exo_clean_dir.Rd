@@ -23,14 +23,11 @@ Add \code{-d} to also remove directories.
 See \url{https://git-scm.com/docs/git-clean}.
 }
 }
-\section{Git commands}{
-
-\verb{git clean}.
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_clean_dir(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-clean}{\code{git clean()}}.}
+

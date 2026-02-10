@@ -5,8 +5,7 @@
 #'
 #'
 #' @inheritParams exo_one_small_change
-#' @section Git commands:
-#' `git config`, `git commit --allow-empty`
+#' @git config allow_empty
 #'
 #' @return The path to the new project
 #' @export

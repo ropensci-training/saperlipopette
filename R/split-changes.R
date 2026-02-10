@@ -14,8 +14,7 @@
 #'
 #' @inheritParams exo_one_small_change
 #'
-#' @section Git commands:
-#' `git add --patch`, `git add -p`.
+#' @git add_patch
 #' @return The path to the new project
 #' @export
 #'
