@@ -1,5 +1,8 @@
 url: https://docs.ropensci.org/saperlipopette/
 
+template:
+  bootstrap: 5
+
 reference:
 - title: Tools to check your set up
   contents:
