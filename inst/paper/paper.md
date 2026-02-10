@@ -94,7 +94,7 @@ The former ties together the practice of basic commands such as Git commit –am
 Both curricula rely heavily on demonstrations and practice through the saperlipopette R package. 
 
 Both curricula have been used in 1-hour to 2-hours workshops, in person and online. [@salmon_2026_18457383;@salmon_2026_18457425;@salmon_2026_18457460;@salmon_2026_18457484] 
-They have been part of conferences, user groups and rOpenSci Champions Program Training. 
+They have been part of conferences, user groups and [rOpenSci Champions Program Training](https://ropensci.org/champions/). 
 In feedback collected after teaching, students appreciated the hands-on approach and easy set up of saperlipopette exercises.
 
 The multilingual feature improves its effectiveness in teaching and learning situations. 
