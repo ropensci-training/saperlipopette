@@ -79,12 +79,12 @@ In online workshops we encourage participants to share their screen and solve an
 
 ## Experience of use in teaching and learning situations
 
-Two training curricula using the package were developed: one about reasons for and ways of creating a clean Git history; one about fixing common Git mishaps. 
+Two training curricula using the package were developed: one about reasons for and ways of creating a clean Git history [@salmon_2026_18457383;@salmon_2026_18457425;@salmon_2026_18457484] ; one about fixing common Git mishaps [@salmon_2026_18457460]. 
 The latter mostly follows the structure of the Oh Shit, Git\! Website: for instance a part is about fixing the last commit’s content or message. 
 The former ties together the practice of basic commands such as Git commit –amend with more advanced techniques such as Git rebase \-i. 
 Both curricula rely heavily on demonstrations and practice through the saperlipopette R package. 
 
-Both curricula have been used in 1-hour to 2-hours workshops, in person and online. [@salmon_2026_18457383,@salmon_2026_18457425,@salmon_2026_18457460,@salmon_2026_18457484] 
+Both curricula have been used in 1-hour to 2-hours workshops, in person and online. [@salmon_2026_18457383;@salmon_2026_18457425;@salmon_2026_18457460;@salmon_2026_18457484] 
 They have been part of conferences, user groups and rOpenSci Champions Program Training. 
 In feedback collected after teaching, students appreciated the hands-on approach and easy set up of saperlipopette exercises.
 
