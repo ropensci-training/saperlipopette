@@ -45,7 +45,9 @@ Importantly, our software provides two levels of guidance for each exercise: a g
 
 Moreover, the messages of the functions, that is to say the exercises and their hints, are available in three languages: English, Spanish and French. 
 
-## Lastly, from a trainer’s perspective, saperlipopette’s ready-made exercises can save time in demonstrating Git workflows.Pedagogical content of the software
+Lastly, from a trainer’s perspective, saperlipopette’s ready-made exercises can save time in demonstrating Git workflows.
+
+## Pedagogical content of the software
 
 Functions, therefore exercises, are organized in three categories in the package’s online reference index: “Tools to check your set up”, “Exercises inspired from Oh shit Git\!”, “Other exercises”. The documentation for each exercise states which Git commands it uses. 
 One could type “reset” in the search bar of the [documentation website](https://docs.ropensci.org/saperlipopette/) to find the relevant exercise(s).
