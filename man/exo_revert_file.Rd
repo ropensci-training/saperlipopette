@@ -21,5 +21,5 @@ parent_path <- withr::local_tempdir()
 path <- exo_revert_file(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
-\section{Related Git documentation}{\href{https://git-scm.com/docs/git-log}{\code{git log()}}, \href{https://git-scm.com/docs/git-restore}{\code{git restore()}}, \href{https://git-scm.com/docs/git-checkout}{\code{git checkout()}}, \href{https://git-scm.com/docs/git-commit}{\code{git commit()}}.}
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-log}{\code{git log}}, \href{https://git-scm.com/docs/git-restore}{\code{git restore}}, \href{https://git-scm.com/docs/git-checkout}{\code{git checkout}}, \href{https://git-scm.com/docs/git-commit}{\code{git commit}}.}
 

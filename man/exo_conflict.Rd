@@ -26,5 +26,5 @@ parent_path <- withr::local_tempdir()
 path <- exo_conflict(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
-\section{Related Git documentation}{\href{https://git-scm.com/docs/git-merge}{\code{git merge()}}.}
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-merge}{\code{git merge}}.}
 

@@ -64,7 +64,7 @@ present_git_link <- function(value) {
     if (nrow(df) == 0) {
       cli::cli_warn("Can't find Git entry for {x}!")
     }
-    sprintf("\\href{%s}{\\code{%s()}}", df$url, df$name)
+    sprintf("\\href{%s}{\\code{%s}}", df$url, df$name)
   }
 
   strings <- purrr::map_chr(

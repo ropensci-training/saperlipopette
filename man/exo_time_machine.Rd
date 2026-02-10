@@ -21,5 +21,5 @@ parent_path <- withr::local_tempdir()
 path <- exo_time_machine(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
-\section{Related Git documentation}{\href{https://git-scm.com/docs/git-reset}{\code{git reset()}}, \href{https://git-scm.com/docs/git-reflog}{\code{git reflog()}}.}
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-reset}{\code{git reset}}, \href{https://git-scm.com/docs/git-reflog}{\code{git reflog}}.}
 

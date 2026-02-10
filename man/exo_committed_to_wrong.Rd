@@ -21,5 +21,5 @@ parent_path <- withr::local_tempdir()
 path <- exo_committed_to_wrong(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
-\section{Related Git documentation}{\href{https://git-scm.com/docs/git-cherry-pick}{\code{git cherry-pick()}}, \href{https://git-scm.com/docs/git-reset}{\code{git reset()}}, \href{https://git-scm.com/docs/git-switch}{\code{git switch()}}, \href{https://git-scm.com/docs/git-checkout}{\code{git checkout()}}.}
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-cherry-pick}{\code{git cherry-pick}}, \href{https://git-scm.com/docs/git-reset}{\code{git reset}}, \href{https://git-scm.com/docs/git-switch}{\code{git switch}}, \href{https://git-scm.com/docs/git-checkout}{\code{git checkout}}.}
 

@@ -31,5 +31,5 @@ parent_path <- withr::local_tempdir()
 path <- exo_reset(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
-\section{Related Git documentation}{\href{https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---mixed}{\code{git reset --mixed()}}.}
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---mixed}{\code{git reset --mixed}}.}
 

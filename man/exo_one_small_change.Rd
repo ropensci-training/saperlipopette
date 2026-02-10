@@ -23,5 +23,5 @@ path <- exo_one_small_change(parent_path = parent_path)
 # And amend the latest commit
 \dontshow{\}) # examplesIf}
 }
-\section{Related Git documentation}{\href{https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---no-edit}{\code{git commit --amend --no-edit()}}.}
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---no-edit}{\code{git commit --amend --no-edit}}.}
 

@@ -29,5 +29,5 @@ parent_path <- withr::local_tempdir()
 path <- exo_clean_dir(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
-\section{Related Git documentation}{\href{https://git-scm.com/docs/git-clean}{\code{git clean()}}.}
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-clean}{\code{git clean}}.}
 

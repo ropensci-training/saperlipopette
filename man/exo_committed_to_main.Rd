@@ -21,5 +21,5 @@ parent_path <- withr::local_tempdir()
 path <- exo_committed_to_main(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
-\section{Related Git documentation}{\href{https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---hard}{\code{git reset --hard()}}, \href{https://git-scm.com/docs/git-branch}{\code{git branch()}}, \href{https://git-scm.com/docs/git-switch}{\code{git switch()}}, \href{https://git-scm.com/docs/git-checkout}{\code{git checkout()}}.}
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---hard}{\code{git reset --hard}}, \href{https://git-scm.com/docs/git-branch}{\code{git branch}}, \href{https://git-scm.com/docs/git-switch}{\code{git switch}}, \href{https://git-scm.com/docs/git-checkout}{\code{git checkout}}.}
 

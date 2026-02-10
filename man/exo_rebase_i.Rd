@@ -32,5 +32,5 @@ parent_path <- withr::local_tempdir()
 path <- exo_rebase_i(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
-\section{Related Git documentation}{\href{https://git-scm.com/docs/git-rebase#_interactive_mode}{\code{git rebase -i()}}.}
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-rebase#_interactive_mode}{\code{git rebase -i}}.}
 

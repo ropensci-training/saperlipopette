@@ -21,5 +21,5 @@ parent_path <- withr::local_tempdir()
 path <- exo_check_editor(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
-\section{Related Git documentation}{\href{https://git-scm.com/docs/git-config}{\code{git config()}}, \href{https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---allow-empty}{\code{git commit --allow-empty()}}.}
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-config}{\code{git config}}, \href{https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---allow-empty}{\code{git commit --allow-empty}}.}
 
