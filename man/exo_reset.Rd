@@ -21,7 +21,7 @@ Instead of \verb{git base --interactive} also available as \verb{git rebase -i}.
 I can also use \verb{git reset --mixed} and then build the commits.
 Useful links:
 \itemize{
-\item \url{https://github.blog/2022-06-30-write-better-commits-build-better-projects/}
+\item \url{https://github.blog/developer-skills/github/write-better-commits-build-better-projects/}
 \item \url{https://masalmon.eu/2024/06/11/rewrite-git-history/}
 }
 }
