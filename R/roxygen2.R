@@ -1,4 +1,4 @@
-# nocov: start
+# nocov start
 
 git_links <- function() {
   rlang::check_installed("tibble")
@@ -75,4 +75,4 @@ present_git_link <- function(value) {
 
   paste(strings, collapse = ", ")
 }
-# nocov: end
+# nocov end
