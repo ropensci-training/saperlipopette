@@ -1,5 +1,7 @@
 # saperlipopette (development version)
 
+* New `exo_worktree()` exercise to practice `git worktree`.
+
 * Add instructions with "switch" and "restore" alongside "checkout" equivalents (#30).
 
 # saperlipopette 0.1.0

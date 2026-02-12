@@ -22,6 +22,7 @@ reference:
   - exo_rebase_i
   - exo_reset
   - exo_bisect
+  - exo_worktree
 - title: All exercises at once
   contents:
   - create_all_exercises
