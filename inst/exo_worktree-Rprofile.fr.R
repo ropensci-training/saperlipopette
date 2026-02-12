@@ -13,7 +13,7 @@ tip <- function() {
     items = c(
       "Examiner l'historique Git.",
       "{.code git worktree add ../v2 v2}",
-      "Ouvre {.path ../v2/flowers.txt}",
+      "Ouvrir {.path ../v2/flowers.txt}",
       "{.code git worktree list}",
       "{.code git worktree v2}",
       "{.code git worktree list}"
