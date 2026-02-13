@@ -49,7 +49,7 @@ exo_bisect <- function(parent_path) {
 
   create_commit <- function(i, new_script) {
     script_lines <- brio::read_lines(new_script)
-    if (i == 13) {
+    if (i == 13L) {
       new_line <- "aaaaaaaaah"
     } else {
       new_line <- sprintf("1+%s", i)
@@ -65,5 +65,5 @@ exo_bisect <- function(parent_path) {
 
   cli::cli_alert_info(tr_("Follow along in {path}!"))
 
-  return(path)
+  path
 }

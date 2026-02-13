@@ -9,3 +9,4 @@
 ^CONTRIBUTING\.md$
 ^vignettes/\.quarto$
 ^vignettes/*_files$
+^\.lintr$

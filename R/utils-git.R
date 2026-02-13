@@ -43,4 +43,3 @@ git_hyde_commit <- function(message, datetime) {
   )
   git_commit(message)
 }
-
