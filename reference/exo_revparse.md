@@ -1,7 +1,9 @@
 # "I want to understand ancestry references!"
 
 I want to find the commit ID and message for HEAD~5 and HEAD^^. The tool
-for that is `git rev-parse` combined with `git log` or `git show`.
+for that is `git rev-parse` combined with `git log` or `git show`. More
+on ancestry references:
+<https://git-scm.com/book/be/v2/Git-Tools-Revision-Selection.html#_ancestry_references>.
 
 ## Usage
 
