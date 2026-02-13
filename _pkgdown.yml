@@ -8,10 +8,10 @@ reference:
 - title: Exercises inspired from Oh shit Git!
   contents:
   - exo_time_machine
+  - exo_one_small_change
+  - exo_latest_message
   - exo_committed_to_main
   - exo_committed_to_wrong
-  - exo_latest_message
-  - exo_one_small_change
   - exo_undo_commit
   - exo_revert_file
 - title: Clean history
@@ -24,6 +24,7 @@ reference:
 - title: Use history
   contents:
   - exo_bisect
+  - exo_revparse
   - exo_worktree
 - title: All exercises at once
   contents:
