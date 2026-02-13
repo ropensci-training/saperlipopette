@@ -1,0 +1,274 @@
+# saperlipopette
+
+The goal of saperlipopette is to hold functions creating Git exercises,
+that users solve using their local and usual tools.
+
+## Installation
+
+You can install the development version of saperlipopette like so, from
+R-universe:
+
+``` r
+install.packages(
+  'saperlipopette', 
+  repos = c('https://packages.ropensci.org', 'https://cloud.r-project.org')
+)
+```
+
+Or from GitHub:
+
+``` r
+# install.packages("pak")
+pak::pak("ropensci-training/saperlipopette")
+```
+
+You’ll also need
+
+- a [Git installation](https://happygitwithr.com/install-git), but if
+  you made it here you probably already use Git at least a bit.
+- [basic Git knowledge](#recommended-resources-about-git), in particular
+  being able to examine the Git history, be it with [git
+  log](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
+  or a tool in your IDE.
+- a directory where to store the exercises folder. In all examples we
+  use a temporary directory but if you prefer, you could use a dedicated
+  “scratch directory”.
+
+## Why this name?
+
+This package is intended to be a companion to <https://ohshitgit.com/>,
+so its name had to honour the exclamation. “saperlipopette” is an
+[old-fashioned French
+exclamation](https://en.wiktionary.org/wiki/saperlipopette). You can say
+“Saperlipopette, Git!”.
+
+## Example
+
+``` r
+library("saperlipopette")
+parent_path <- withr::local_tempdir()
+path <- exo_one_small_change(parent_path)
+#> ℹ Follow along in /tmp/RtmpzAtXfO/fileee0f27088ec4/one-small-change!
+# what's in path
+fs::dir_tree(path)
+#> /tmp/RtmpzAtXfO/fileee0f27088ec4/one-small-change
+#> ├── R
+#> └── bla
+# with Git in a command line: git log
+# or the gert R package
+gert::git_log(repo = path)
+#> # A tibble: 2 × 6
+#>   commit                          author time                files merge message
+#> * <chr>                           <chr>  <dttm>              <int> <lgl> <chr>  
+#> 1 2ff0d31f566e68ae0ee94b6028a3fa… Jane … 2023-12-15 16:25:00     1 FALSE "feat:…
+#> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 16:25:00     2 FALSE "First…
+```
+
+At this stage, the user would open the newly created R project and
+launch an R session, where messages would indicate them what to do, and
+which URL to follow, to find, in this case, the corresponding ohshitgit
+entry. In practice here the user would change a file, then Git add it,
+then run `git commit --amend --no-edit`. The user would examine the [Git
+history](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
+before and after this.
+
+``` R
+#> ✖ "Oh shit, I committed and immediately realized I need to make one small change!"
+#> ✖ I wanted to list 3 things in my bla file, not only two!
+#> ℹ See <https://ohshitgit.com/#change-last-commit>
+#> ℹ For more help use `tip()`
+```
+
+If they need more instructions than what is initially provided, the user
+can run:
+
+``` r
+tip()
+#> • Add 'thing 3' to the 'bla' file and save it.
+#> • `git add bla`
+#> • `git commit --amend --no-edit`
+#> • Examine Git history.
+```
+
+That interface relies on adding an `.Rprofile` to the newly created
+project, with instructions formatted with the cli package.
+
+We’ve set the Git author, committer and date so that the automatic
+commits get the same hashes, which can be useful when teaching a group:
+everyone should be looking at the same hashes on their machine, except
+for those commits they create themselves.
+
+Below we use
+[`gert::git_log()`](https://docs.ropensci.org/gert/reference/git_commit.html),
+as opposed to `git log` in a command line, because that integrates
+better with R Markdown that we use for building documentation.
+
+``` r
+parent_path <- withr::local_tempdir()
+path <- exo_one_small_change(parent_path)
+#> ℹ Follow along in /tmp/RtmpzAtXfO/fileee0f3b59bbaa/one-small-change!
+gert::git_log(repo = path)
+#> # A tibble: 2 × 6
+#>   commit                          author time                files merge message
+#> * <chr>                           <chr>  <dttm>              <int> <lgl> <chr>  
+#> 1 2ff0d31f566e68ae0ee94b6028a3fa… Jane … 2023-12-15 16:25:00     1 FALSE "feat:…
+#> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 16:25:00     2 FALSE "First…
+parent_path2 <- withr::local_tempdir()
+path2 <- exo_one_small_change(parent_path2)
+#> ℹ Follow along in /tmp/RtmpzAtXfO/fileee0f5b2e2854/one-small-change!
+gert::git_log(repo = path2)
+#> # A tibble: 2 × 6
+#>   commit                          author time                files merge message
+#> * <chr>                           <chr>  <dttm>              <int> <lgl> <chr>  
+#> 1 2ff0d31f566e68ae0ee94b6028a3fa… Jane … 2023-12-15 16:25:00     1 FALSE "feat:…
+#> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 16:25:00     2 FALSE "First…
+```
+
+### Multilingual!
+
+The saperlipopette can create messages in English (default) but also in
+French and Spanish. Example in French:
+
+``` r
+library("saperlipopette")
+withr::local_language("fr")
+parent_path <- withr::local_tempdir()
+path <- exo_one_small_change(parent_path)
+#> ℹ L'exercice attend dans /tmp/RtmpzAtXfO/fileee0f51db7185/one-small-change !
+# what's in path
+fs::dir_tree(path)
+#> /tmp/RtmpzAtXfO/fileee0f51db7185/one-small-change
+#> ├── R
+#> └── bla
+# with Git in a command line: git log
+# or the gert R package
+gert::git_log(repo = path)
+#> # A tibble: 2 × 6
+#>   commit                          author time                files merge message
+#> * <chr>                           <chr>  <dttm>              <int> <lgl> <chr>  
+#> 1 8f4f4f6fc6c4423d2c67caf93bdd92… Jane … 2023-12-15 16:25:00     1 FALSE "feat:…
+#> 2 65bee703cbbcc9f809594e17835551… Jane … 2023-12-15 16:25:00     2 FALSE "Premi…
+```
+
+``` R
+#> ✖ "Et merde, je viens de commiter et il manque une toute petite modification !"
+#> ✖ Je voulais lister 3 choses dans mon fichier bla, pas seulement 2 !
+#> ℹ Voir <https://ohshitgit.com/fr#modifier-le-dernier-commit>
+#> ℹ Pour plus d'aide, `tip()`
+```
+
+``` r
+tip()
+#> • Ajouter 'chose 3' au fichier 'bla' puis l'enregistrer.
+#> • `git add bla`
+#> • `git commit --amend --no-edit`
+#> • Examiner l'historique Git.
+```
+
+## Exercises
+
+Consult the
+[reference](https://docs.ropensci.org/saperlipopette/reference/index.html).
+
+Exercises cover:
+
+- Oh Shit, Git!: exercises inspired by <https://ohshitgit.com/> by Katie
+  Sylor-Miller.
+- Clean history: exercises on how to get a clean Git history, for
+  instance using rebase interactive.
+- Use history: exercises on how to use the Git history, for instance
+  using blame.
+
+As an individual learner, pick what you want to learn or try out! As an
+instructor, you can mix and match exercises: for instance focussing the
+session on solving common mistakes (Oh Shit, Git!) or on why and how to
+create a clean Git history (exercises from “Use history” then exercises
+from “Clean history”).
+
+Feel free to suggest new exercises by opening a GitHub
+[issue](https://github.com/ropensci-training/saperlipopette/issues).
+
+## Recommended resources about Git
+
+For beginners:
+
+- [Happy Git with R](https://happygitwithr.com/)
+- [Learn Git branching](https://learngitbranching.js.org/)
+
+For users less new to Git:
+
+- [Git in Practice by Mike
+  McQuaid](https://masalmon.eu/2023/11/01/reading-notes-git-in-practice/)
+- [Pro Git by Scott
+  Chacon](https://masalmon.eu/2024/01/19/pro-git-scott-chacon-reading-notes/)
+
+# Package index
+
+## Tools to check your set up
+
+- [`git_sitrep()`](https://usethis.r-lib.org/reference/git_sitrep.html)
+  : Git/GitHub sitrep (from usethis)
+- [`exo_check_editor()`](https://docs.ropensci.org/saperlipopette/reference/exo_check_editor.md)
+  : "Hey, I don't want to get into Vim by mistake!"
+
+## Exercises inspired from Oh shit Git!
+
+- [`exo_time_machine()`](https://docs.ropensci.org/saperlipopette/reference/exo_time_machine.md)
+  : "Oh shit, I did something terribly wrong, please tell me git has a
+  magic time machine!?!"
+- [`exo_one_small_change()`](https://docs.ropensci.org/saperlipopette/reference/exo_one_small_change.md)
+  : "Oh shit, I committed and immediately realized I need to make one
+  small change!"
+- [`exo_latest_message()`](https://docs.ropensci.org/saperlipopette/reference/exo_latest_message.md)
+  : "Oh shit, I need to change the message on my last commit!"
+- [`exo_committed_to_main()`](https://docs.ropensci.org/saperlipopette/reference/exo_committed_to_main.md)
+  : "Oh shit, I accidentally committed something to main that should
+  have been on a brand new branch!"
+- [`exo_committed_to_wrong()`](https://docs.ropensci.org/saperlipopette/reference/exo_committed_to_wrong.md)
+  : "Oh shit, I accidentally committed to the wrong branch!"
+- [`exo_undo_commit()`](https://docs.ropensci.org/saperlipopette/reference/exo_undo_commit.md)
+  : "Oh shit, I need to undo a commit from like 5 commits ago!"
+- [`exo_revert_file()`](https://docs.ropensci.org/saperlipopette/reference/exo_revert_file.md)
+  : "Oh shit, I need to undo my changes to a file!"
+
+## Clean history
+
+- [`exo_split_changes()`](https://docs.ropensci.org/saperlipopette/reference/exo_split_changes.md)
+  : "Hey I'd like to split these changes to the same file into several
+  commits!"
+- [`exo_clean_dir()`](https://docs.ropensci.org/saperlipopette/reference/exo_clean_dir.md)
+  : "Hey I'd like to remove these untracked files I created to test
+  stuff!"
+- [`exo_conflict()`](https://docs.ropensci.org/saperlipopette/reference/exo_conflict.md)
+  : "Hey I'd like to see what merge conflicts look like!"
+- [`exo_rebase_i()`](https://docs.ropensci.org/saperlipopette/reference/exo_rebase_i.md)
+  : "Hey I'd like to make my commits in a branch look informative and
+  smart!"
+- [`exo_reset()`](https://docs.ropensci.org/saperlipopette/reference/exo_reset.md)
+  : "Hey I'd like to restart from scratch"
+
+## Use history
+
+- [`exo_bisect()`](https://docs.ropensci.org/saperlipopette/reference/exo_bisect.md)
+  : "Hey I'd like to find which commit introduced a bug!"
+- [`exo_log_deleted_file()`](https://docs.ropensci.org/saperlipopette/reference/exo_log_deleted_file.md)
+  : "I want to find which commit deleted a file!"
+- [`exo_log_deleted_line()`](https://docs.ropensci.org/saperlipopette/reference/exo_log_deleted_line.md)
+  : "I want to find which commit deleted a line!"
+- [`exo_revparse()`](https://docs.ropensci.org/saperlipopette/reference/exo_revparse.md)
+  : "I want to understand ancestry references!"
+- [`exo_blame()`](https://docs.ropensci.org/saperlipopette/reference/exo_blame.md)
+  : "I want to find who added a specific line!"
+- [`exo_worktree()`](https://docs.ropensci.org/saperlipopette/reference/exo_worktree.md)
+  : "I need to see what the project looked like at a certain version!"
+
+## All exercises at once
+
+- [`create_all_exercises()`](https://docs.ropensci.org/saperlipopette/reference/create_all_exercises.md)
+  : Create all exercises folder at once
+
+# Articles
+
+### All vignettes
+
+- [saperlipopette](https://docs.ropensci.org/saperlipopette/articles/saperlipopette.md):
