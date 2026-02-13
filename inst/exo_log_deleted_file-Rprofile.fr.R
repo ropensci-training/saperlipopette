@@ -6,7 +6,7 @@ cli::cli_alert_danger(
   '"Je veux trouver quel commit a supprimé un fichier !"'
 )
 cli::cli_alert_danger(
-  "Trouve quel commit a supprimé script.R !"
+  "Trouve quel commit a supprimé R/script.R !"
 )
 cli::cli_alert_info("Pour plus d'aide, {.run tip()}")
 

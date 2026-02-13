@@ -4,7 +4,7 @@ if (file.exists("~/.Rprofile")) {
 
 cli::cli_alert_danger('"I want to find which commit deleted a file!"')
 cli::cli_alert_danger(
-  "Find which commit deleted script.R!"
+  "Find which commit deleted R/script.R!"
 )
 cli::cli_alert_info("For more help use {.run tip()}")
 
