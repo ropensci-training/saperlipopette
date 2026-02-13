@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/ropensci-training/saperlipopette/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropensci-training/saperlipopette/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/ropensci-training/saperlipopette/graph/badge.svg)](https://app.codecov.io/gh/ropensci-training/saperlipopette)
-[![Codecov test coverage](https://codecov.io/gh/maelle/saperlipopette/graph/badge.svg)](https://app.codecov.io/gh/maelle/saperlipopette)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 <!-- badges: end -->
 
 The goal of saperlipopette is to hold functions creating Git exercises, 
