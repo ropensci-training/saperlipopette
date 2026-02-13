@@ -1,5 +1,9 @@
 # saperlipopette (development version)
 
+* New `exo_log_deleted_file()` exercise to practice finding a deleted file with `git log -- <path>`.
+
+* New `exo_log_deleted_line()` exercise to practice finding a deleted line with `git log --S<string>` or `git log --R<regex>`.
+
 * New `exo_revparse()` exercise to practice parsing ancestry references with `git rev-parse`.
 
 * New `exo_worktree()` exercise to practice `git worktree`.

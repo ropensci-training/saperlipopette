@@ -31,6 +31,12 @@
       +-- latest-message
       |   +-- R
       |   \-- bla
+      +-- log-deleted-file
+      |   +-- R
+      |   \-- flowers.txt
+      +-- log-deleted-line
+      |   +-- R
+      |   \-- flowers.txt
       +-- one-small-change
       |   +-- R
       |   \-- bla
