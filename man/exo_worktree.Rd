@@ -13,7 +13,7 @@ exo_worktree(parent_path)
 The path to the new project
 }
 \description{
-I want create a folder containing the project as it was at tag v2,
+I want to create a folder containing the project as it was at tag v2,
 to read the flowers.txt file.
 The tool for that is \verb{git worktree}.
 }

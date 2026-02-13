@@ -1,7 +1,7 @@
 #' "I need to see what the project looked like at a certain version!"
 #'
 #' @description
-#' I want create a folder containing the project as it was at tag v2,
+#' I want to create a folder containing the project as it was at tag v2,
 #' to read the flowers.txt file.
 #' The tool for that is `git worktree`.
 #'
@@ -51,9 +51,15 @@ exo_worktree <- function(parent_path) {
   )
 
   messages <- c(
-    "feat: wonderful", "feat: delightful", "feat: brilliant",
-    "feat: cheerful", "feat: graceful", "feat: joyful",
-    "feat: peaceful", "feat: radiant", "feat: splendid",
+    "feat: wonderful",
+    "feat: delightful",
+    "feat: brilliant",
+    "feat: cheerful",
+    "feat: graceful",
+    "feat: joyful",
+    "feat: peaceful",
+    "feat: radiant",
+    "feat: splendid",
     "feat: vibrant"
   )
 
