@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: saperlipopette 0.0.0.9000\n"
-"POT-Creation-Date: 2026-02-13 09:22+0100\n"
+"POT-Creation-Date: 2026-02-13 10:00+0100\n"
 "PO-Revision-Date: 2025-05-16 09:43+0200\n"
 "Last-Translator: Maëlle Salmon\n"
 "Language-Team: none\n"
@@ -13,9 +13,10 @@ msgstr ""
 
 #: check-editor.R:36 clean-dir.R:42 committed-to-main.R:36
 #: committed-to-wrong-branch.R:36 conflict.R:41 debug.R:41
-#: edit-latest-message.R:37 one-small-change.R:38 rebase-i.R:44 reset.R:43
-#: revert-commit.R:36 revert-file.R:36 revparse.R:37 split-changes.R:44
-#: time-machine.R:36 worktree.R:38
+#: edit-latest-message.R:37 log-deleted-file.R:37 log-deleted-line.R:38
+#: one-small-change.R:38 rebase-i.R:44 reset.R:43 revert-commit.R:36
+#: revert-file.R:36 revparse.R:37 split-changes.R:44 time-machine.R:36
+#: worktree.R:38
 msgid "First commit"
 msgstr "Premier commit"
 
@@ -38,13 +39,15 @@ msgstr "feat: ajoute bla"
 
 #: check-editor.R:48 clean-dir.R:59 committed-to-main.R:48
 #: committed-to-wrong-branch.R:61 conflict.R:66 debug.R:66
-#: edit-latest-message.R:49 one-small-change.R:50 rebase-i.R:82 reset.R:82
-#: revert-commit.R:64 revert-file.R:65 revparse.R:75 split-changes.R:60
-#: time-machine.R:49 worktree.R:83
+#: edit-latest-message.R:49 log-deleted-file.R:94 log-deleted-line.R:76
+#: one-small-change.R:50 rebase-i.R:82 reset.R:82 revert-commit.R:64
+#: revert-file.R:65 revparse.R:75 split-changes.R:60 time-machine.R:49
+#: worktree.R:83
 msgid "Follow along in {path}!"
 msgstr "L'exercice attend dans {path} !"
 
-#: clean-dir.R:49 conflict.R:48 debug.R:48 split-changes.R:51
+#: clean-dir.R:49 conflict.R:48 debug.R:48 log-deleted-file.R:44
+#: split-changes.R:51
 msgid "feat: add script"
 msgstr "feat: ajoute le script"
 
@@ -52,7 +55,7 @@ msgstr "feat: ajoute le script"
 msgid "fix things"
 msgstr "répare les choses"
 
-#: conflict.R:53
+#: conflict.R:53 log-deleted-file.R:48
 msgid "feat: improve script"
 msgstr "feat: améliore le script"
 
@@ -60,13 +63,101 @@ msgstr "feat: améliore le script"
 msgid "feat: amend script"
 msgstr "feat: change le script"
 
-#: debug.R:59
+#: debug.R:59 log-deleted-file.R:52
 msgid "feat: edit script"
 msgstr "feat: modifie le script"
 
 #: edit-latest-message.R:45
 msgid "add a new documennnt"
 msgstr "ajoute un nouveau documennnt"
+
+#: log-deleted-file.R:56
+msgid "refactor: remove script"
+msgstr "refactor: supprime le script"
+
+#: log-deleted-file.R:59 log-deleted-line.R:41 revparse.R:40 worktree.R:41
+msgid "daisy"
+msgstr "pâquerette"
+
+#: log-deleted-file.R:60 log-deleted-line.R:42 revparse.R:41 worktree.R:42
+msgid "tulip"
+msgstr "tulipe"
+
+#: log-deleted-file.R:61 log-deleted-line.R:43 revparse.R:42 worktree.R:43
+msgid "rose"
+msgstr "rose"
+
+#: log-deleted-file.R:62 log-deleted-line.R:44 revparse.R:43 worktree.R:44
+msgid "lavender"
+msgstr "lavande"
+
+#: log-deleted-file.R:63 log-deleted-line.R:45 revparse.R:44 worktree.R:45
+msgid "sunflower"
+msgstr "tournesol"
+
+#: log-deleted-file.R:64 log-deleted-line.R:46 revparse.R:45 worktree.R:46
+msgid "jasmine"
+msgstr "jasmin"
+
+#: log-deleted-file.R:65 log-deleted-line.R:47 revparse.R:46 worktree.R:47
+msgid "orchid"
+msgstr "orchidée"
+
+#: log-deleted-file.R:66 log-deleted-line.R:48 revparse.R:47 worktree.R:48
+msgid "peony"
+msgstr "pivoine"
+
+#: log-deleted-file.R:67 log-deleted-line.R:49 revparse.R:48 worktree.R:49
+msgid "iris"
+msgstr "iris"
+
+#: log-deleted-file.R:68 log-deleted-line.R:50 revparse.R:49 worktree.R:50
+msgid "poppy"
+msgstr "coquelicot"
+
+#: log-deleted-file.R:72 log-deleted-line.R:54 revparse.R:53 worktree.R:54
+msgid "feat: wonderful"
+msgstr "feat: merveilleux"
+
+#: log-deleted-file.R:73 log-deleted-line.R:55 revparse.R:54 worktree.R:55
+msgid "feat: delightful"
+msgstr "feat: ravissant"
+
+#: log-deleted-file.R:74 log-deleted-line.R:56 revparse.R:55 worktree.R:56
+msgid "feat: brilliant"
+msgstr "feat: brillant"
+
+#: log-deleted-file.R:75 log-deleted-line.R:57 revparse.R:56 worktree.R:57
+msgid "feat: cheerful"
+msgstr "feat: joyeux"
+
+#: log-deleted-file.R:76 log-deleted-line.R:58 revparse.R:57 worktree.R:58
+msgid "feat: graceful"
+msgstr "feat: gracieux"
+
+#: log-deleted-file.R:77 log-deleted-line.R:59 revparse.R:58 worktree.R:59
+msgid "feat: joyful"
+msgstr "feat: réjouissant"
+
+#: log-deleted-file.R:78 log-deleted-line.R:60 revparse.R:59 worktree.R:60
+msgid "feat: peaceful"
+msgstr "feat: paisible"
+
+#: log-deleted-file.R:79 log-deleted-line.R:61 revparse.R:60 worktree.R:61
+msgid "feat: radiant"
+msgstr "feat: radieux"
+
+#: log-deleted-file.R:80 log-deleted-line.R:62 revparse.R:61 worktree.R:62
+msgid "feat: splendid"
+msgstr "feat: splendide"
+
+#: log-deleted-file.R:81 log-deleted-line.R:63 revparse.R:62 worktree.R:63
+msgid "feat: vibrant"
+msgstr "feat: vibrant"
+
+#: log-deleted-file.R:84 log-deleted-line.R:66 revparse.R:65 worktree.R:66
+msgid "flowers.txt"
+msgstr "fleurs.txt"
 
 #: rebase-i.R:53 reset.R:52
 msgid "add ci configuration"
@@ -115,90 +206,6 @@ msgstr "feat: ajoute bla.txt"
 #: revert-file.R:56
 msgid "fix: amend bla.txt"
 msgstr "fix: change bla.txt"
-
-#: revparse.R:40 worktree.R:41
-msgid "daisy"
-msgstr "pâquerette"
-
-#: revparse.R:41 worktree.R:42
-msgid "tulip"
-msgstr "tulipe"
-
-#: revparse.R:42 worktree.R:43
-msgid "rose"
-msgstr "rose"
-
-#: revparse.R:43 worktree.R:44
-msgid "lavender"
-msgstr "lavande"
-
-#: revparse.R:44 worktree.R:45
-msgid "sunflower"
-msgstr "tournesol"
-
-#: revparse.R:45 worktree.R:46
-msgid "jasmine"
-msgstr "jasmin"
-
-#: revparse.R:46 worktree.R:47
-msgid "orchid"
-msgstr "orchidée"
-
-#: revparse.R:47 worktree.R:48
-msgid "peony"
-msgstr "pivoine"
-
-#: revparse.R:48 worktree.R:49
-msgid "iris"
-msgstr "iris"
-
-#: revparse.R:49 worktree.R:50
-msgid "poppy"
-msgstr "coquelicot"
-
-#: revparse.R:53 worktree.R:54
-msgid "feat: wonderful"
-msgstr "feat: merveilleux"
-
-#: revparse.R:54 worktree.R:55
-msgid "feat: delightful"
-msgstr "feat: ravissant"
-
-#: revparse.R:55 worktree.R:56
-msgid "feat: brilliant"
-msgstr "feat: brillant"
-
-#: revparse.R:56 worktree.R:57
-msgid "feat: cheerful"
-msgstr "feat: joyeux"
-
-#: revparse.R:57 worktree.R:58
-msgid "feat: graceful"
-msgstr "feat: gracieux"
-
-#: revparse.R:58 worktree.R:59
-msgid "feat: joyful"
-msgstr "feat: réjouissant"
-
-#: revparse.R:59 worktree.R:60
-msgid "feat: peaceful"
-msgstr "feat: paisible"
-
-#: revparse.R:60 worktree.R:61
-msgid "feat: radiant"
-msgstr "feat: radieux"
-
-#: revparse.R:61 worktree.R:62
-msgid "feat: splendid"
-msgstr "feat: splendide"
-
-#: revparse.R:62 worktree.R:63
-msgid "feat: vibrant"
-msgstr "feat: vibrant"
-
-#: revparse.R:65 worktree.R:66
-msgid "flowers.txt"
-msgstr "fleurs.txt"
 
 #: utils-potools.R:6
 msgid "en"

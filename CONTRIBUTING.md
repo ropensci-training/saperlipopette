@@ -17,6 +17,7 @@ Please open an issue for any larger change (new exercise for instance).
 - [ ] Update `po/` translation files:
   - Run `potools::po_extract()` to update the `.pot` file with new `tr_()` strings
   - Run `potools::po_update()` to sync `.po` files with the updated `.pot`
+  - Run `potools::po_compile()`. 
   - Update `po/R-fr.po` and `po/R-es.po` with translations for new strings
 - [ ] Create `tests/testthat/test-<exercise-name>.R`
   - Snapshot `gert::git_log(repo = path)[["commit"]]`
