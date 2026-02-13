@@ -4,6 +4,7 @@
 #' I want to create a folder containing the project as it was at tag v2,
 #' to read the text file.
 #' The tool for that is `git worktree`.
+#' <https://masalmon.eu/2024/01/23/git-worktree/>
 #'
 #'
 #' @inheritParams exo_one_small_change
