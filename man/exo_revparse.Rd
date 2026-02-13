@@ -15,6 +15,7 @@ The path to the new project
 \description{
 I want to find the commit ID and message for HEAD~5 and HEAD^^.
 The tool for that is \verb{git rev-parse} combined with \verb{git log} or \verb{git show}.
+More on ancestry references: \url{https://git-scm.com/book/be/v2/Git-Tools-Revision-Selection.html#_ancestry_references}.
 }
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
