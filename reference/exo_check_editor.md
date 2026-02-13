@@ -1,6 +1,7 @@
 # "Hey, I don't want to get into Vim by mistake!"
 
 An exercice to check your Git's core.editor is set correctly.
+<https://docs.github.com/es/get-started/git-basics/associating-text-editors-with-git>
 
 ## Usage
 
