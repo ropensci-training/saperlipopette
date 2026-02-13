@@ -14,13 +14,15 @@ reference:
   - exo_one_small_change
   - exo_undo_commit
   - exo_revert_file
-- title: Other exercises
+- title: Clean history
   contents:
   - exo_split_changes
   - exo_clean_dir
   - exo_conflict
   - exo_rebase_i
   - exo_reset
+- title: Use history
+  contents:
   - exo_bisect
   - exo_worktree
 - title: All exercises at once
