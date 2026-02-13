@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: saperlipopette 0.0.0.9000\n"
-"POT-Creation-Date: 2025-06-05 14:04+0200\n"
+"POT-Creation-Date: 2026-02-13 08:56+0100\n"
 "PO-Revision-Date: 2025-05-16 09:43+0200\n"
 "Last-Translator: Maëlle Salmon\n"
 "Language-Team: none\n"
@@ -11,106 +11,108 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: clean-dir.R:43 committed-to-main.R:37 committed-to-wrong-branch.R:37
-#: conflict.R:42 debug.R:42 edit-latest-message.R:38 one-small-change.R:39
-#: rebase-i.R:45 reset.R:44 revert-commit.R:37 revert-file.R:37
-#: split-changes.R:45 time-machine.R:37
+#: check-editor.R:36 clean-dir.R:42 committed-to-main.R:36
+#: committed-to-wrong-branch.R:36 conflict.R:41 debug.R:41
+#: edit-latest-message.R:37 one-small-change.R:38 rebase-i.R:44 reset.R:43
+#: revert-commit.R:36 revert-file.R:36 split-changes.R:44 time-machine.R:36
+#: worktree.R:38
 msgid "First commit"
 msgstr "Premier commit"
 
-#: clean-dir.R:50 conflict.R:49 debug.R:49 split-changes.R:52
-msgid "feat: add script"
-msgstr "feat: ajoute le script"
-
-#: clean-dir.R:60 committed-to-main.R:49 committed-to-wrong-branch.R:62
-#: conflict.R:67 debug.R:67 edit-latest-message.R:50 one-small-change.R:51
-#: rebase-i.R:83 reset.R:83 revert-commit.R:65 revert-file.R:66
-#: split-changes.R:61 time-machine.R:50
-msgid "Follow along in {path}!"
-msgstr "L'exercice attend dans {path} !"
-
-#: committed-to-main.R:41 committed-to-wrong-branch.R:54
-#: edit-latest-message.R:42 one-small-change.R:43 revert-commit.R:45
-#: revert-commit.R:51 revert-file.R:41 revert-file.R:47 time-machine.R:41
+#: check-editor.R:40 committed-to-main.R:40 committed-to-wrong-branch.R:53
+#: edit-latest-message.R:41 one-small-change.R:42 revert-commit.R:44
+#: revert-commit.R:50 revert-file.R:40 revert-file.R:46 time-machine.R:40
 msgid "thing 1"
 msgstr "chose 1"
 
-#: committed-to-main.R:41 committed-to-wrong-branch.R:54
-#: edit-latest-message.R:42 one-small-change.R:43 revert-commit.R:45
-#: revert-file.R:41 time-machine.R:41
+#: check-editor.R:40 committed-to-main.R:40 committed-to-wrong-branch.R:53
+#: edit-latest-message.R:41 one-small-change.R:42 revert-commit.R:44
+#: revert-file.R:40 time-machine.R:40
 msgid "thing 2"
 msgstr "chose 2"
 
-#: committed-to-main.R:45 committed-to-wrong-branch.R:58 one-small-change.R:47
-#: revert-commit.R:49 time-machine.R:45
+#: check-editor.R:44 committed-to-main.R:44 committed-to-wrong-branch.R:57
+#: one-small-change.R:46 revert-commit.R:48 time-machine.R:44
 msgid "feat: add bla"
 msgstr "feat: ajoute bla"
 
-#: committed-to-wrong-branch.R:50
+#: check-editor.R:48 clean-dir.R:59 committed-to-main.R:48
+#: committed-to-wrong-branch.R:61 conflict.R:66 debug.R:66
+#: edit-latest-message.R:49 one-small-change.R:50 rebase-i.R:82 reset.R:82
+#: revert-commit.R:64 revert-file.R:65 split-changes.R:60 time-machine.R:49
+#: worktree.R:81
+msgid "Follow along in {path}!"
+msgstr "L'exercice attend dans {path} !"
+
+#: clean-dir.R:49 conflict.R:48 debug.R:48 split-changes.R:51
+msgid "feat: add script"
+msgstr "feat: ajoute le script"
+
+#: committed-to-wrong-branch.R:49
 msgid "fix things"
 msgstr "répare les choses"
 
-#: conflict.R:54
+#: conflict.R:53
 msgid "feat: improve script"
 msgstr "feat: améliore le script"
 
-#: conflict.R:63
+#: conflict.R:62
 msgid "feat: amend script"
 msgstr "feat: change le script"
 
-#: debug.R:60
+#: debug.R:59
 msgid "feat: edit script"
 msgstr "feat: modifie le script"
 
-#: edit-latest-message.R:46
+#: edit-latest-message.R:45
 msgid "add a new documennnt"
 msgstr "ajoute un nouveau documennnt"
 
-#: rebase-i.R:54 reset.R:53
+#: rebase-i.R:53 reset.R:52
 msgid "add ci configuration"
 msgstr "ajoute la configuration d'intégration continue"
 
-#: rebase-i.R:61 reset.R:60
+#: rebase-i.R:60 reset.R:59
 msgid "add script"
 msgstr "ajoute le script"
 
-#: rebase-i.R:65 rebase-i.R:68 reset.R:64 reset.R:67
+#: rebase-i.R:64 rebase-i.R:67 reset.R:63 reset.R:66
 msgid "try to fix ci"
 msgstr "essaie de réparer l'intégration continue"
 
-#: rebase-i.R:72 reset.R:71
+#: rebase-i.R:71 reset.R:70
 msgid "try to fix script"
 msgstr "essaie de réparer le script"
 
-#: rebase-i.R:76 reset.R:75
+#: rebase-i.R:75 reset.R:74
 msgid "add a ci thing"
 msgstr "ajoute une chose à l'intégration continue"
 
-#: rebase-i.R:79 reset.R:79
+#: rebase-i.R:78 reset.R:78
 msgid "fix script"
 msgstr "répare le script"
 
-#: revert-commit.R:41 revert-file.R:62
+#: revert-commit.R:40 revert-file.R:61
 msgid "fix: fix things"
 msgstr "fix: répare les choses"
 
-#: revert-commit.R:51 revert-commit.R:57 revert-file.R:47 revert-file.R:53
+#: revert-commit.R:50 revert-commit.R:56 revert-file.R:46 revert-file.R:52
 msgid "thing 3"
 msgstr "chose 3"
 
-#: revert-commit.R:55 revert-file.R:51
+#: revert-commit.R:54 revert-file.R:50
 msgid "fix: edit bla"
 msgstr "fix: modifie bla"
 
-#: revert-commit.R:61
+#: revert-commit.R:60
 msgid "fix: amend bla"
 msgstr "fix: change bla"
 
-#: revert-file.R:45
+#: revert-file.R:44
 msgid "feat: add bla.txt"
 msgstr "feat: ajoute bla.txt"
 
-#: revert-file.R:57
+#: revert-file.R:56
 msgid "fix: amend bla.txt"
 msgstr "fix: change bla.txt"
 

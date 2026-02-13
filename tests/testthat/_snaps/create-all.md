@@ -51,9 +51,12 @@
       |       \-- script.R
       +-- time-machine
       |   \-- R
-      \-- undo-commit
+      +-- undo-commit
+      |   +-- R
+      |   +-- bla
+      |   \-- fix.txt
+      \-- worktree
           +-- R
-          +-- bla
-          \-- fix.txt
+          \-- flowers.txt
       [1] ""
 
