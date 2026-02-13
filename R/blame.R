@@ -43,19 +43,31 @@ exo_blame <- function(parent_path) {
   gert::git_add(new_script)
   git_jekyll_commit(tr_("feat: add script"), "2024-01-05 09:00:00Z")
 
-  brio::write_lines(text = c("a <- 1", "b <- 2", "x <- x + 1"), path = new_script)
+  brio::write_lines(
+    text = c("a <- 1", "b <- 2", "x <- x + 1"),
+    path = new_script
+  )
   gert::git_add(new_script)
   git_hyde_commit(tr_("feat: edit script"), "2024-01-06 23:00:00Z")
 
-  brio::write_lines(text = c("a <- 1", "b <- 2", "x <- x + 1", "c <- 3"), path = new_script)
+  brio::write_lines(
+    text = c("a <- 1", "b <- 2", "x <- x + 1", "c <- 3"),
+    path = new_script
+  )
   gert::git_add(new_script)
   git_jekyll_commit(tr_("feat: improve script"), "2024-01-08 10:00:00Z")
 
-  brio::write_lines(text = c("a <- 1", "b <- 20", "x <- x + 1", "c <- 3"), path = new_script)
+  brio::write_lines(
+    text = c("a <- 1", "b <- 20", "x <- x + 1", "c <- 3"),
+    path = new_script
+  )
   gert::git_add(new_script)
   git_hyde_commit(tr_("feat: amend script"), "2024-01-09 22:00:00Z")
 
-  brio::write_lines(text = c("a <- 10", "b <- 20", "x <- x + 1", "c <- 3"), path = new_script)
+  brio::write_lines(
+    text = c("a <- 10", "b <- 20", "x <- x + 1", "c <- 3"),
+    path = new_script
+  )
   gert::git_add(new_script)
   git_jekyll_commit(tr_("feat: edit script"), "2024-01-10 11:00:00Z")
 
@@ -63,5 +75,5 @@ exo_blame <- function(parent_path) {
 
   cli::cli_alert_info(tr_("Follow along in {path}!"))
 
-  return(path)
+  path
 }

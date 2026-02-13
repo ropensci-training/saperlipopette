@@ -31,7 +31,7 @@ git_links <- function() {
     "worktree"      , "git worktree"                 , "https://git-scm.com/docs/git-worktree"                                          ,
     "rev_parse"     , "git rev-parse"                , "https://git-scm.com/docs/git-rev-parse"                                         ,
     "tag"           , "git tag"                      , "https://git-scm.com/docs/git-tag"                                               ,
-    "blame"         , "git blame"                    , "https://git-scm.com/docs/git-blame"                                            ,
+    "blame"         , "git blame"                    , "https://git-scm.com/docs/git-blame"                                             ,
     "show"          , "git show"                     , "https://git-scm.com/docs/git-show"
   )
 }
@@ -69,7 +69,7 @@ format.rd_section_gitcommands <- function(x, ...) {
 present_git_link <- function(value) {
   format_git_single_link <- function(x, git_links) {
     df <- git_links[git_links$command == x, ]
-    if (nrow(df) == 0) {
+    if (nrow(df) == 0L) {
       cli::cli_warn("Can't find Git entry for {x}!")
     }
     sprintf("\\href{%s}{\\code{%s}}", df$url, df$name)
@@ -81,6 +81,6 @@ present_git_link <- function(value) {
     git_links = git_links()
   )
 
-  paste(strings, collapse = ", ")
+  toString(strings)
 }
 # nocov end

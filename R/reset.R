@@ -47,25 +47,25 @@ exo_reset <- function(parent_path) {
   ci_file1 <- "ci.yml"
 
   fs::file_create(ci_file1)
-  brio::write_lines(text = c("do: yes"), path = ci_file1)
+  brio::write_lines(text = "do: yes", path = ci_file1)
   gert::git_add(ci_file1)
   git_commit(tr_("add ci configuration"))
 
   script <- "bla.R"
 
   fs::file_create(script)
-  brio::write_lines(text = c("1/0"), path = script)
+  brio::write_lines(text = "1/0", path = script)
   gert::git_add(script)
   git_commit(tr_("add script"))
 
-  brio::write_lines(text = c("do: true"), path = ci_file1)
+  brio::write_lines(text = "do: true", path = ci_file1)
   gert::git_add(ci_file1)
   git_commit(tr_("try to fix ci"))
-  brio::write_lines(text = c("do: 1"), path = ci_file1)
+  brio::write_lines(text = "do: 1", path = ci_file1)
   gert::git_add(ci_file1)
   git_commit(tr_("try to fix ci"))
 
-  brio::write_lines(text = c("1/Inf"), path = script)
+  brio::write_lines(text = "1/Inf", path = script)
   gert::git_add(script)
   git_commit(tr_("try to fix script"))
 
@@ -73,7 +73,7 @@ exo_reset <- function(parent_path) {
   gert::git_add(ci_file1)
   git_commit(tr_("add a ci thing"))
 
-  brio::write_lines(text = c("1/2"), path = script)
+  brio::write_lines(text = "1/2", path = script)
   gert::git_add(script)
   git_commit(tr_("fix script"))
 
@@ -81,5 +81,5 @@ exo_reset <- function(parent_path) {
 
   cli::cli_alert_info(tr_("Follow along in {path}!"))
 
-  return(path)
+  path
 }

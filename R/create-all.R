@@ -18,5 +18,6 @@ create_all_exercises <- function(parent_path) {
   purrr::walk(funs, rlang::exec, parent_path = parent_path)
 
   fs::dir_tree(parent_path)
-  return(parent_path)
+
+  parent_path
 }

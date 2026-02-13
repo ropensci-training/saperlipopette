@@ -72,16 +72,16 @@ exo_worktree <- function(parent_path) {
     git_commit(message)
   })
 
-  log <- gert::git_log()
+  git_log <- gert::git_log()
   gert::git_config_set("user.name", "Jane Doe")
   gert::git_config_set("user.email", "jane@example.com")
-  gert::git_tag_create("v1", message = "v1", ref = log$commit[9])
-  gert::git_tag_create("v2", message = "v2", ref = log$commit[6])
-  gert::git_tag_create("v3", message = "v3", ref = log$commit[3])
+  gert::git_tag_create("v1", message = "v1", ref = git_log$commit[9L])
+  gert::git_tag_create("v2", message = "v2", ref = git_log$commit[6L])
+  gert::git_tag_create("v3", message = "v3", ref = git_log$commit[3L])
 
   usethis::local_project(original_dir, force = TRUE)
 
   cli::cli_alert_info(tr_("Follow along in {path}!"))
 
-  return(path)
+  path
 }
