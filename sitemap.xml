@@ -1,5 +1,6 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
 <url><loc>https://docs.ropensci.org/saperlipopette/404.html</loc></url>
+<url><loc>https://docs.ropensci.org/saperlipopette/CONTRIBUTING.html</loc></url>
 <url><loc>https://docs.ropensci.org/saperlipopette/LICENSE-text.html</loc></url>
 <url><loc>https://docs.ropensci.org/saperlipopette/LICENSE.html</loc></url>
 <url><loc>https://docs.ropensci.org/saperlipopette/authors.html</loc></url>
@@ -20,6 +21,7 @@
 <url><loc>https://docs.ropensci.org/saperlipopette/reference/exo_split_changes.html</loc></url>
 <url><loc>https://docs.ropensci.org/saperlipopette/reference/exo_time_machine.html</loc></url>
 <url><loc>https://docs.ropensci.org/saperlipopette/reference/exo_undo_commit.html</loc></url>
+<url><loc>https://docs.ropensci.org/saperlipopette/reference/exo_worktree.html</loc></url>
 <url><loc>https://docs.ropensci.org/saperlipopette/reference/index.html</loc></url>
 <url><loc>https://docs.ropensci.org/saperlipopette/reference/saperlipopette-package.html</loc></url>
 </urlset>
