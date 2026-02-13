@@ -1,53 +1,23 @@
 ---
-output: github_document
+title: "saperlipopette"
+vignette: >
+  %\VignetteIndexEntry{saperlipopette}
+  %\VignetteEngine{quarto::html}
+  %\VignetteEncoding{UTF-8}
+knitr:
+  opts_chunk:
+    collapse: true
+    comment: '#>'
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
+```{r}
+#| label: setup
+library(saperlipopette)
 ```
-
-# saperlipopette
-
-<!-- badges: start -->
-[![R-CMD-check](https://github.com/ropensci-training/saperlipopette/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropensci-training/saperlipopette/actions/workflows/R-CMD-check.yaml)
-[![Codecov test coverage](https://codecov.io/gh/ropensci-training/saperlipopette/graph/badge.svg)](https://app.codecov.io/gh/ropensci-training/saperlipopette)
-[![Codecov test coverage](https://codecov.io/gh/maelle/saperlipopette/graph/badge.svg)](https://app.codecov.io/gh/maelle/saperlipopette)
-<!-- badges: end -->
 
 The goal of saperlipopette is to hold functions creating Git exercises, 
 that users solve using their local and usual tools.
 
-## Installation
-
-You can install the development version of saperlipopette like so, from R-universe:
-
-```r
-install.packages(
-  'saperlipopette', 
-  repos = c('https://packages.ropensci.org', 'https://cloud.r-project.org')
-)
-```
-
-
-Or from GitHub: 
-
-``` r
-# install.packages("pak")
-pak::pak("ropensci-training/saperlipopette")
-```
-
-You'll also need
-
-- a [Git installation](https://happygitwithr.com/install-git), but if you made it here you probably already use Git at least a bit.
-- [basic Git knowledge](#recommended-resources-about-git), in particular being able to examine the Git history, be it with [git log](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History) or a tool in your IDE.
-- a directory where to store the exercises folder. In all examples we use a temporary directory but if you prefer, you could use a dedicated "scratch directory".
 
 ## Why this name?
 
@@ -161,3 +131,4 @@ For users less new to Git:
 
 - [Git in Practice by Mike McQuaid](https://masalmon.eu/2023/11/01/reading-notes-git-in-practice/)
 - [Pro Git by Scott Chacon](https://masalmon.eu/2024/01/19/pro-git-scott-chacon-reading-notes/)
+

@@ -12,8 +12,8 @@ coverage](https://codecov.io/gh/ropensci-training/saperlipopette/graph/badge.svg
 coverage](https://codecov.io/gh/maelle/saperlipopette/graph/badge.svg)](https://app.codecov.io/gh/maelle/saperlipopette)
 <!-- badges: end -->
 
-The goal of saperlipopette is to hold functions creating Git messes,
-that users would then solve, to follow <https://ohshitgit.com/>.
+The goal of saperlipopette is to hold functions creating Git exercises,
+that users solve using their local and usual tools.
 
 ## Installation
 
@@ -56,16 +56,14 @@ exclamation](https://en.wiktionary.org/wiki/saperlipopette). You can say
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
 library("saperlipopette")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/Rtmp8ohEEH/file5f675e102349/one-small-change!
+#> ℹ Follow along in /tmp/RtmpzAtXfO/fileee0f27088ec4/one-small-change!
 # what's in path
 fs::dir_tree(path)
-#> /tmp/Rtmp8ohEEH/file5f675e102349/one-small-change
+#> /tmp/RtmpzAtXfO/fileee0f27088ec4/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
@@ -80,9 +78,9 @@ gert::git_log(repo = path)
 
 At this stage, the user would open the newly created R project and
 launch an R session, where messages would indicate them what to do, and
-which URL to follow, to find the corresponding ohshitgit entry. In
-practice here the user would change a file, then Git add it, then run
-`git commit --amend --no-edit`. The user would examine the [Git
+which URL to follow, to find, in this case, the corresponding ohshitgit
+entry. In practice here the user would change a file, then Git add it,
+then run `git commit --amend --no-edit`. The user would examine the [Git
 history](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
 before and after this.
 
@@ -117,7 +115,7 @@ building documentation.
 ``` r
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/Rtmp8ohEEH/file5f673cc75ae7/one-small-change!
+#> ℹ Follow along in /tmp/RtmpzAtXfO/fileee0f3b59bbaa/one-small-change!
 gert::git_log(repo = path)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -126,7 +124,7 @@ gert::git_log(repo = path)
 #> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 16:25:00     2 FALSE "First…
 parent_path2 <- withr::local_tempdir()
 path2 <- exo_one_small_change(parent_path2)
-#> ℹ Follow along in /tmp/Rtmp8ohEEH/file5f671b28dfce/one-small-change!
+#> ℹ Follow along in /tmp/RtmpzAtXfO/fileee0f5b2e2854/one-small-change!
 gert::git_log(repo = path2)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -145,10 +143,10 @@ library("saperlipopette")
 withr::local_language("fr")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ L'exercice attend dans /tmp/Rtmp8ohEEH/file5f6760e782cf/one-small-change !
+#> ℹ L'exercice attend dans /tmp/RtmpzAtXfO/fileee0f51db7185/one-small-change !
 # what's in path
 fs::dir_tree(path)
-#> /tmp/Rtmp8ohEEH/file5f6760e782cf/one-small-change
+#> /tmp/RtmpzAtXfO/fileee0f51db7185/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
@@ -174,7 +172,30 @@ tip()
 #> • Examiner l'historique Git.
 ```
 
-### Recommended resources about Git
+## Exercises
+
+Consult the
+[reference](https://docs.ropensci.org/saperlipopette/reference/index.html).
+
+Exercises cover:
+
+- Oh Shit, Git!: exercises inspired by <https://ohshitgit.com/> by Katie
+  Sylor-Miller.
+- Clean history: exercises on how to get a clean Git history, for
+  instance using rebase interactive.
+- Use history: exercises on how to use the Git history, for instance
+  using blame.
+
+As an individual learner, pick what you want to learn or try out! As an
+instructor, you can mix and match exercises: for instance focussing the
+session on solving common mistakes (Oh Shit, Git!) or on why and how to
+create a clean Git history (exercises from “Use history” then exercises
+from “Clean history”).
+
+Feel free to suggest new exercises by opening a GitHub
+[issue](https://github.com/ropensci-training/saperlipopette/issues).
+
+## Recommended resources about Git
 
 For beginners:
 
