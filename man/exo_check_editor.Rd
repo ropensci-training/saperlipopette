@@ -15,14 +15,11 @@ The path to the new project
 \description{
 An exercice to check your Git's core.editor is set correctly.
 }
-\section{Git commands}{
-
-\verb{git config}, \verb{git commit --allow-empty}
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_check_editor(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-config}{\code{git config}}, \href{https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---allow-empty}{\code{git commit --allow-empty}}.}
+

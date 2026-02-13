@@ -17,22 +17,19 @@ I am working in a feature branch that's all my own.
 I made many small commits as I was figuring things out.
 Now I want the commits to tell a story for the PR reviewers,
 and not a story of how many stupid mistakes I made!
-Instead of \verb{git base --interactive} also available as \verb{git rebase -i}.¡,
+Instead of \verb{git base --interactive} also available as \verb{git rebase -i},
 I can also use \verb{git reset --mixed} and then build the commits.
 Useful links:
 \itemize{
-\item \url{https://github.blog/2022-06-30-write-better-commits-build-better-projects/}
+\item \url{https://github.blog/developer-skills/github/write-better-commits-build-better-projects/}
 \item \url{https://masalmon.eu/2024/06/11/rewrite-git-history/}
 }
 }
-\section{Git commands}{
-
-\verb{git reset --mixed}
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_reset(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---mixed}{\code{git reset --mixed}}.}
+

@@ -5,8 +5,7 @@
 #'
 #'
 #' @inheritParams exo_one_small_change
-#' @section Git commands:
-#' `git log`, `git revert`
+#' @git log revert
 #'
 #' @return The path to the new project
 #' @export

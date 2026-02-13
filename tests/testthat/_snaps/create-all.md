@@ -7,6 +7,9 @@
       +-- bisect
       |   \-- R
       |       \-- script.R
+      +-- blame
+      |   \-- R
+      |       \-- script.R
       +-- check-editor
       |   +-- R
       |   \-- bla
@@ -31,6 +34,12 @@
       +-- latest-message
       |   +-- R
       |   \-- bla
+      +-- log-deleted-file
+      |   +-- R
+      |   \-- flowers.txt
+      +-- log-deleted-line
+      |   +-- R
+      |   \-- flowers.txt
       +-- one-small-change
       |   +-- R
       |   \-- bla
@@ -46,14 +55,20 @@
       |   +-- R
       |   +-- bla.txt
       |   \-- fix.txt
+      +-- revparse
+      |   +-- R
+      |   \-- flowers.txt
       +-- split-changes
       |   \-- R
       |       \-- script.R
       +-- time-machine
       |   \-- R
-      \-- undo-commit
+      +-- undo-commit
+      |   +-- R
+      |   +-- bla
+      |   \-- fix.txt
+      \-- worktree
           +-- R
-          +-- bla
-          \-- fix.txt
+          \-- flowers.txt
       [1] ""
 

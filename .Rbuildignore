@@ -11,3 +11,6 @@
 ^vignettes/articles$
 ^vignettes/articles/\.quarto$
 ^vignettes/articles/*_files$
+^CONTRIBUTING\.md$
+^vignettes/\.quarto$
+^vignettes/*_files$

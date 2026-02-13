@@ -21,8 +21,8 @@ knitr::opts_chunk$set(
 [![Codecov test coverage](https://codecov.io/gh/maelle/saperlipopette/graph/badge.svg)](https://app.codecov.io/gh/maelle/saperlipopette)
 <!-- badges: end -->
 
-The goal of saperlipopette is to hold functions creating Git messes, that users 
-would then solve, to follow https://ohshitgit.com/.
+The goal of saperlipopette is to hold functions creating Git exercises, 
+that users solve using their local and usual tools.
 
 ## Installation
 
@@ -58,8 +58,6 @@ You can say "Saperlipopette, Git!".
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ```{r example}
 library("saperlipopette")
 parent_path <- withr::local_tempdir()
@@ -73,7 +71,7 @@ gert::git_log(repo = path)
 
 At this stage, the user would open the newly created R project and launch an R session,
 where messages would indicate them what to do, 
-and which URL to follow, to find the corresponding ohshitgit entry.
+and which URL to follow, to find, in this case, the corresponding ohshitgit entry.
 In practice here the user would change a file, then Git add it, then run `git commit --amend --no-edit`.
 The user would examine the [Git history](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History) before and after this.
 
@@ -136,7 +134,23 @@ source(system.file(
 tip()
 ```
 
-### Recommended resources about Git
+## Exercises
+
+Consult the [reference](https://docs.ropensci.org/saperlipopette/reference/index.html).
+
+Exercises cover:
+
+- Oh Shit, Git!: exercises inspired by https://ohshitgit.com/ by Katie Sylor-Miller.
+- Clean history: exercises on how to get a clean Git history, for instance using rebase interactive.
+- Use history: exercises on how to use the Git history, for instance using blame.
+
+
+As an individual learner, pick what you want to learn or try out!
+As an instructor, you can mix and match exercises: for instance focussing the session on solving common mistakes (Oh Shit, Git!) or on why and how to create a clean Git history (exercises from "Use history" then exercises from "Clean history").
+
+Feel free to suggest new exercises by opening a GitHub [issue](https://github.com/ropensci-training/saperlipopette/issues).
+
+## Recommended resources about Git
 
 For beginners:
 

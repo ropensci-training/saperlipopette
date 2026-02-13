@@ -6,8 +6,7 @@
 #'
 #' @inheritParams exo_one_small_change
 #'
-#' @section Git commands:
-#' `git commit --amend`
+#' @git amend
 #'
 #' @return The path
 #' @export

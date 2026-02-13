@@ -23,17 +23,14 @@ Useful links:
 \item \url{https://jvns.ca/blog/2023/11/06/rebasing-what-can-go-wrong-/}
 \item \url{https://wizardzines.com/comics/rules-for-rebasing/}
 \item \url{https://github.com/MikeMcQuaid/GitInPractice/blob/main/06-RewritingHistoryAndDisasterRecovery.adoc#rebase-commits-interactively-git-rebase-interactive}
-\item \url{https://github.blog/2022-06-30-write-better-commits-build-better-projects/}
+\item \url{https://github.blog/developer-skills/github/write-better-commits-build-better-projects/}
 }
 }
-\section{Git commands}{
-
-\verb{git rebase -i}
-}
-
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()
 path <- exo_rebase_i(parent_path = parent_path)
 \dontshow{\}) # examplesIf}
 }
+\section{Related Git documentation}{\href{https://git-scm.com/docs/git-rebase#_interactive_mode}{\code{git rebase -i}}.}
+

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: saperlipopette 0.0.0.9000\n"
-"POT-Creation-Date: 2025-06-05 14:04+0200\n"
+"POT-Creation-Date: 2026-02-13 10:30+0100\n"
 "PO-Revision-Date: 2025-05-16 13:57+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -11,106 +11,199 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: clean-dir.R:43 committed-to-main.R:37 committed-to-wrong-branch.R:37
-#: conflict.R:42 debug.R:42 edit-latest-message.R:38 one-small-change.R:39
-#: rebase-i.R:45 reset.R:44 revert-commit.R:37 revert-file.R:37
-#: split-changes.R:45 time-machine.R:37
+#: blame.R:37 check-editor.R:36 clean-dir.R:42 committed-to-main.R:36
+#: committed-to-wrong-branch.R:36 conflict.R:41 debug.R:41
+#: edit-latest-message.R:37 log-deleted-file.R:37 log-deleted-line.R:38
+#: one-small-change.R:38 rebase-i.R:44 reset.R:43 revert-commit.R:36
+#: revert-file.R:36 revparse.R:37 split-changes.R:44 time-machine.R:36
+#: worktree.R:38
 msgid "First commit"
 msgstr "Primer commit"
 
-#: clean-dir.R:50 conflict.R:49 debug.R:49 split-changes.R:52
+#: blame.R:44 clean-dir.R:49 conflict.R:48 debug.R:48 log-deleted-file.R:44
+#: split-changes.R:51
 msgid "feat: add script"
 msgstr "feat: añade el script"
 
-#: clean-dir.R:60 committed-to-main.R:49 committed-to-wrong-branch.R:62
-#: conflict.R:67 debug.R:67 edit-latest-message.R:50 one-small-change.R:51
-#: rebase-i.R:83 reset.R:83 revert-commit.R:65 revert-file.R:66
-#: split-changes.R:61 time-machine.R:50
-msgid "Follow along in {path}!"
-msgstr "El ejercicio te espera en {path}"
-
-#: committed-to-main.R:41 committed-to-wrong-branch.R:54
-#: edit-latest-message.R:42 one-small-change.R:43 revert-commit.R:45
-#: revert-commit.R:51 revert-file.R:41 revert-file.R:47 time-machine.R:41
-msgid "thing 1"
-msgstr "cosa 1"
-
-#: committed-to-main.R:41 committed-to-wrong-branch.R:54
-#: edit-latest-message.R:42 one-small-change.R:43 revert-commit.R:45
-#: revert-file.R:41 time-machine.R:41
-msgid "thing 2"
-msgstr "cosa 2"
-
-#: committed-to-main.R:45 committed-to-wrong-branch.R:58 one-small-change.R:47
-#: revert-commit.R:49 time-machine.R:45
-msgid "feat: add bla"
-msgstr "feat: añade bla"
-
-#: committed-to-wrong-branch.R:50
-msgid "fix things"
-msgstr "repara las cosas"
-
-#: conflict.R:54
-msgid "feat: improve script"
-msgstr "feat: mejora el script"
-
-#: conflict.R:63
-msgid "feat: amend script"
-msgstr "feat: modifica el script"
-
-#: debug.R:60
+#: blame.R:48 blame.R:60 debug.R:59 log-deleted-file.R:52
 msgid "feat: edit script"
 msgstr "feat: cambia el script"
 
-#: edit-latest-message.R:46
+#: blame.R:52 conflict.R:53 log-deleted-file.R:48
+msgid "feat: improve script"
+msgstr "feat: mejora el script"
+
+#: blame.R:56 conflict.R:62
+msgid "feat: amend script"
+msgstr "feat: modifica el script"
+
+#: blame.R:64 check-editor.R:48 clean-dir.R:59 committed-to-main.R:48
+#: committed-to-wrong-branch.R:61 conflict.R:66 debug.R:66
+#: edit-latest-message.R:49 log-deleted-file.R:94 log-deleted-line.R:76
+#: one-small-change.R:50 rebase-i.R:82 reset.R:82 revert-commit.R:64
+#: revert-file.R:65 revparse.R:75 split-changes.R:60 time-machine.R:49
+#: worktree.R:83
+msgid "Follow along in {path}!"
+msgstr "El ejercicio te espera en {path}"
+
+#: check-editor.R:40 committed-to-main.R:40 committed-to-wrong-branch.R:53
+#: edit-latest-message.R:41 one-small-change.R:42 revert-commit.R:44
+#: revert-commit.R:50 revert-file.R:40 revert-file.R:46 time-machine.R:40
+msgid "thing 1"
+msgstr "cosa 1"
+
+#: check-editor.R:40 committed-to-main.R:40 committed-to-wrong-branch.R:53
+#: edit-latest-message.R:41 one-small-change.R:42 revert-commit.R:44
+#: revert-file.R:40 time-machine.R:40
+msgid "thing 2"
+msgstr "cosa 2"
+
+#: check-editor.R:44 committed-to-main.R:44 committed-to-wrong-branch.R:57
+#: one-small-change.R:46 revert-commit.R:48 time-machine.R:44
+msgid "feat: add bla"
+msgstr "feat: añade bla"
+
+#: committed-to-wrong-branch.R:49
+msgid "fix things"
+msgstr "repara las cosas"
+
+#: edit-latest-message.R:45
 msgid "add a new documennnt"
 msgstr "añade un nuevo documento"
 
-#: rebase-i.R:54 reset.R:53
+#: log-deleted-file.R:56
+msgid "refactor: remove script"
+msgstr "refactor: elimina el script"
+
+#: log-deleted-file.R:59 log-deleted-line.R:41 revparse.R:40 worktree.R:41
+msgid "daisy"
+msgstr "margarita"
+
+#: log-deleted-file.R:60 log-deleted-line.R:42 revparse.R:41 worktree.R:42
+msgid "tulip"
+msgstr "tulipán"
+
+#: log-deleted-file.R:61 log-deleted-line.R:43 revparse.R:42 worktree.R:43
+msgid "rose"
+msgstr "rosa"
+
+#: log-deleted-file.R:62 log-deleted-line.R:44 revparse.R:43 worktree.R:44
+msgid "lavender"
+msgstr "lavanda"
+
+#: log-deleted-file.R:63 log-deleted-line.R:45 revparse.R:44 worktree.R:45
+msgid "sunflower"
+msgstr "girasol"
+
+#: log-deleted-file.R:64 log-deleted-line.R:46 revparse.R:45 worktree.R:46
+msgid "jasmine"
+msgstr "jazmín"
+
+#: log-deleted-file.R:65 log-deleted-line.R:47 revparse.R:46 worktree.R:47
+msgid "orchid"
+msgstr "orquídea"
+
+#: log-deleted-file.R:66 log-deleted-line.R:48 revparse.R:47 worktree.R:48
+msgid "peony"
+msgstr "peonía"
+
+#: log-deleted-file.R:67 log-deleted-line.R:49 revparse.R:48 worktree.R:49
+msgid "iris"
+msgstr "iris"
+
+#: log-deleted-file.R:68 log-deleted-line.R:50 revparse.R:49 worktree.R:50
+msgid "poppy"
+msgstr "amapola"
+
+#: log-deleted-file.R:72 log-deleted-line.R:54 revparse.R:53 worktree.R:54
+msgid "feat: wonderful"
+msgstr "feat: maravilloso"
+
+#: log-deleted-file.R:73 log-deleted-line.R:55 revparse.R:54 worktree.R:55
+msgid "feat: delightful"
+msgstr "feat: encantador"
+
+#: log-deleted-file.R:74 log-deleted-line.R:56 revparse.R:55 worktree.R:56
+msgid "feat: brilliant"
+msgstr "feat: brillante"
+
+#: log-deleted-file.R:75 log-deleted-line.R:57 revparse.R:56 worktree.R:57
+msgid "feat: cheerful"
+msgstr "feat: alegre"
+
+#: log-deleted-file.R:76 log-deleted-line.R:58 revparse.R:57 worktree.R:58
+msgid "feat: graceful"
+msgstr "feat: elegante"
+
+#: log-deleted-file.R:77 log-deleted-line.R:59 revparse.R:58 worktree.R:59
+msgid "feat: joyful"
+msgstr "feat: gozoso"
+
+#: log-deleted-file.R:78 log-deleted-line.R:60 revparse.R:59 worktree.R:60
+msgid "feat: peaceful"
+msgstr "feat: tranquilo"
+
+#: log-deleted-file.R:79 log-deleted-line.R:61 revparse.R:60 worktree.R:61
+msgid "feat: radiant"
+msgstr "feat: radiante"
+
+#: log-deleted-file.R:80 log-deleted-line.R:62 revparse.R:61 worktree.R:62
+msgid "feat: splendid"
+msgstr "feat: espléndido"
+
+#: log-deleted-file.R:81 log-deleted-line.R:63 revparse.R:62 worktree.R:63
+msgid "feat: vibrant"
+msgstr "feat: vibrante"
+
+#: log-deleted-file.R:84 log-deleted-line.R:66 revparse.R:65 worktree.R:66
+msgid "flowers.txt"
+msgstr "flores.txt"
+
+#: rebase-i.R:53 reset.R:52
 msgid "add ci configuration"
 msgstr "añade la configuración de integración continua"
 
-#: rebase-i.R:61 reset.R:60
+#: rebase-i.R:60 reset.R:59
 msgid "add script"
 msgstr "añade el script"
 
-#: rebase-i.R:65 rebase-i.R:68 reset.R:64 reset.R:67
+#: rebase-i.R:64 rebase-i.R:67 reset.R:63 reset.R:66
 msgid "try to fix ci"
 msgstr "intenta de reparar la integración continua"
 
-#: rebase-i.R:72 reset.R:71
+#: rebase-i.R:71 reset.R:70
 msgid "try to fix script"
 msgstr "intenta de reparar el script"
 
-#: rebase-i.R:76 reset.R:75
+#: rebase-i.R:75 reset.R:74
 msgid "add a ci thing"
 msgstr "añade una cosa de integración continua"
 
-#: rebase-i.R:79 reset.R:79
+#: rebase-i.R:78 reset.R:78
 msgid "fix script"
 msgstr "repara el script"
 
-#: revert-commit.R:41 revert-file.R:62
+#: revert-commit.R:40 revert-file.R:61
 msgid "fix: fix things"
 msgstr "fix: repara las cosas"
 
-#: revert-commit.R:51 revert-commit.R:57 revert-file.R:47 revert-file.R:53
+#: revert-commit.R:50 revert-commit.R:56 revert-file.R:46 revert-file.R:52
 msgid "thing 3"
 msgstr "cosa 3"
 
-#: revert-commit.R:55 revert-file.R:51
+#: revert-commit.R:54 revert-file.R:50
 msgid "fix: edit bla"
 msgstr "fix: modifica bla"
 
-#: revert-commit.R:61
+#: revert-commit.R:60
 msgid "fix: amend bla"
 msgstr "fix: cambia bla"
 
-#: revert-file.R:45
+#: revert-file.R:44
 msgid "feat: add bla.txt"
 msgstr "feat: añade bla.txt"
 
-#: revert-file.R:57
+#: revert-file.R:56
 msgid "fix: amend bla.txt"
 msgstr "fix: modifica bla.txt"
 

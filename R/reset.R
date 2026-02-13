@@ -5,16 +5,15 @@
 #' I made many small commits as I was figuring things out.
 #' Now I want the commits to tell a story for the PR reviewers,
 #' and not a story of how many stupid mistakes I made!
-#' Instead of `git base --interactive` also available as `git rebase -i`.¡,
+#' Instead of `git base --interactive` also available as `git rebase -i`,
 #' I can also use `git reset --mixed` and then build the commits.
 #' Useful links:
-#' - <https://github.blog/2022-06-30-write-better-commits-build-better-projects/>
+#' - <https://github.blog/developer-skills/github/write-better-commits-build-better-projects/>
 #' - <https://masalmon.eu/2024/06/11/rewrite-git-history/>
 #'
 #' @inheritParams exo_one_small_change
 #'
-#' @section Git commands:
-#' `git reset --mixed`
+#' @git reset_mixed
 #' @return The path to the new project
 #' @export
 #'
