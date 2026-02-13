@@ -2,7 +2,7 @@ if (file.exists("~/.Rprofile")) {
   base::sys.source("~/.Rprofile", envir = environment())
 }
 
-cli::cli_alert_danger('"Quiero saber cómo era flowers.txt en el tag v2!"')
+cli::cli_alert_danger('"Quiero saber cómo era flores.txt en el tag v2!"')
 cli::cli_alert_danger(
   "Crea una carpeta con el proyecto como era en el tag v2."
 )
@@ -13,7 +13,7 @@ tip <- function() {
     items = c(
       "Inspecciona la historia de Git.",
       "{.code git worktree add ../v2 v2}",
-      "Abre {.path ../v2/flowers.txt}",
+      "Abre {.path ../v2/flores.txt}",
       "{.code git worktree list}",
       "{.code git worktree v2}",
       "{.code git worktree list}"

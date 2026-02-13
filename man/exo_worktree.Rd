@@ -14,7 +14,7 @@ The path to the new project
 }
 \description{
 I want to create a folder containing the project as it was at tag v2,
-to read the flowers.txt file.
+to read the text file.
 The tool for that is \verb{git worktree}.
 }
 \examples{

@@ -46,6 +46,9 @@
       |   +-- R
       |   +-- bla.txt
       |   \-- fix.txt
+      +-- revparse
+      |   +-- R
+      |   \-- flowers.txt
       +-- split-changes
       |   \-- R
       |       \-- script.R

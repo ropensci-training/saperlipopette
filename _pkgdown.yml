@@ -24,6 +24,7 @@ reference:
 - title: Use history
   contents:
   - exo_bisect
+  - exo_revparse
   - exo_worktree
 - title: All exercises at once
   contents:

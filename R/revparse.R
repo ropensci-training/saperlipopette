@@ -1,22 +1,21 @@
-#' "I need to see what the project looked like at a certain version!"
+#' "I want to understand ancestry references!"
 #'
 #' @description
-#' I want to create a folder containing the project as it was at tag v2,
-#' to read the text file.
-#' The tool for that is `git worktree`.
+#' I want to find the commit ID and message for HEAD~5 and HEAD^^.
+#' The tool for that is `git rev-parse` combined with `git log` or `git show`.
 #'
 #'
 #' @inheritParams exo_one_small_change
-#' @git log worktree tag
+#' @git rev_parse log show
 #'
 #' @return The path to the new project
 #' @export
 #'
 #' @examplesIf interactive()
 #' parent_path <- withr::local_tempdir()
-#' path <- exo_worktree(parent_path = parent_path)
-exo_worktree <- function(parent_path) {
-  path <- file.path(parent_path, "worktree")
+#' path <- exo_revparse(parent_path = parent_path)
+exo_revparse <- function(parent_path) {
+  path <- file.path(parent_path, "revparse")
 
   withr::local_options(usethis.quiet = TRUE)
 
@@ -26,7 +25,7 @@ exo_worktree <- function(parent_path) {
   withr::local_dir(path)
   gert::git_init()
 
-  create_r_profile("worktree")
+  create_r_profile("revparse")
 
   create_project(path = getwd())
   # Ignore Rproj that might otherwise get edited when we open the project
@@ -70,13 +69,6 @@ exo_worktree <- function(parent_path) {
     gert::git_add(txt_file)
     git_commit(message)
   })
-
-  log <- gert::git_log()
-  gert::git_config_set("user.name", "Jane Doe")
-  gert::git_config_set("user.email", "jane@example.com")
-  gert::git_tag_create("v1", message = "v1", ref = log$commit[9])
-  gert::git_tag_create("v2", message = "v2", ref = log$commit[6])
-  gert::git_tag_create("v3", message = "v3", ref = log$commit[3])
 
   usethis::local_project(original_dir, force = TRUE)
 

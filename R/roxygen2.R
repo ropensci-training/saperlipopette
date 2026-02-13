@@ -26,7 +26,9 @@ git_links <- function() {
     "reflog"        , "git reflog"                   , "https://git-scm.com/docs/git-reflog"                                            ,
     "revert"        , "git revert"                   , "https://git-scm.com/docs/gitworktr-revert"                                      ,
     "worktree"      , "git worktree"                 , "https://git-scm.com/docs/git-worktree"                                          ,
-    "tag"           , "git tag"                      , "https://git-scm.com/docs/git-tag"
+    "rev_parse"     , "git rev-parse"                , "https://git-scm.com/docs/git-rev-parse"                                         ,
+    "tag"           , "git tag"                      , "https://git-scm.com/docs/git-tag"                                               ,
+    "show"          , "git show"                     , "https://git-scm.com/docs/git-show"
   )
 }
 

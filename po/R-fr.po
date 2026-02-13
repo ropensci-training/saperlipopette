@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: saperlipopette 0.0.0.9000\n"
-"POT-Creation-Date: 2026-02-13 08:56+0100\n"
+"POT-Creation-Date: 2026-02-13 09:22+0100\n"
 "PO-Revision-Date: 2025-05-16 09:43+0200\n"
 "Last-Translator: Maëlle Salmon\n"
 "Language-Team: none\n"
@@ -14,8 +14,8 @@ msgstr ""
 #: check-editor.R:36 clean-dir.R:42 committed-to-main.R:36
 #: committed-to-wrong-branch.R:36 conflict.R:41 debug.R:41
 #: edit-latest-message.R:37 one-small-change.R:38 rebase-i.R:44 reset.R:43
-#: revert-commit.R:36 revert-file.R:36 split-changes.R:44 time-machine.R:36
-#: worktree.R:38
+#: revert-commit.R:36 revert-file.R:36 revparse.R:37 split-changes.R:44
+#: time-machine.R:36 worktree.R:38
 msgid "First commit"
 msgstr "Premier commit"
 
@@ -39,8 +39,8 @@ msgstr "feat: ajoute bla"
 #: check-editor.R:48 clean-dir.R:59 committed-to-main.R:48
 #: committed-to-wrong-branch.R:61 conflict.R:66 debug.R:66
 #: edit-latest-message.R:49 one-small-change.R:50 rebase-i.R:82 reset.R:82
-#: revert-commit.R:64 revert-file.R:65 split-changes.R:60 time-machine.R:49
-#: worktree.R:81
+#: revert-commit.R:64 revert-file.R:65 revparse.R:75 split-changes.R:60
+#: time-machine.R:49 worktree.R:83
 msgid "Follow along in {path}!"
 msgstr "L'exercice attend dans {path} !"
 
@@ -115,6 +115,90 @@ msgstr "feat: ajoute bla.txt"
 #: revert-file.R:56
 msgid "fix: amend bla.txt"
 msgstr "fix: change bla.txt"
+
+#: revparse.R:40 worktree.R:41
+msgid "daisy"
+msgstr "pâquerette"
+
+#: revparse.R:41 worktree.R:42
+msgid "tulip"
+msgstr "tulipe"
+
+#: revparse.R:42 worktree.R:43
+msgid "rose"
+msgstr "rose"
+
+#: revparse.R:43 worktree.R:44
+msgid "lavender"
+msgstr "lavande"
+
+#: revparse.R:44 worktree.R:45
+msgid "sunflower"
+msgstr "tournesol"
+
+#: revparse.R:45 worktree.R:46
+msgid "jasmine"
+msgstr "jasmin"
+
+#: revparse.R:46 worktree.R:47
+msgid "orchid"
+msgstr "orchidée"
+
+#: revparse.R:47 worktree.R:48
+msgid "peony"
+msgstr "pivoine"
+
+#: revparse.R:48 worktree.R:49
+msgid "iris"
+msgstr "iris"
+
+#: revparse.R:49 worktree.R:50
+msgid "poppy"
+msgstr "coquelicot"
+
+#: revparse.R:53 worktree.R:54
+msgid "feat: wonderful"
+msgstr "feat: merveilleux"
+
+#: revparse.R:54 worktree.R:55
+msgid "feat: delightful"
+msgstr "feat: ravissant"
+
+#: revparse.R:55 worktree.R:56
+msgid "feat: brilliant"
+msgstr "feat: brillant"
+
+#: revparse.R:56 worktree.R:57
+msgid "feat: cheerful"
+msgstr "feat: joyeux"
+
+#: revparse.R:57 worktree.R:58
+msgid "feat: graceful"
+msgstr "feat: gracieux"
+
+#: revparse.R:58 worktree.R:59
+msgid "feat: joyful"
+msgstr "feat: réjouissant"
+
+#: revparse.R:59 worktree.R:60
+msgid "feat: peaceful"
+msgstr "feat: paisible"
+
+#: revparse.R:60 worktree.R:61
+msgid "feat: radiant"
+msgstr "feat: radieux"
+
+#: revparse.R:61 worktree.R:62
+msgid "feat: splendid"
+msgstr "feat: splendide"
+
+#: revparse.R:62 worktree.R:63
+msgid "feat: vibrant"
+msgstr "feat: vibrant"
+
+#: revparse.R:65 worktree.R:66
+msgid "flowers.txt"
+msgstr "fleurs.txt"
 
 #: utils-potools.R:6
 msgid "en"
