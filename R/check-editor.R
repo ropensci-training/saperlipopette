@@ -2,6 +2,7 @@
 #'
 #' @description
 #' An exercice to check your Git's core.editor is set correctly.
+#' <https://docs.github.com/es/get-started/git-basics/associating-text-editors-with-git>
 #'
 #'
 #' @inheritParams exo_one_small_change

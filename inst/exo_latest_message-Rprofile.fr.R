@@ -16,7 +16,7 @@ tip <- function() {
     items = c(
       "Examiner l'historique Git.",
       "Remarquer que 'documennnt' devrait être 'document' ! Une faute de frappe !",
-      "{.code git commit --amend}",
+      "{.code git commit --amend} ou {.code git commit --amend -m 'document'}",
       "Examiner l'historique Git."
     )
   )

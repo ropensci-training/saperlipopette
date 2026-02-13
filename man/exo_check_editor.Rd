@@ -14,6 +14,7 @@ The path to the new project
 }
 \description{
 An exercice to check your Git's core.editor is set correctly.
+\url{https://docs.github.com/es/get-started/git-basics/associating-text-editors-with-git}
 }
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
