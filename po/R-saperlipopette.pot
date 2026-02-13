@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: saperlipopette 0.1.0.9000\n"
-"POT-Creation-Date: 2026-02-12 14:59+0100\n"
+"POT-Creation-Date: 2026-02-13 08:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "feat: add bla"
 msgstr ""
 
-#: check-editor.R:48 clean-dir.R:59 committed-to-main.R:48 committed-to-wrong-branch.R:61 conflict.R:66 debug.R:66 edit-latest-message.R:49 one-small-change.R:50 rebase-i.R:82 reset.R:82 revert-commit.R:64 revert-file.R:65 split-changes.R:60 time-machine.R:49 worktree.R:73
+#: check-editor.R:48 clean-dir.R:59 committed-to-main.R:48 committed-to-wrong-branch.R:61 conflict.R:66 debug.R:66 edit-latest-message.R:49 one-small-change.R:50 rebase-i.R:82 reset.R:82 revert-commit.R:64 revert-file.R:65 split-changes.R:60 time-machine.R:49 worktree.R:81
 msgid "Follow along in {path}!"
 msgstr ""
 
