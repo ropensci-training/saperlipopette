@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: saperlipopette 0.0.0.9000\n"
-"POT-Creation-Date: 2026-02-13 10:00+0100\n"
+"POT-Creation-Date: 2026-02-13 10:30+0100\n"
 "PO-Revision-Date: 2025-05-16 13:57+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: check-editor.R:36 clean-dir.R:42 committed-to-main.R:36
+#: blame.R:37 check-editor.R:36 clean-dir.R:42 committed-to-main.R:36
 #: committed-to-wrong-branch.R:36 conflict.R:41 debug.R:41
 #: edit-latest-message.R:37 log-deleted-file.R:37 log-deleted-line.R:38
 #: one-small-change.R:38 rebase-i.R:44 reset.R:43 revert-commit.R:36
@@ -19,6 +19,32 @@ msgstr ""
 #: worktree.R:38
 msgid "First commit"
 msgstr "Primer commit"
+
+#: blame.R:44 clean-dir.R:49 conflict.R:48 debug.R:48 log-deleted-file.R:44
+#: split-changes.R:51
+msgid "feat: add script"
+msgstr "feat: añade el script"
+
+#: blame.R:48 blame.R:60 debug.R:59 log-deleted-file.R:52
+msgid "feat: edit script"
+msgstr "feat: cambia el script"
+
+#: blame.R:52 conflict.R:53 log-deleted-file.R:48
+msgid "feat: improve script"
+msgstr "feat: mejora el script"
+
+#: blame.R:56 conflict.R:62
+msgid "feat: amend script"
+msgstr "feat: modifica el script"
+
+#: blame.R:64 check-editor.R:48 clean-dir.R:59 committed-to-main.R:48
+#: committed-to-wrong-branch.R:61 conflict.R:66 debug.R:66
+#: edit-latest-message.R:49 log-deleted-file.R:94 log-deleted-line.R:76
+#: one-small-change.R:50 rebase-i.R:82 reset.R:82 revert-commit.R:64
+#: revert-file.R:65 revparse.R:75 split-changes.R:60 time-machine.R:49
+#: worktree.R:83
+msgid "Follow along in {path}!"
+msgstr "El ejercicio te espera en {path}"
 
 #: check-editor.R:40 committed-to-main.R:40 committed-to-wrong-branch.R:53
 #: edit-latest-message.R:41 one-small-change.R:42 revert-commit.R:44
@@ -37,35 +63,9 @@ msgstr "cosa 2"
 msgid "feat: add bla"
 msgstr "feat: añade bla"
 
-#: check-editor.R:48 clean-dir.R:59 committed-to-main.R:48
-#: committed-to-wrong-branch.R:61 conflict.R:66 debug.R:66
-#: edit-latest-message.R:49 log-deleted-file.R:94 log-deleted-line.R:76
-#: one-small-change.R:50 rebase-i.R:82 reset.R:82 revert-commit.R:64
-#: revert-file.R:65 revparse.R:75 split-changes.R:60 time-machine.R:49
-#: worktree.R:83
-msgid "Follow along in {path}!"
-msgstr "El ejercicio te espera en {path}"
-
-#: clean-dir.R:49 conflict.R:48 debug.R:48 log-deleted-file.R:44
-#: split-changes.R:51
-msgid "feat: add script"
-msgstr "feat: añade el script"
-
 #: committed-to-wrong-branch.R:49
 msgid "fix things"
 msgstr "repara las cosas"
-
-#: conflict.R:53 log-deleted-file.R:48
-msgid "feat: improve script"
-msgstr "feat: mejora el script"
-
-#: conflict.R:62
-msgid "feat: amend script"
-msgstr "feat: modifica el script"
-
-#: debug.R:59 log-deleted-file.R:52
-msgid "feat: edit script"
-msgstr "feat: cambia el script"
 
 #: edit-latest-message.R:45
 msgid "add a new documennnt"

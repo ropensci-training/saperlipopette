@@ -26,3 +26,21 @@ git_commit <- function(message) {
   )
 }
 
+git_jekyll_commit <- function(message, datetime) {
+  withr::local_envvar(
+    SAPERLIPOPETTE_AUTHOR_NAME = "Dr Jekyll",
+    SAPERLIPOPETTE_AUTHOR_EMAIL = "jekyll@example.com",
+    SAPERLIPOPETTE_AUTHOR_DATE = datetime
+  )
+  git_commit(message)
+}
+
+git_hyde_commit <- function(message, datetime) {
+  withr::local_envvar(
+    SAPERLIPOPETTE_AUTHOR_NAME = "Mr Hyde",
+    SAPERLIPOPETTE_AUTHOR_EMAIL = "hyde@example.com",
+    SAPERLIPOPETTE_AUTHOR_DATE = datetime
+  )
+  git_commit(message)
+}
+
