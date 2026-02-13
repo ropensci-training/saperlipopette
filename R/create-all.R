@@ -7,6 +7,9 @@
 #' @return The parent path
 #' @export
 #'
+#' @examplesIf interactive()
+#' parent_path <- withr::local_tempdir()
+#' path <- create_all_exercises(parent_path = parent_path)
 create_all_exercises <- function(parent_path) {
   rlang::local_interactive(FALSE)
 
