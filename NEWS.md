@@ -1,5 +1,7 @@
 # saperlipopette (development version)
 
+* New `exo_blame()` exercise to practice finding who added a specific line with `git blame`.
+
 * New `exo_log_deleted_file()` exercise to practice finding a deleted file with `git log -- <path>`.
 
 * New `exo_log_deleted_line()` exercise to practice finding a deleted line with `git log --S<string>` or `git log --R<regex>`.

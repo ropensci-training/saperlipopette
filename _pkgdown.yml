@@ -27,6 +27,7 @@ reference:
   - exo_log_deleted_file
   - exo_log_deleted_line
   - exo_revparse
+  - exo_blame
   - exo_worktree
 - title: All exercises at once
   contents:

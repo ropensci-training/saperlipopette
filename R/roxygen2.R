@@ -31,6 +31,7 @@ git_links <- function() {
     "worktree"      , "git worktree"                 , "https://git-scm.com/docs/git-worktree"                                          ,
     "rev_parse"     , "git rev-parse"                , "https://git-scm.com/docs/git-rev-parse"                                         ,
     "tag"           , "git tag"                      , "https://git-scm.com/docs/git-tag"                                               ,
+    "blame"         , "git blame"                    , "https://git-scm.com/docs/git-blame"                                            ,
     "show"          , "git show"                     , "https://git-scm.com/docs/git-show"
   )
 }

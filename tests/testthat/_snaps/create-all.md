@@ -7,6 +7,9 @@
       +-- bisect
       |   \-- R
       |       \-- script.R
+      +-- blame
+      |   \-- R
+      |       \-- script.R
       +-- check-editor
       |   +-- R
       |   \-- bla
