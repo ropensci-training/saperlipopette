@@ -49,7 +49,7 @@ Lastly, from a trainer’s perspective, saperlipopette’s ready-made exercises 
 
 ## Pedagogical content of the software
 
-Functions, therefore exercises, are organized in three categories in the package’s online reference index: “Tools to check your set up”, “Exercises inspired from Oh shit Git\!”, “Other exercises”. The documentation for each exercise states which Git commands it uses. 
+Functions, therefore exercises, are organized in three categories in the package’s online reference index: “Tools to check your set up”, “Exercises inspired from Oh shit Git\!”, “Clean history”, “Use history”. The documentation for each exercise states which Git commands it uses. 
 One could type “reset” in the search bar of the [documentation website](https://docs.ropensci.org/saperlipopette/) to find the relevant exercise(s).
 
 Table 1\. Overview of the Git scenarios, main concepts and commands covered in *saperlipopette*
