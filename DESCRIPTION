@@ -31,4 +31,5 @@ Suggests:
     tibble
 Config/testthat/edition: 3
 Config/potools/style: explicit
+Config/ropensci/maintainer: staff
 VignetteBuilder: quarto
