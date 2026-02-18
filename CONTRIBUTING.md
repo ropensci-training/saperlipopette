@@ -44,6 +44,8 @@ Add `exo_<exercise_name>` to `_pkgdown.yml` in the appropriate section
 
 Add a bullet to `NEWS.md` under the development version heading
 
-Run `devtools::document()` to update NAMESPACE
+Run
+[`devtools::document()`](https://devtools.r-lib.org/reference/document.html)
+to update NAMESPACE
 
 Run tests and accept new snapshots
