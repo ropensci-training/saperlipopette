@@ -21,7 +21,7 @@ bibliography: paper.bib
 # Summary
 
 Git has a challenging learning curve, but it is crucial for both individual and team software development practices to have a good command of a wide set of Git features beyond the basics. 
-Saperlipopette is an open-source, MIT-licensed R package (library) aimed at providing hands-on, low-stakes practice opportunities for Git users to improve their version control skills. 
+We present saperlipopette; an open-source, MIT-licensed R package (library) aimed at providing hands-on, low-stakes practice opportunities for Git users to improve their version control skills. 
 It has been used in several training sessions, online and in person, in English, French and Spanish. 
 While saperlipopette is best suited for R users, the approach of launching exercises through a single command, creating a (temporary) folder with a Git playground, providing instructions and hints, could be-reused for creating a library or CLI in any language. 
 Even the actual scenarios and guidance could be re-used and ported to another language.
