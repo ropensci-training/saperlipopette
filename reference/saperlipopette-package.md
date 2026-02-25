@@ -19,6 +19,11 @@ Useful links:
 **Maintainer**: Maëlle Salmon <msmaellesalmon@gmail.com>
 ([ORCID](https://orcid.org/0000-0002-2815-0399))
 
+Authors:
+
+- Yanina Bellini Saibene
+  ([ORCID](https://orcid.org/0000-0002-4522-7466))
+
 Other contributors:
 
 - Jim Gardner \[contributor\]
