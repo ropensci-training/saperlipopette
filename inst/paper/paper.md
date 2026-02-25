@@ -85,6 +85,7 @@ We use an informative slidedeck to provide context and explain concepts.
 We demonstrate exercises using live coding, then have participants solve them. 
 In online workshops, we group participants in breakout rooms to foster collaborations and peer-instruction. 
 After each practice time, and before moving on to the next topic, we discuss participants’ questions and remarks about the exercise(s) they have just worked on. 
+
 # Teaching with saperlipopette
 
 We developed two training curricula which use saperlipopette to demonstrate and provide practice opportunities when learning Git. The first training covers creating a clean Git history using basic and more advanced techniques [@salmon_2026_18457383;@salmon_2026_18457425;@salmon_2026_18457484]; and the  second follows the structure of the Oh Shit, Git\! Website and covers fixing common Git mishaps [@salmon_2026_18457460]. 
