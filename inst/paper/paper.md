@@ -93,8 +93,6 @@ Both curricula have been used in 1-hour to 2-hours workshops, in person and onli
 In feedback collected after teaching, students appreciated the hands-on approach and easy set up of saperlipopette exercises.
 
 The multilingual feature improve the effectiveness of saperlipopette in teaching and learning situations. 
-Presenting exercises in learners’ native languages reduces cognitive load and allows them to focus on understanding Git concepts rather than translating technical English. 
-For instructors, multilingual support enables reuse of the same materials across courses, workshops, and regions increasing reach and saving time on preparing exercises and materials.
 Presenting exercises and feedback in learners’ native languages reduces cognitive load and allows them to focus on understanding Git concepts rather than translating technical English. 
 For instructors, multilingual support enables reuse of the same materials across courses, workshops, and regions increasing reach and saving time on preparing exercises and materials.
 
