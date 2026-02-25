@@ -46,10 +46,6 @@ This approach helps reduce the learners’ cognitive load as recreating an exerc
 Our software provides two levels of guidance for each exercise: a general description of the problem to be solved, with the option to request more hints if necessary.
 Moreover, the messages of the functions, that is to say the exercises and their hints, are available in three languages: English, Spanish and French. 
 
-Importantly, our software provides two levels of guidance for each exercise: a general description of the problem to be solved, with the option to request more hints if necessary. 
-
-Moreover, the messages of the functions, that is to say the exercises and their hints, are available in three languages: English, Spanish and French. 
-
 Lastly, from a trainer’s perspective, saperlipopette’s ready-made exercises can save time in demonstrating Git workflows.
 
 ## Pedagogical content of the software
