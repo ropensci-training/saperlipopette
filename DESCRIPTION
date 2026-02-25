@@ -22,6 +22,8 @@ Imports:
     parsedate,
     purrr,
     rlang,
+    roxygen2,
+    tibble,
     usethis,
     withr
 Suggests: 
