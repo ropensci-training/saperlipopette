@@ -41,7 +41,10 @@ The package is suitable for instructors to use as a safe practice environment du
 
 # Design of the software
 
-Maëlle Salmon was inspired to create saperlipopette [https://docs.ropensci.org/saperlipopette/](https://docs.ropensci.org/saperlipopette/) after she read the “Git in Practice” book [@mcquaid2014] and the “Oh Shit, Git\!”[^1] website [@sylormiller]. She designed this R package as a tool for locally practicing advanced Git commands, which are not usually taught at beginners workshops and as a way to bridge the gap between knowing about techniques and applying them in day-to-day work. Next, Yanina Bellini Saibene joined the team to help translate exercises and to develop training curricula and workshops. Together Maëlle and Yanina have translated the exercises and training materials for saperlipopette into English, French, and Spanish, and have used it to provide advanced Git training as part of the rOpenSci Champions Program Training.
+Maëlle Salmon was inspired to create saperlipopette [https://docs.ropensci.org/saperlipopette/](https://docs.ropensci.org/saperlipopette/) after she read the “Git in Practice” book [@mcquaid2014] and the “Oh Shit, Git\!”[^1] website [@sylormiller]. She designed this R package as a tool for locally practicing advanced Git commands, which are not usually taught at beginners workshops and as a way to bridge the gap between knowing about techniques and applying them in day-to-day work. 
+She built saperlipopette on top of gert[@gert] and usethis[@usethis].
+Next, Yanina Bellini Saibene joined the team to help translate exercises and to develop training curricula and workshops, which influenced the documentation and contents of the software. 
+Together Maëlle and Yanina have translated the exercises and training materials for saperlipopette into English, French, and Spanish, and have used it to provide advanced Git training as part of the rOpenSci Champions Program Training.
 
 [^1]: The package’s initial set of functions covered “Oh Shit, Git”, which inspired the package name: “saperlipopette” is an old-fashioned curse word in French, Maëlle's native language.
 
@@ -98,8 +101,5 @@ For instructors, multilingual support enables reuse of the same materials across
 Presenting exercises and feedback in learners’ native languages reduces cognitive load and allows them to focus on understanding Git concepts rather than translating technical English. 
 For instructors, multilingual support enables reuse of the same materials across courses, workshops, and regions increasing reach and saving time on preparing exercises and materials.
 
-# Story of the project
-
-The R package was created by Maëlle Salmon after she read the “Git in Practice” book [@mcquaid2014] and the “Oh Shit, Git\!” website [@sylormiller], to bridge the gap between knowing about techniques and applying them in day-to-day work. 
 
 # References
