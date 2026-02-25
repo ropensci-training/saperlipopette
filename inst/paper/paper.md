@@ -79,6 +79,11 @@ Table 1\. Overview of the Git scenarios, main concepts and commands covered in *
 | Clean up commit history | History rewriting, interactive rebase | git rebase \-i |
 | Start over from scratch | Resetting the index, unstaging changes | git reset \--mixed |
 | Find the commit that introduced a bug | Binary search in commit history | git bisect |
+| Find which commit deleted a file | Using commit history | git log |
+| Find which commit deleted a line | Using commit history | git log -S, git log -G |
+| Understand ancestry references | Ancestry references, commit navigation | git rev-parse, git log, git show |
+| Find who added a specific line | Line-level history, authorship | git blame |
+| See the project at a specific version | Worktrees, tags | git log, git worktree, git tag |
 
 In workshops, we select exercises to comply with the learning objectives. 
 We use an informative slidedeck to provide context and explain concepts. 
