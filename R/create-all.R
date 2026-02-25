@@ -7,6 +7,9 @@
 #' @return The parent path
 #' @export
 #'
+#' @examplesIf interactive()
+#' parent_path <- withr::local_tempdir()
+#' path <- create_all_exercises(parent_path = parent_path)
 create_all_exercises <- function(parent_path) {
   rlang::local_interactive(FALSE)
 
@@ -15,5 +18,6 @@ create_all_exercises <- function(parent_path) {
   purrr::walk(funs, rlang::exec, parent_path = parent_path)
 
   fs::dir_tree(parent_path)
-  return(parent_path)
+
+  parent_path
 }

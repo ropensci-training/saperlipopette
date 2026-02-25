@@ -60,5 +60,5 @@ exo_committed_to_wrong <- function(parent_path) {
 
   cli::cli_alert_info(tr_("Follow along in {path}!"))
 
-  return(path)
+  path
 }

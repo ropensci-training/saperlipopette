@@ -15,7 +15,7 @@ tip <- function() {
       "{.code git worktree add ../v2 v2}",
       "Open {.path ../v2/flowers.txt}",
       "{.code git worktree list}",
-      "{.code git worktree v2}",
+      "{.code git worktree remove v2}",
       "{.code git worktree list}"
     )
   )

@@ -2,6 +2,7 @@
 #'
 #' @description
 #' An exercice to check your Git's core.editor is set correctly.
+#' <https://docs.github.com/es/get-started/git-basics/associating-text-editors-with-git>
 #'
 #'
 #' @inheritParams exo_one_small_change
@@ -47,5 +48,5 @@ exo_check_editor <- function(parent_path) {
 
   cli::cli_alert_info(tr_("Follow along in {path}!"))
 
-  return(path)
+  path
 }

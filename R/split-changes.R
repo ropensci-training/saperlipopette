@@ -50,14 +50,14 @@ exo_split_changes <- function(parent_path) {
   gert::git_add(new_script)
   git_commit(tr_("feat: add script"))
 
-  script_lines <- append(script_lines, "# a comment", after = 0)
-  script_lines <- append(script_lines, c("1/2", "1/3"), after = 2)
-  script_lines <- append(script_lines, c("library(ggplot2)"))
+  script_lines <- append(script_lines, "# a comment", after = 0L)
+  script_lines <- append(script_lines, c("1/2", "1/3"), after = 2L)
+  script_lines <- append(script_lines, "library(ggplot2)")
   brio::write_lines(text = script_lines, path = new_script)
 
   usethis::local_project(original_dir, force = TRUE)
 
   cli::cli_alert_info(tr_("Follow along in {path}!"))
 
-  return(path)
+  path
 }

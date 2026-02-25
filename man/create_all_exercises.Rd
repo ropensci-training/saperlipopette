@@ -15,3 +15,9 @@ The parent path
 \description{
 But do not open them!
 }
+\examples{
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
+parent_path <- withr::local_tempdir()
+path <- create_all_exercises(parent_path = parent_path)
+\dontshow{\}) # examplesIf}
+}

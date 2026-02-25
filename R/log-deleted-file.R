@@ -93,5 +93,5 @@ exo_log_deleted_file <- function(parent_path) {
 
   cli::cli_alert_info(tr_("Follow along in {path}!"))
 
-  return(path)
+  path
 }
