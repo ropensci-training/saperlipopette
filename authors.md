@@ -10,6 +10,11 @@
 - **Yanina Bellini Saibene**. Author.
   [](https://orcid.org/0000-0002-4522-7466)
 
+- **Steffi LaZerte**. Reviewer.
+  [](https://orcid.org/0000-0002-7690-8360)  
+  Steffi reviewed the 'saperlipopette, a risk-free playground for
+  learning more Git' article.
+
 ## Citation
 
 Source:

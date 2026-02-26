@@ -4,7 +4,7 @@ pkgdown_sha: ~
 articles:
   articles/paper: paper.html
   saperlipopette: saperlipopette.html
-last_built: 2026-02-25T10:18Z
+last_built: 2026-02-26T08:05Z
 urls:
   reference: https://docs.ropensci.org/saperlipopette/reference
   article: https://docs.ropensci.org/saperlipopette/articles
