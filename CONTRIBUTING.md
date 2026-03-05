@@ -1,6 +1,10 @@
 We welcome your contributions!
 
-Please open an issue for any larger change (new exercise for instance).
+Some general recommendations:
+
+- Please open an issue for any question you might have, or any bug you notice. We're happy to help!
+- Please open an issue for any larger change (new exercise for instance).
+- Please open a PR for smaller fixes.
 
 ## Contributing a new exercise
 
