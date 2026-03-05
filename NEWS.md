@@ -1,5 +1,7 @@
 # saperlipopette 0.1.1
 
+* Fix tests for interactive testing within RStudio or Positron (thanks `@robitalec`).
+
 * New `exo_blame()` exercise to practice finding who added a specific line with `git blame`.
 
 * New `exo_log_deleted_file()` exercise to practice finding a deleted file with `git log -- <path>`.
