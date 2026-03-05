@@ -21,10 +21,10 @@ exclamation](https://en.wiktionary.org/wiki/saperlipopette). You can say
 library("saperlipopette")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/Rtmphy2vyR/file1d9736fd0d7c/one-small-change!
+#> ℹ Follow along in /tmp/Rtmpn0thMk/file1d104cbff2fb/one-small-change!
 # what's in path
 fs::dir_tree(path)
-#> /tmp/Rtmphy2vyR/file1d9736fd0d7c/one-small-change
+#> /tmp/Rtmpn0thMk/file1d104cbff2fb/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
@@ -77,7 +77,7 @@ better with R Markdown that we use for building documentation.
 ``` r
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/Rtmphy2vyR/file1d9759c3adf3/one-small-change!
+#> ℹ Follow along in /tmp/Rtmpn0thMk/file1d105b7addfa/one-small-change!
 gert::git_log(repo = path)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -86,7 +86,7 @@ gert::git_log(repo = path)
 #> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 15:25:00     2 FALSE "First…
 parent_path2 <- withr::local_tempdir()
 path2 <- exo_one_small_change(parent_path2)
-#> ℹ Follow along in /tmp/Rtmphy2vyR/file1d97553de2fb/one-small-change!
+#> ℹ Follow along in /tmp/Rtmpn0thMk/file1d104962c65a/one-small-change!
 gert::git_log(repo = path2)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -105,10 +105,10 @@ library("saperlipopette")
 withr::local_language("fr")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/Rtmphy2vyR/file1d971057e6bb/one-small-change!
+#> ℹ Follow along in /tmp/Rtmpn0thMk/file1d102b87f6e0/one-small-change!
 # what's in path
 fs::dir_tree(path)
-#> /tmp/Rtmphy2vyR/file1d971057e6bb/one-small-change
+#> /tmp/Rtmpn0thMk/file1d102b87f6e0/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
