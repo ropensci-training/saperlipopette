@@ -1,4 +1,4 @@
-# saperlipopette (development version)
+# saperlipopette 0.1.1
 
 * New `exo_blame()` exercise to practice finding who added a specific line with `git blame`.
 
