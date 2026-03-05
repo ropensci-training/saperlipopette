@@ -1,6 +1,9 @@
 # Changelog
 
-## saperlipopette (development version)
+## saperlipopette 0.1.1
+
+- Fix tests for interactive testing within RStudio or Positron (thanks
+  `@robitalec`).
 
 - New
   [`exo_blame()`](https://docs.ropensci.org/saperlipopette/reference/exo_blame.md)
