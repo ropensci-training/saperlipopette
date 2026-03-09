@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/ropensci-training/saperlipopette/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropensci-training/saperlipopette/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/ropensci-training/saperlipopette/graph/badge.svg)](https://app.codecov.io/gh/ropensci-training/saperlipopette)
+[![Status at rOpenSci Software Peer Review](https://badges.ropensci.org/754_status.svg)](https://github.com/ropensci/software-review/issues/754)
 <!-- badges: end -->
 
 The goal of saperlipopette is to hold functions creating Git exercises, 
