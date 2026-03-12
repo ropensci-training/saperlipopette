@@ -16,6 +16,7 @@ tip <- function() {
     items = c(
       "Examiner l'historique Git.",
       "{.code git restore bla.txt --source=[saved hash]} ou {.code git checkout [saved hash] -- bla.txt}",
+      "{.code git add bla.txt}",
       "{.code git commit -m 'no need to copy-paste yay'}",
       "Examiner l'historique Git."
     )
