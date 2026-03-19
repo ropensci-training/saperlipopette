@@ -16,6 +16,6 @@ cli::cli_alert_info("Para más ayuda, {.run tip()}")
 
 tip <- function() {
   cli::cli_li("{.code git reflog}")
-  cli::cli_li('{.code git reset HEAD@{1}}')
+  cli::cli_li('{.code git reset HEAD@{{1}}}')
   cli::cli_li('Inspecciona la historia de Git.')
 }
