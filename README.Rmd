@@ -24,6 +24,11 @@ knitr::opts_chunk$set(
 The goal of saperlipopette is to hold functions creating Git exercises, 
 that users solve using their local and usual tools.
 
+Teachers can use the package when teaching intermediate Git by
+creating commonly-encountered version control challenges and providing guidance
+to resolving the challenges.
+Learners can also use the various exercises on their own to learn Git concepts.
+
 ## Installation
 
 You can install the development version of saperlipopette like so, from R-universe:
