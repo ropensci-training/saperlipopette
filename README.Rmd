@@ -58,7 +58,7 @@ You'll also need
 
 This package is intended to be a companion to https://ohshitgit.com/,
 so its name had to honour the exclamation.
-"saperlipopette" is an [old-fashioned French exclamation](https://en.wiktionary.org/wiki/saperlipopette).
+"saperlipopette" is an [old-fashioned French exclamation (link including a recording to hear the word's pronunciation)](https://en.wiktionary.org/wiki/saperlipopette).
 You can say "Saperlipopette, Git!".
 
 ## Example
