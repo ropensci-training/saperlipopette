@@ -15,6 +15,18 @@ The path to the new project
 \description{
 To go with \url{https://ohshitgit.com/#accidental-commit-master}
 }
+\section{Workflow}{
+
+Running the function will create the exercise as a new folder in \code{parent_path}.
+If called from RStudio or Positron, the function will open a new R session in
+that IDE.
+If not, the user will need to navigate to the path returned by the function,
+and launch an R session from there.
+The new R session will display messages about what challenge to solve,
+and running the \code{tip()} function from that new R session will display
+additional guiance.
+}
+
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()

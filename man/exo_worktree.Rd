@@ -18,6 +18,18 @@ to read the text file.
 The tool for that is \verb{git worktree}.
 \url{https://masalmon.eu/2024/01/23/git-worktree/}
 }
+\section{Workflow}{
+
+Running the function will create the exercise as a new folder in \code{parent_path}.
+If called from RStudio or Positron, the function will open a new R session in
+that IDE.
+If not, the user will need to navigate to the path returned by the function,
+and launch an R session from there.
+The new R session will display messages about what challenge to solve,
+and running the \code{tip()} function from that new R session will display
+additional guiance.
+}
+
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()

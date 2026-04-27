@@ -22,12 +22,14 @@ Useful links:
 
 Authors:
 \itemize{
+  \item Maëlle Salmon \email{msmaellesalmon@gmail.com} (\href{https://orcid.org/0000-0002-2815-0399}{ORCID})
   \item Yanina Bellini Saibene (\href{https://orcid.org/0000-0002-4522-7466}{ORCID})
 }
 
 Other contributors:
 \itemize{
   \item Jim Gardner [contributor]
+  \item Steffi LaZerte (\href{https://orcid.org/0000-0002-7690-8360}{ORCID}) (Steffi reviewed the 'saperlipopette, a risk-free playground for learning more Git' article.) [reviewer]
 }
 
 }

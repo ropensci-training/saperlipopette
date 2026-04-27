@@ -9,6 +9,7 @@
 #' @git amend
 #'
 #' @return The path
+#' @inheritSection exo_committed_to_main Workflow
 #' @export
 #'
 #' @examplesIf interactive()
