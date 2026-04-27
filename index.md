@@ -3,6 +3,11 @@
 The goal of saperlipopette is to hold functions creating Git exercises,
 that users solve using their local and usual tools.
 
+Teachers can use the package when teaching intermediate Git by creating
+commonly-encountered version control challenges and providing guidance
+to resolving the challenges. Learners can also use the various exercises
+on their own to learn Git concepts.
+
 ## Installation
 
 You can install the development version of saperlipopette like so, from
@@ -44,14 +49,20 @@ exclamation](https://en.wiktionary.org/wiki/saperlipopette). You can say
 
 ## Example
 
+Running the code below will create a new folder containing the exercise.
+If in RStudio or Positron, the code will even open a new R session. If
+not, the user will need to launch an R session, where messages would
+indicate them what to do, and which URL to follow, to find, in this
+case, the corresponding ohshitgit entry.
+
 ``` r
 library("saperlipopette")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmpQZY9FU/file426d67746edf/one-small-change!
+#> ℹ Follow along in /tmp/Rtmp941JVU/filec7c0f517938/one-small-change
 # what's in path
 fs::dir_tree(path)
-#> /tmp/RtmpQZY9FU/file426d67746edf/one-small-change
+#> /tmp/Rtmp941JVU/filec7c0f517938/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
@@ -64,13 +75,15 @@ gert::git_log(repo = path)
 #> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 16:25:00     2 FALSE "First…
 ```
 
-At this stage, the user would open the newly created R project and
-launch an R session, where messages would indicate them what to do, and
-which URL to follow, to find, in this case, the corresponding ohshitgit
-entry. In practice here the user would change a file, then Git add it,
-then run `git commit --amend --no-edit`. The user would examine the [Git
+In practice here, in the exercise’s folder, the user would - change a
+file, - then Git add it through the terminal or the interface of their
+choice, - then run `git commit --amend --no-edit` through the terminal
+or the interface of their choice.
+
+The user would examine the [Git
 history](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
-before and after this.
+before and after this, either through the terminal (`git log`) or the
+interface of their choice.
 
 ``` R
 #> ✖ "Oh shit, I committed and immediately realized I need to make one small change!"
@@ -106,7 +119,7 @@ better with R Markdown that we use for building documentation.
 ``` r
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmpQZY9FU/file426d250516e2/one-small-change!
+#> ℹ Follow along in /tmp/Rtmp941JVU/filec7c05d23630/one-small-change
 gert::git_log(repo = path)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -115,7 +128,7 @@ gert::git_log(repo = path)
 #> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 16:25:00     2 FALSE "First…
 parent_path2 <- withr::local_tempdir()
 path2 <- exo_one_small_change(parent_path2)
-#> ℹ Follow along in /tmp/RtmpQZY9FU/file426d31c55757/one-small-change!
+#> ℹ Follow along in /tmp/Rtmp941JVU/filec7c0121eccff/one-small-change
 gert::git_log(repo = path2)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -134,10 +147,10 @@ library("saperlipopette")
 withr::local_language("fr")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ L'exercice attend dans /tmp/RtmpQZY9FU/file426d1870e821/one-small-change !
+#> ℹ Follow along in /tmp/Rtmp941JVU/filec7c0626d9b81/one-small-change
 # what's in path
 fs::dir_tree(path)
-#> /tmp/RtmpQZY9FU/file426d1870e821/one-small-change
+#> /tmp/Rtmp941JVU/filec7c0626d9b81/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log

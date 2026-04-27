@@ -48,7 +48,7 @@ Note that patch is also an option for git commit, if you prefer so.'></head><bod
   <main id="main" class="col-md-9"><div class="page-header">
 
       <h1>"Hey I'd like to split these changes to the same file into several commits!"</h1>
-      <small class="dont-index">Source: <a href="https://github.com/ropensci-training/saperlipopette/blob/main/R/split-changes.R" class="external-link"><code>R/split-changes.R</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/ropensci-training/saperlipopette/blob/main/R/exo-split-changes.R" class="external-link"><code>R/exo-split-changes.R</code></a></small>
       <div class="d-none name"><code>exo_split_changes.Rd</code></div>
     </div>
 
@@ -79,6 +79,19 @@ See <a href="https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging#_stagi
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     <p>The path to the new project</p>
+    </div>
+    <div class="section level2">
+    <h2 id="workflow">Workflow<a class="anchor" aria-label="anchor" href="#workflow"></a></h2>
+
+
+<p>Running the function will create the exercise as a new folder in <code>parent_path</code>.
+If called from RStudio or Positron, the function will open a new R session in
+that IDE.
+If not, the user will need to navigate to the path returned by the function,
+and launch an R session from there.
+The new R session will display messages about what challenge to solve,
+and running the <code>tip()</code> function from that new R session will display
+additional guiance.</p>
     </div>
     <div class="section level2">
     <h2 id="related-git-documentation">Related Git documentation<a class="anchor" aria-label="anchor" href="#related-git-documentation"></a></h2>

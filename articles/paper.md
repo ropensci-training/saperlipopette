@@ -156,19 +156,19 @@ McQuaid, Mike. 2014. *Git in Practice*. Manning Publications.
 Ooms, Jeroen. 2026. *Gert: Simple Git Client for r*.
 <https://docs.ropensci.org/gert/>.
 
-Salmon, Maëlle. 2026a. “Git, Un Gentil ’Push’ Vers Une Meilleure
-Maîtrise.” Zenodo. <https://doi.org/10.5281/zenodo.18457383>.
+Salmon, Maëlle. 2026a. *Git, Un Gentil ’Push’ Vers Une Meilleure
+Maîtrise*. Zenodo. <https://doi.org/10.5281/zenodo.18457383>.
 
-———. 2026b. “Painlessly Improve Your Git History.” Zenodo.
+Salmon, Maëlle. 2026b. *Painlessly Improve Your Git History*. Zenodo.
 <https://doi.org/10.5281/zenodo.18457425>.
 
-Salmon, Maëlle, and Yanina Noemí Bellini Saibene. 2026a. “¡Miércoles,
-Git!” Zenodo. <https://doi.org/10.5281/zenodo.18457460>.
+Salmon, Maëlle, and Yanina Noemí Bellini Saibene. 2026a. *¡Miércoles,
+Git!* Zenodo. <https://doi.org/10.5281/zenodo.18457460>.
 
-———. 2026b. “Usar y Mejorar Tu Historial de Git.” Zenodo.
-<https://doi.org/10.5281/zenodo.18457484>.
+Salmon, Maëlle, and Yanina Noemí Bellini Saibene. 2026b. *Usar y Mejorar
+Tu Historial de Git*. Zenodo. <https://doi.org/10.5281/zenodo.18457484>.
 
-Sylor-Miller, Katie. 2024. “Oh Shit, Git!?!” <https://ohshitgit.com/>.
+Sylor-Miller, Katie. 2024. *Oh Shit, Git!?!* <https://ohshitgit.com/>.
 
 Tyagi, Devansh, Aman Kamboj, Aryan Sharma, Shilpy Sharma, and Rishi
 Sharma. 2025. “Interactive Git Learning Platform: Analysis and

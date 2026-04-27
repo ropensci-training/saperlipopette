@@ -27,6 +27,16 @@ exo_reset(parent_path)
 
 The path to the new project
 
+## Workflow
+
+Running the function will create the exercise as a new folder in
+`parent_path`. If called from RStudio or Positron, the function will
+open a new R session in that IDE. If not, the user will need to navigate
+to the path returned by the function, and launch an R session from
+there. The new R session will display messages about what challenge to
+solve, and running the `tip()` function from that new R session will
+display additional guiance.
+
 ## Related Git documentation
 
 [`git reset --mixed`](https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---mixed).

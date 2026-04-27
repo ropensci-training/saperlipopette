@@ -18,6 +18,16 @@ exo_one_small_change(parent_path)
 
 The path
 
+## Workflow
+
+Running the function will create the exercise as a new folder in
+`parent_path`. If called from RStudio or Positron, the function will
+open a new R session in that IDE. If not, the user will need to navigate
+to the path returned by the function, and launch an R session from
+there. The new R session will display messages about what challenge to
+solve, and running the `tip()` function from that new R session will
+display additional guiance.
+
 ## Related Git documentation
 
 [`git commit --amend --no-edit`](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---no-edit).
