@@ -1,4 +1,7 @@
-default_committer <- function() {
+#' Git committer for reproducibility
+#' Can be overriden through environment variables
+#' @noRd
+saperlipopette_committer <- function() {
   gert::git_signature(
     name = Sys.getenv("SAPERLIPOPETTE_COMMITTER_NAME", "Jane Doe"),
     email = Sys.getenv("SAPERLIPOPETTE_COMMITTER_EMAIL", "jane@example.com"),
@@ -8,7 +11,10 @@ default_committer <- function() {
   )
 }
 
-default_author <- function() {
+#' Git author for reproducibility
+#' Can be overriden through environment variables
+#' @noRd
+saperlipopette_author <- function() {
   gert::git_signature(
     name = Sys.getenv("SAPERLIPOPETTE_AUTHOR_NAME", "Jane Doe"),
     email = Sys.getenv("SAPERLIPOPETTE_AUTHOR_EMAIL", "jane@example.com"),
@@ -18,11 +24,13 @@ default_author <- function() {
   )
 }
 
+#' Wrapper for reproducibility to use default committer/author
+#' @noRd
 git_commit <- function(message) {
   gert::git_commit(
     message = tr_(message),
-    author = default_author(),
-    committer = default_committer()
+    author = saperlipopette_author(),
+    committer = saperlipopette_committer()
   )
 }
 
