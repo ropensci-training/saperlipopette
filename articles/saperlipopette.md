@@ -11,9 +11,10 @@ that users solve using their local and usual tools.
 
 This package is intended to be a companion to https://ohshitgit.com/, so
 its name had to honour the exclamation. “saperlipopette” is an
-[old-fashioned French
-exclamation](https://en.wiktionary.org/wiki/saperlipopette). You can say
-“Saperlipopette, Git!”.
+[old-fashioned French exclamation (link including a recording to hear
+the word’s
+pronunciation)](https://en.wiktionary.org/wiki/saperlipopette). You can
+say “Saperlipopette, Git!”.
 
 ## Example
 
@@ -30,10 +31,10 @@ case, the corresponding ohshitgit entry.
 library("saperlipopette")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/Rtmpi45mqf/file1d321e5269b7/one-small-change
+#> ℹ Follow along in /tmp/RtmppIXL7f/file1c431618272e/one-small-change
 # what's in path
 fs::dir_tree(path)
-#> /tmp/Rtmpi45mqf/file1d321e5269b7/one-small-change
+#> /tmp/RtmppIXL7f/file1c431618272e/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
@@ -88,7 +89,7 @@ better with R Markdown that we use for building documentation.
 ``` r
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/Rtmpi45mqf/file1d325ab9b95b/one-small-change
+#> ℹ Follow along in /tmp/RtmppIXL7f/file1c431a03965f/one-small-change
 gert::git_log(repo = path)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -97,7 +98,7 @@ gert::git_log(repo = path)
 #> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 15:25:00     2 FALSE "First…
 parent_path2 <- withr::local_tempdir()
 path2 <- exo_one_small_change(parent_path2)
-#> ℹ Follow along in /tmp/Rtmpi45mqf/file1d326d189c1a/one-small-change
+#> ℹ Follow along in /tmp/RtmppIXL7f/file1c43f7b0875/one-small-change
 gert::git_log(repo = path2)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -116,10 +117,10 @@ library("saperlipopette")
 withr::local_language("fr")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/Rtmpi45mqf/file1d3238d50da3/one-small-change
+#> ℹ Follow along in /tmp/RtmppIXL7f/file1c4357877a27/one-small-change
 # what's in path
 fs::dir_tree(path)
-#> /tmp/Rtmpi45mqf/file1d3238d50da3/one-small-change
+#> /tmp/RtmppIXL7f/file1c4357877a27/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
