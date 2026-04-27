@@ -23,12 +23,14 @@ that users solve using their local and usual tools.
 
 This package is intended to be a companion to https://ohshitgit.com/,
 so its name had to honour the exclamation.
-"saperlipopette" is an [old-fashioned French exclamation](https://en.wiktionary.org/wiki/saperlipopette).
+"saperlipopette" is an [old-fashioned French exclamation (link including a recording to hear the word's pronunciation)](https://en.wiktionary.org/wiki/saperlipopette).
 You can say "Saperlipopette, Git!".
 
 ## Example
 
 Running the code below will create a new folder containing the exercise.
+`parent_path` is a temporary folder created by the withr package, that will be deleted when closing the current R session.
+
 If in RStudio or Positron, the code will even open a new R session. 
 If not, the user will need to launch an R session,
 where messages would indicate them what to do, 
