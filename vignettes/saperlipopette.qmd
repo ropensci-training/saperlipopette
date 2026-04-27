@@ -28,6 +28,12 @@ You can say "Saperlipopette, Git!".
 
 ## Example
 
+Running the code below will create a new folder containing the exercise.
+If in RStudio or Positron, the code will even open a new R session. 
+If not, the user will need to launch an R session,
+where messages would indicate them what to do, 
+and which URL to follow, to find, in this case, the corresponding ohshitgit entry.
+
 ```{r example}
 library("saperlipopette")
 parent_path <- withr::local_tempdir()
@@ -39,9 +45,6 @@ fs::dir_tree(path)
 gert::git_log(repo = path)
 ```
 
-At this stage, the user would open the newly created R project and launch an R session,
-where messages would indicate them what to do, 
-and which URL to follow, to find, in this case, the corresponding ohshitgit entry.
 In practice here the user would change a file, then Git add it, then run `git commit --amend --no-edit`.
 The user would examine the [Git history](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History) before and after this.
 
