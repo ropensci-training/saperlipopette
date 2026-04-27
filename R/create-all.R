@@ -5,6 +5,7 @@
 #' @inheritParams exo_one_small_change
 #'
 #' @return The parent path
+#' @inheritSection exo_committed_to_main Workflow
 #' @export
 #'
 #' @examplesIf interactive()

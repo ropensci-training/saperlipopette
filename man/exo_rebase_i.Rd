@@ -26,6 +26,18 @@ Useful links:
 \item \url{https://github.blog/developer-skills/github/write-better-commits-build-better-projects/}
 }
 }
+\section{Workflow}{
+
+Running the function will create the exercise as a new folder in \code{parent_path}.
+If called from RStudio or Positron, the function will open a new R session in
+that IDE.
+If not, the user will need to navigate to the path returned by the function,
+and launch an R session from there.
+The new R session will display messages about what challenge to solve,
+and running the \code{tip()} function from that new R session will display
+additional guiance.
+}
+
 \examples{
 \dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 parent_path <- withr::local_tempdir()

@@ -9,6 +9,7 @@
 #' @git blame
 #'
 #' @return The path to the new project
+#' @inheritSection exo_committed_to_main Workflow
 #' @export
 #'
 #' @examplesIf interactive()
