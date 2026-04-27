@@ -16,6 +16,8 @@ License: MIT + file LICENSE
 URL: https://docs.ropensci.org/saperlipopette/,
     https://github.com/ropensci-training/saperlipopette
 BugReports: https://github.com/ropensci-training/saperlipopette/issues
+Depends:
+    R (>= 4.1.0)
 Imports: 
     brio,
     cli,
