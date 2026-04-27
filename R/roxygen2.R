@@ -36,26 +36,17 @@ git_links <- function() {
   )
 }
 
+# https://roxygen2.r-lib.org/dev/articles/extending.html
+# https://roxygen2.r-lib.org/dev/articles/rd-S3.html#methods-for-generics-in-other-packages
+#' @exportS3Method roxygen2::roxy_tag_parse
 roxy_tag_parse.roxy_tag_git <- function(x) {
   roxygen2::tag_words(x)
 }
 
+#' @exportS3Method roxygen2::roxy_tag_rd
 roxy_tag_rd.roxy_tag_git <- function(x, base_path, env) {
   roxygen2::rd_section("gitcommands", x$val)
 }
-
-rlang::on_load({
-  vctrs::s3_register(
-    "roxygen2::roxy_tag_parse",
-    "roxy_tag_git",
-    roxy_tag_parse.roxy_tag_git
-  )
-  vctrs::s3_register(
-    "roxygen2::roxy_tag_rd",
-    "roxy_tag_git",
-    roxy_tag_rd.roxy_tag_git
-  )
-})
 
 #' @export
 format.rd_section_gitcommands <- function(x, ...) {
