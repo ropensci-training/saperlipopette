@@ -1,3 +1,5 @@
+#' Create directory, error if it exists
+#' @noRd
 dir_create <- function(path, call = rlang::caller_env()) {
   if (fs::dir_exists(path)) {
     cli::cli_abort(
