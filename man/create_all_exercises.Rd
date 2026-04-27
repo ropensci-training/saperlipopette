@@ -14,6 +14,9 @@ The parent path
 }
 \description{
 But do not open them!
+Having all the exercises as folders within \code{parent_path} makes it possible
+to resolve them one by one, if one wants to practice all that is available
+with the package.
 }
 \section{Workflow}{
 

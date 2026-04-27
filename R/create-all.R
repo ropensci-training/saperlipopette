@@ -1,6 +1,9 @@
 #' Create all exercises folder at once
 #'
 #' But do not open them!
+#' Having all the exercises as folders within `parent_path` makes it possible
+#' to resolve them one by one, if one wants to practice all that is available
+#' with the package.
 #'
 #' @inheritParams exo_one_small_change
 #'
