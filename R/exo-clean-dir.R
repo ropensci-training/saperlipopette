@@ -57,7 +57,7 @@ exo_clean_dir <- function(parent_path) {
 
   usethis::local_project(original_dir, force = TRUE)
 
-  cli::cli_alert_info(tr_("Follow along in {path}!"))
+  cli::cli_alert_info(tr_("Follow along in {path}"))
 
   path
 }
