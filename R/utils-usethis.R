@@ -1,3 +1,7 @@
+#' Wrapper for `create_project()`
+#' Useful to not create RStudio files
+#' even when testing from within RStudio
+#' @noRd
 create_project <- function(path) {
   # do not create rprojfile when testing
   # testthat:::is_testing()
