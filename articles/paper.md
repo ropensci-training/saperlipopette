@@ -46,11 +46,11 @@ hands-on exercises, as well for for self-guided learners.
 Maëlle Salmon was inspired to create saperlipopette
 <https://docs.ropensci.org/saperlipopette/> after she read the “Git in
 Practice” book ([McQuaid 2014](#ref-mcquaid2014)) and the “Oh Shit,
-Git!”[¹](#fn1) website ([Sylor-Miller 2024](#ref-sylormiller)). She
-designed this R package as a tool for locally practicing advanced Git
-commands, which are not usually taught at beginners workshops and as a
-way to bridge the gap between knowing about techniques and applying them
-in day-to-day work. She built saperlipopette on top of gert ([Ooms
+Git!”[^1] website ([Sylor-Miller 2024](#ref-sylormiller)). She designed
+this R package as a tool for locally practicing advanced Git commands,
+which are not usually taught at beginners workshops and as a way to
+bridge the gap between knowing about techniques and applying them in
+day-to-day work. She built saperlipopette on top of gert ([Ooms
 2026](#ref-gert)) and usethis ([Wickham et al. 2025](#ref-usethis)).
 Next, Yanina Bellini Saibene joined the team to help translate exercises
 and to develop training curricula and workshops, which influenced the
@@ -95,26 +95,26 @@ exercise(s).
 Table 1. Overview of the Git scenarios, main concepts and commands
 covered in *saperlipopette*
 
-| Scenario                              | Main Git concepts                                      | Git commands typically taught                          |
-|:--------------------------------------|:-------------------------------------------------------|:-------------------------------------------------------|
-| Go back in time                       | Commit history, HEAD movement, recovering lost states  | git reset, git reflog                                  |
-| Fix an accidental commit to main      | Branch pointers, rewriting history, moving commits     | git reset --hard, git branch, git switch, git checkout |
-| Fix a commit on the wrong branch      | Applying commits across branches, history manipulation | git cherry-pick, git reset, git switch, git checkout   |
-| Change the last commit message        | Amending commits, metadata editing                     | git commit --amend                                     |
-| Add a small fix to the last commit    | Amending content without changing metadata             | git commit --amend --no-edit                           |
-| Undo an older commit                  | Commit history inspection, safe undo with new commits  | git log, git revert                                    |
-| Discard changes in a file             | Restoring file state, working tree vs commit history   | git log, git restore, git checkout, git commit         |
-| Split changes into multiple commits   | Partial staging, atomic commits                        | git add --patch, git add -p                            |
-| Remove untracked files                | Cleaning the working directory, untracked files        | git clean                                              |
-| Experience merge conflicts            | Branch merging, conflict detection and resolution      | git merge                                              |
-| Clean up commit history               | History rewriting, interactive rebase                  | git rebase -i                                          |
-| Start over from scratch               | Resetting the index, unstaging changes                 | git reset --mixed                                      |
-| Find the commit that introduced a bug | Binary search in commit history                        | git bisect                                             |
-| Find which commit deleted a file      | Using commit history                                   | git log                                                |
-| Find which commit deleted a line      | Using commit history                                   | git log -S, git log -G                                 |
-| Understand ancestry references        | Ancestry references, commit navigation                 | git rev-parse, git log, git show                       |
-| Find who added a specific line        | Line-level history, authorship                         | git blame                                              |
-| See the project at a specific version | Worktrees, tags                                        | git log, git worktree, git tag                         |
+| Scenario | Main Git concepts | Git commands typically taught |
+|:---|:---|:---|
+| Go back in time | Commit history, HEAD movement, recovering lost states | git reset, git reflog |
+| Fix an accidental commit to main | Branch pointers, rewriting history, moving commits | git reset --hard, git branch, git switch, git checkout |
+| Fix a commit on the wrong branch | Applying commits across branches, history manipulation | git cherry-pick, git reset, git switch, git checkout |
+| Change the last commit message | Amending commits, metadata editing | git commit --amend |
+| Add a small fix to the last commit | Amending content without changing metadata | git commit --amend --no-edit |
+| Undo an older commit | Commit history inspection, safe undo with new commits | git log, git revert |
+| Discard changes in a file | Restoring file state, working tree vs commit history | git log, git restore, git checkout, git commit |
+| Split changes into multiple commits | Partial staging, atomic commits | git add --patch, git add -p |
+| Remove untracked files | Cleaning the working directory, untracked files | git clean |
+| Experience merge conflicts | Branch merging, conflict detection and resolution | git merge |
+| Clean up commit history | History rewriting, interactive rebase | git rebase -i |
+| Start over from scratch | Resetting the index, unstaging changes | git reset --mixed |
+| Find the commit that introduced a bug | Binary search in commit history | git bisect |
+| Find which commit deleted a file | Using commit history | git log |
+| Find which commit deleted a line | Using commit history | git log -S, git log -G |
+| Understand ancestry references | Ancestry references, commit navigation | git rev-parse, git log, git show |
+| Find who added a specific line | Line-level history, authorship | git blame |
+| See the project at a specific version | Worktrees, tags | git log, git worktree, git tag |
 
 In workshops, we select exercises to comply with the learning
 objectives. We use an informative slidedeck to provide context and
@@ -180,8 +180,6 @@ Wickham, Hadley, Jennifer Bryan, Malcolm Barrett, and Andy Teucher.
 2025. *Usethis: Automate Package and Project Setup*.
 <https://github.com/r-lib/usethis>.
 
-------------------------------------------------------------------------
-
-1.  The package’s initial set of functions covered “Oh Shit, Git”, which
-    inspired the package name: “saperlipopette” is an old-fashioned
-    curse word in French, Maëlle’s native language.
+[^1]: The package’s initial set of functions covered “Oh Shit, Git”,
+    which inspired the package name: “saperlipopette” is an
+    old-fashioned curse word in French, Maëlle’s native language.

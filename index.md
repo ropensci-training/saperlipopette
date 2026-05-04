@@ -14,6 +14,7 @@ You can install the development version of saperlipopette like so, from
 R-universe:
 
 ``` r
+
 install.packages(
   'saperlipopette', 
   repos = c('https://packages.ropensci.org', 'https://cloud.r-project.org')
@@ -23,6 +24,7 @@ install.packages(
 Or from GitHub:
 
 ``` r
+
 # install.packages("pak")
 pak::pak("ropensci-training/saperlipopette")
 ```
@@ -60,6 +62,7 @@ indicate them what to do, and which URL to follow, to find, in this
 case, the corresponding ohshitgit entry.
 
 ``` r
+
 library("saperlipopette")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
@@ -100,6 +103,7 @@ If they need more instructions than what is initially provided, the user
 can run:
 
 ``` r
+
 tip()
 #> • Add 'thing 3' to the 'bla' file and save it.
 #> • `git add bla`
@@ -121,6 +125,7 @@ as opposed to `git log` in a command line, because that integrates
 better with R Markdown that we use for building documentation.
 
 ``` r
+
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
 #> ℹ Follow along in /tmp/Rtmp3fVeqS/fileee187fbd5a93/one-small-change
@@ -147,6 +152,7 @@ The saperlipopette can create messages in English (default) but also in
 French and Spanish. Example in French:
 
 ``` r
+
 library("saperlipopette")
 withr::local_language("fr")
 parent_path <- withr::local_tempdir()
@@ -175,6 +181,7 @@ gert::git_log(repo = path)
 ```
 
 ``` r
+
 tip()
 #> • Ajouter 'chose 3' au fichier 'bla' puis l'enregistrer.
 #> • `git add bla`

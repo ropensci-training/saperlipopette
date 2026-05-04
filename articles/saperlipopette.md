@@ -1,6 +1,7 @@
 # saperlipopette
 
 ``` r
+
 library(saperlipopette)
 ```
 
@@ -28,13 +29,14 @@ indicate them what to do, and which URL to follow, to find, in this
 case, the corresponding ohshitgit entry.
 
 ``` r
+
 library("saperlipopette")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmppIXL7f/file1c431618272e/one-small-change
+#> ℹ Follow along in /tmp/RtmpGrGmED/file1dff5e142d13/one-small-change
 # what's in path
 fs::dir_tree(path)
-#> /tmp/RtmppIXL7f/file1c431618272e/one-small-change
+#> /tmp/RtmpGrGmED/file1dff5e142d13/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
@@ -66,6 +68,7 @@ If they need more instructions than what is initially provided, the user
 can run:
 
 ``` r
+
 tip()
 #> • Add 'thing 3' to the 'bla' file and save it.
 #> • `git add bla`
@@ -87,9 +90,10 @@ as opposed to `git log` in a command line, because that integrates
 better with R Markdown that we use for building documentation.
 
 ``` r
+
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmppIXL7f/file1c431a03965f/one-small-change
+#> ℹ Follow along in /tmp/RtmpGrGmED/file1dff4f6d5576/one-small-change
 gert::git_log(repo = path)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -98,7 +102,7 @@ gert::git_log(repo = path)
 #> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 15:25:00     2 FALSE "First…
 parent_path2 <- withr::local_tempdir()
 path2 <- exo_one_small_change(parent_path2)
-#> ℹ Follow along in /tmp/RtmppIXL7f/file1c43f7b0875/one-small-change
+#> ℹ Follow along in /tmp/RtmpGrGmED/file1dff229ce16d/one-small-change
 gert::git_log(repo = path2)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -113,14 +117,15 @@ The saperlipopette can create messages in English (default) but also in
 French and Spanish. Example in French:
 
 ``` r
+
 library("saperlipopette")
 withr::local_language("fr")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmppIXL7f/file1c4357877a27/one-small-change
+#> ℹ Follow along in /tmp/RtmpGrGmED/file1dffef21e37/one-small-change
 # what's in path
 fs::dir_tree(path)
-#> /tmp/RtmppIXL7f/file1c4357877a27/one-small-change
+#> /tmp/RtmpGrGmED/file1dffef21e37/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
@@ -139,6 +144,7 @@ gert::git_log(repo = path)
     #> ℹ Pour plus d'aide, `tip()`
 
 ``` r
+
 tip()
 #> • Ajouter 'chose 3' au fichier 'bla' puis l'enregistrer.
 #> • `git add bla`
