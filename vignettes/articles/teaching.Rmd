@@ -40,8 +40,8 @@ We order and group those exercises. For instance fixing the latest commit's mess
 ## During the workshop
 
 During the workshop, a bit of context is explained in each part but the focus is on demonstrating each exercise or each pair/group of exercises then letting participants solve the exercises on their own. 
-We strongly believe hands-on sessions are key to learning.
-
+We know hands-on sessions are key to learning.
+After the hands-on finished we discuss the exercises together and solve any questions in group.
 ## After the workshop
 
 Or before... please share with us any comment, bug report or feature request on the exercises!
