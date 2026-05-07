@@ -15,6 +15,10 @@
   Steffi reviewed the 'saperlipopette, a risk-free playground for
   learning more Git' article.
 
+- **Mine Cetinkaya-Rundel**. Reviewer.  
+  Mine reviewed the package for rOpenSci:
+  https://github.com/ropensci/software-review/issues/754#issuecomment-4324492956.
+
 ## Citation
 
 Source:
