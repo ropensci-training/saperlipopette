@@ -1,5 +1,31 @@
 # saperlipopette (development version)
 
+Many changes thanks to reviews by reviewers Jeff Oliver and Mine Çetinkaya-Rundel and editors Alec Robitaille. 
+
+## Interface
+
+- Remove the exclamation mark at the end of the message indicating the path.
+
+## Documentation
+
+- Clarify use cases of the package.
+- Explain what happens automatically.
+- Clarify example, explain withr's temporary path.
+- Document Workflow in each manual page.
+- Improve the manual page of `create_all_exercises()`.
+- Mention in README that the Wiktionary link of saperlipopette includes a recording of the pronunciation of the word.
+
+## Internal
+
+- Document fs helpers.
+- Document and rename Git helpers.
+- Document internationalization helpers.
+- Document usethis wrapper.
+- Rename R scripts to align them with the function they contain.
+- Use roxygen2 from CRAN.
+- Add minimal R version.
+
+
 # saperlipopette 0.1.1
 
 * Fix tests for interactive testing within RStudio or Positron (thanks `@robitalec`).
