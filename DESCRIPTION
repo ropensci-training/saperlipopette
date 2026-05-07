@@ -8,7 +8,9 @@ Authors@R: c(
     person("Yanina Bellini", "Saibene", role = "aut",
            comment = c(ORCID = "0000-0002-4522-7466")),
     person("Steffi", "LaZerte", role = "rev",
-           comment = c("Steffi reviewed the 'saperlipopette, a risk-free playground for learning more Git' article.", ORCID = "0000-0002-7690-8360"))
+           comment = c("Steffi reviewed the 'saperlipopette, a risk-free playground for learning more Git' article.", ORCID = "0000-0002-7690-8360")),
+    person("Mine", "Çetinkaya-Rundel", role = "rev",
+           comment = "Mine reviewed the package for rOpenSci: https://github.com/ropensci/software-review/issues/754#issuecomment-4324492956.")
   )
 Description: Holds functions creating Git messes, that users would then
     solve, to follow <https://ohshitgit.com/>.
