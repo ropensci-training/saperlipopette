@@ -1,4 +1,4 @@
-# saperlipopette (development version)
+# saperlipopette 1.0.0
 
 Many changes thanks to reviews by reviewers Jeff Oliver and Mine Çetinkaya-Rundel and editors Alec Robitaille. 
 
