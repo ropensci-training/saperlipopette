@@ -19,6 +19,10 @@
   Mine reviewed the package for rOpenSci:
   https://github.com/ropensci/software-review/issues/754#issuecomment-4324492956.
 
+- **Jeff Oliver**. Reviewer.  
+  Jeff reviewed the package for rOpenSci:
+  https://github.com/ropensci/software-review/issues/754#issuecomment-4172245979.
+
 ## Citation
 
 Source:
