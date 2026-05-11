@@ -33,10 +33,10 @@ case, the corresponding ohshitgit entry.
 library("saperlipopette")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmpAEKZYG/file1e833db95271/one-small-change
+#> ℹ Follow along in /tmp/RtmpxQ6iju/file1d6d20e491eb/one-small-change
 # what's in path
 fs::dir_tree(path)
-#> /tmp/RtmpAEKZYG/file1e833db95271/one-small-change
+#> /tmp/RtmpxQ6iju/file1d6d20e491eb/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
@@ -93,7 +93,7 @@ better with R Markdown that we use for building documentation.
 
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmpAEKZYG/file1e836e5ff70e/one-small-change
+#> ℹ Follow along in /tmp/RtmpxQ6iju/file1d6d519547ac/one-small-change
 gert::git_log(repo = path)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -102,7 +102,7 @@ gert::git_log(repo = path)
 #> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 15:25:00     2 FALSE "First…
 parent_path2 <- withr::local_tempdir()
 path2 <- exo_one_small_change(parent_path2)
-#> ℹ Follow along in /tmp/RtmpAEKZYG/file1e8352f4f958/one-small-change
+#> ℹ Follow along in /tmp/RtmpxQ6iju/file1d6d1dc8712e/one-small-change
 gert::git_log(repo = path2)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -122,10 +122,10 @@ library("saperlipopette")
 withr::local_language("fr")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmpAEKZYG/file1e833c4af14d/one-small-change
+#> ℹ Follow along in /tmp/RtmpxQ6iju/file1d6d109d1697/one-small-change
 # what's in path
 fs::dir_tree(path)
-#> /tmp/RtmpAEKZYG/file1e833c4af14d/one-small-change
+#> /tmp/RtmpxQ6iju/file1d6d109d1697/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
