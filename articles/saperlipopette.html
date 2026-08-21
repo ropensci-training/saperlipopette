@@ -91,10 +91,10 @@
 <span><span class="co">#&gt; Registered S3 method overwritten by 'gert':</span></span>
 <span><span class="co">#&gt;   method                        from          </span></span>
 <span><span class="co">#&gt;   format.rd_section_gitcommands saperlipopette</span></span>
-<span><span class="co">#&gt; ℹ Follow along in /tmp/Rtmpyzlauh/file1d881965bd5b/one-small-change</span></span>
+<span><span class="co">#&gt; ℹ Follow along in /tmp/RtmpuXA6YE/file1db326b23180/one-small-change</span></span>
 <span><span class="co"># what's in path</span></span>
 <span><span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/dir_tree.html" class="external-link">dir_tree</a></span><span class="op">(</span><span class="va">path</span><span class="op">)</span></span>
-<span><span class="co">#&gt; /tmp/Rtmpyzlauh/file1d881965bd5b/one-small-change</span></span>
+<span><span class="co">#&gt; /tmp/RtmpuXA6YE/file1db326b23180/one-small-change</span></span>
 <span><span class="co">#&gt; ├── R</span></span>
 <span><span class="co">#&gt; └── bla</span></span>
 <span><span class="co"># with Git in a command line: git log</span></span>
@@ -130,7 +130,7 @@
 <div class="sourceCode cell-code" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">parent_path</span> <span class="op">&lt;-</span> <span class="fu">withr</span><span class="fu">::</span><span class="fu"><a href="https://withr.r-lib.org/reference/with_tempfile.html" class="external-link">local_tempdir</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="va">path</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/exo_one_small_change.html">exo_one_small_change</a></span><span class="op">(</span><span class="va">parent_path</span><span class="op">)</span></span>
-<span><span class="co">#&gt; ℹ Follow along in /tmp/Rtmpyzlauh/file1d881112ac74/one-small-change</span></span>
+<span><span class="co">#&gt; ℹ Follow along in /tmp/RtmpuXA6YE/file1db36ff5fc90/one-small-change</span></span>
 <span><span class="fu">gert</span><span class="fu">::</span><span class="fu"><a href="https://docs.ropensci.org/gert/reference/git_history.html" class="external-link">git_log</a></span><span class="op">(</span>repo <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 2 × 6</span></span>
 <span><span class="co">#&gt;   commit                          author time                files merge message</span></span>
@@ -139,7 +139,7 @@
 <span><span class="co">#&gt; 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 15:25:00     2 FALSE "First…</span></span>
 <span><span class="va">parent_path2</span> <span class="op">&lt;-</span> <span class="fu">withr</span><span class="fu">::</span><span class="fu"><a href="https://withr.r-lib.org/reference/with_tempfile.html" class="external-link">local_tempdir</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="va">path2</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/exo_one_small_change.html">exo_one_small_change</a></span><span class="op">(</span><span class="va">parent_path2</span><span class="op">)</span></span>
-<span><span class="co">#&gt; ℹ Follow along in /tmp/Rtmpyzlauh/file1d883bbab235/one-small-change</span></span>
+<span><span class="co">#&gt; ℹ Follow along in /tmp/RtmpuXA6YE/file1db35fd23d88/one-small-change</span></span>
 <span><span class="fu">gert</span><span class="fu">::</span><span class="fu"><a href="https://docs.ropensci.org/gert/reference/git_history.html" class="external-link">git_log</a></span><span class="op">(</span>repo <span class="op">=</span> <span class="va">path2</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 2 × 6</span></span>
 <span><span class="co">#&gt;   commit                          author time                files merge message</span></span>
@@ -156,10 +156,10 @@
 <span><span class="fu">withr</span><span class="fu">::</span><span class="fu"><a href="https://withr.r-lib.org/reference/with_language.html" class="external-link">local_language</a></span><span class="op">(</span><span class="st">"fr"</span><span class="op">)</span></span>
 <span><span class="va">parent_path</span> <span class="op">&lt;-</span> <span class="fu">withr</span><span class="fu">::</span><span class="fu"><a href="https://withr.r-lib.org/reference/with_tempfile.html" class="external-link">local_tempdir</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="va">path</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/exo_one_small_change.html">exo_one_small_change</a></span><span class="op">(</span><span class="va">parent_path</span><span class="op">)</span></span>
-<span><span class="co">#&gt; ℹ Follow along in /tmp/Rtmpyzlauh/file1d882e348367/one-small-change</span></span>
+<span><span class="co">#&gt; ℹ Follow along in /tmp/RtmpuXA6YE/file1db3342f6c14/one-small-change</span></span>
 <span><span class="co"># what's in path</span></span>
 <span><span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/dir_tree.html" class="external-link">dir_tree</a></span><span class="op">(</span><span class="va">path</span><span class="op">)</span></span>
-<span><span class="co">#&gt; /tmp/Rtmpyzlauh/file1d882e348367/one-small-change</span></span>
+<span><span class="co">#&gt; /tmp/RtmpuXA6YE/file1db3342f6c14/one-small-change</span></span>
 <span><span class="co">#&gt; ├── R</span></span>
 <span><span class="co">#&gt; └── bla</span></span>
 <span><span class="co"># with Git in a command line: git log</span></span>
