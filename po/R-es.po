@@ -69,7 +69,7 @@ msgstr "repara las cosas"
 
 #: edit-latest-message.R:45
 msgid "add a new documennnt"
-msgstr "añade un nuevo documento"
+msgstr "añade un nuevo documennnto"
 
 #: log-deleted-file.R:56
 msgid "refactor: remove script"
