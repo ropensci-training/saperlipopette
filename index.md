@@ -120,7 +120,7 @@ everyone should be looking at the same hashes on their machine, except
 for those commits they create themselves.
 
 Below we use
-[`gert::git_log()`](https://docs.ropensci.org/gert/reference/git_commit.html),
+[`gert::git_log()`](https://docs.ropensci.org/gert/reference/git_history.html),
 as opposed to `git log` in a command line, because that integrates
 better with R Markdown that we use for building documentation.
 

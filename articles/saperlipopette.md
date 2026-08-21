@@ -33,10 +33,13 @@ case, the corresponding ohshitgit entry.
 library("saperlipopette")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmpcA3LDC/file1eb1767f5fdf/one-small-change
+#> Registered S3 method overwritten by 'gert':
+#>   method                        from          
+#>   format.rd_section_gitcommands saperlipopette
+#> ℹ Follow along in /tmp/Rtmpyzlauh/file1d881965bd5b/one-small-change
 # what's in path
 fs::dir_tree(path)
-#> /tmp/RtmpcA3LDC/file1eb1767f5fdf/one-small-change
+#> /tmp/Rtmpyzlauh/file1d881965bd5b/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
@@ -85,7 +88,7 @@ everyone should be looking at the same hashes on their machine, except
 for those commits they create themselves.
 
 Below we use
-[`gert::git_log()`](https://docs.ropensci.org/gert/reference/git_commit.html),
+[`gert::git_log()`](https://docs.ropensci.org/gert/reference/git_history.html),
 as opposed to `git log` in a command line, because that integrates
 better with R Markdown that we use for building documentation.
 
@@ -93,7 +96,7 @@ better with R Markdown that we use for building documentation.
 
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmpcA3LDC/file1eb1fafdac/one-small-change
+#> ℹ Follow along in /tmp/Rtmpyzlauh/file1d881112ac74/one-small-change
 gert::git_log(repo = path)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -102,7 +105,7 @@ gert::git_log(repo = path)
 #> 2 e227ecc55e421f70b6e30602e6a2ee… Jane … 2023-12-15 15:25:00     2 FALSE "First…
 parent_path2 <- withr::local_tempdir()
 path2 <- exo_one_small_change(parent_path2)
-#> ℹ Follow along in /tmp/RtmpcA3LDC/file1eb137ff3577/one-small-change
+#> ℹ Follow along in /tmp/Rtmpyzlauh/file1d883bbab235/one-small-change
 gert::git_log(repo = path2)
 #> # A tibble: 2 × 6
 #>   commit                          author time                files merge message
@@ -122,10 +125,10 @@ library("saperlipopette")
 withr::local_language("fr")
 parent_path <- withr::local_tempdir()
 path <- exo_one_small_change(parent_path)
-#> ℹ Follow along in /tmp/RtmpcA3LDC/file1eb149db8cfd/one-small-change
+#> ℹ Follow along in /tmp/Rtmpyzlauh/file1d882e348367/one-small-change
 # what's in path
 fs::dir_tree(path)
-#> /tmp/RtmpcA3LDC/file1eb149db8cfd/one-small-change
+#> /tmp/Rtmpyzlauh/file1d882e348367/one-small-change
 #> ├── R
 #> └── bla
 # with Git in a command line: git log
