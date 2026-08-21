@@ -3,7 +3,7 @@ if (file.exists("~/.Rprofile")) {
 }
 
 cli::cli_alert_danger(
-  '"Mierda, necesito deshacer los cambio de un archivo!"'
+  '"Mierda, necesito deshacer los cambios de un archivo!"'
 )
 cli::cli_alert_danger(
   "Quiero que bla.txt sea como era antes del commit 'fix: repara cosas' !"
